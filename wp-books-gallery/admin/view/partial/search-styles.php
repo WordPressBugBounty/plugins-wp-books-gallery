@@ -17,7 +17,7 @@ wp_nonce_field( 'wbg_search_style_action', 'wbg_search_style_nonce_field' );
     <table class="wbg-search-style-settings-table">
         <!-- Search Panel -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Search Panel', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -52,8 +52,6 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Border Radius', WBG_TXT_DOMAIN );
@@ -68,12 +66,14 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
+        </tr>
+        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Border Width', WBG_TXT_DOMAIN );
 ?>:</label>
             </th>
-            <td>
+            <td colspan="1">
                 <?php 
 ?>
                     <span><?php 
@@ -85,7 +85,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Input Fields -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Input Fields', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -120,8 +120,6 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Font Size', WBG_TXT_DOMAIN );
@@ -139,7 +137,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Search Button -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Search Button', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -168,8 +166,6 @@ esc_attr_e( $wbg_btn_border_color );
 ?>">
                 <div id="colorpicker"></div>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Font Color', WBG_TXT_DOMAIN );
@@ -182,8 +178,9 @@ esc_attr_e( $wbg_btn_font_color );
                 <div id="colorpicker"></div>
             </td>
         </tr>
+        <!-- Search Button: Hover -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Search Button - Hover', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -215,13 +212,24 @@ esc_attr_e( $wbg_search_font_color_hover );
         </tr>
         <!-- Reset Button -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Reset Button', WBG_TXT_DOMAIN );
 ?></span><hr>
             </th>
         </tr>
         <tr>
+            <th scope="row">
+                <label><?php 
+_e( 'Button Width', WBG_TXT_DOMAIN );
+?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="45" max="200" name="wbg_reset_btn_width" id="wbg_reset_btn_width" value="<?php 
+esc_attr_e( $wbg_reset_btn_width );
+?>">
+                <code>px</code>
+            </td>
             <th scope="row">
                 <label><?php 
 _e( 'Background Color', WBG_TXT_DOMAIN );
@@ -259,14 +267,57 @@ esc_attr_e( $wbg_search_reset_font_color );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Width', WBG_TXT_DOMAIN );
+_e( 'Font Size', WBG_TXT_DOMAIN );
 ?>:</label>
             </th>
             <td>
-                <input type="number" class="small-text" min="45" max="200" name="wbg_reset_btn_width" id="wbg_reset_btn_width" value="<?php 
-esc_attr_e( $wbg_reset_btn_width );
+                <input type="number" class="small-text" min="12" max="45" name="wbg_reset_btn_font_size" id="wbg_reset_btn_font_size" value="<?php 
+esc_attr_e( $wbg_reset_btn_font_size );
 ?>">
                 <code>px</code>
+            </td>
+        </tr>
+        <!-- Reset Button: Hover -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align:left;">
+                <hr><span><?php 
+_e( 'Reset Button - Hover', WBG_TXT_DOMAIN );
+?></span><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php 
+_e( 'Background Color', WBG_TXT_DOMAIN );
+?>:</label>
+            </th>
+            <td>
+                <input class="wbg-wp-color" type="text" name="wbg_search_reset_bg_color_hvr" id="wbg_search_reset_bg_color_hvr" value="<?php 
+esc_attr_e( $wbg_search_reset_bg_color_hvr );
+?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Font Color', WBG_TXT_DOMAIN );
+?>:</label>
+            </th>
+            <td>
+                <input class="wbg-wp-color" type="text" name="wbg_search_reset_font_color_hvr" id="wbg_search_reset_font_color_hvr" value="<?php 
+esc_attr_e( $wbg_search_reset_font_color_hvr );
+?>">
+                <div id="colorpicker"></div>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Border Color', WBG_TXT_DOMAIN );
+?>:</label>
+            </th>
+            <td>
+                <input class="wbg-wp-color" type="text" name="wbg_search_reset_border_color_hvr" id="wbg_search_reset_border_color_hvr" value="<?php 
+esc_attr_e( $wbg_search_reset_border_color_hvr );
+?>">
+                <div id="colorpicker"></div>
             </td>
         </tr>
     </table>

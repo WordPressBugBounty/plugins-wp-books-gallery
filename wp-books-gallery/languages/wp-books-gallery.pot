@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Books Gallery\n"
-"POT-Creation-Date: 2024-08-28 14:03+0600\n"
+"POT-Creation-Date: 2024-09-25 05:13+0600\n"
 "PO-Revision-Date: 2021-12-27 03:58+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _e;esc_html_e;esc_html;esc_html_;__\n"
 "X-Poedit-SearchPath-0: .\n"
@@ -49,8 +49,8 @@ msgstr ""
 msgid "Usage & Tutorial"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:162 front/view/gallery.php:283
-#: front/view/gallery.php:292
+#: admin/cls-books-gallery-admin.php:162 front/view/gallery.php:284
+#: front/view/gallery.php:293
 msgid "Books"
 msgstr ""
 
@@ -443,11 +443,11 @@ msgstr ""
 #: admin/view/partial/gallery-styles.php:573
 #: admin/view/partial/search-styles.php:30
 #: admin/view/partial/search-styles.php:49
-#: admin/view/partial/search-styles.php:70
+#: admin/view/partial/search-styles.php:68
 #: admin/view/partial/search-styles.php:89
 #: admin/view/partial/search-styles.php:116
 #: admin/view/partial/search-styles.php:135
-#: admin/view/partial/search-styles.php:156
+#: admin/view/partial/search-styles.php:154
 #: admin/view/partial/single-content.php:24
 #: admin/view/partial/single-styles.php:30
 #: admin/view/partial/single-styles.php:75
@@ -558,7 +558,7 @@ msgstr ""
 #: admin/view/partial/gallery-content.php:475
 #: admin/view/partial/gallery-styles.php:592
 #: admin/view/partial/search-content.php:370
-#: admin/view/partial/search-styles.php:263
+#: admin/view/partial/search-styles.php:296
 #: admin/view/partial/single-content.php:613
 #: admin/view/partial/single-styles.php:356
 msgid "Save Settings"
@@ -1024,15 +1024,15 @@ msgstr ""
 #: admin/view/partial/gallery-styles.php:24
 #: admin/view/partial/gallery-styles.php:90
 #: admin/view/partial/search-styles.php:43
-#: admin/view/partial/search-styles.php:184
-#: admin/view/partial/search-styles.php:236
+#: admin/view/partial/search-styles.php:182
+#: admin/view/partial/search-styles.php:240
+#: admin/view/partial/search-styles.php:285
 #: admin/view/partial/single-styles.php:312
 #: widget/cls-books-gallery-widget.php:132
 msgid "Border Color"
 msgstr ""
 
 #: admin/view/partial/gallery-styles.php:31
-#: admin/view/partial/search-styles.php:252
 #: admin/view/partial/single-styles.php:24
 #: admin/view/partial/single-styles.php:272
 msgid "Width"
@@ -1054,7 +1054,7 @@ msgid "Padding"
 msgstr ""
 
 #: admin/view/partial/gallery-styles.php:66
-#: admin/view/partial/search-styles.php:64
+#: admin/view/partial/search-styles.php:62
 #: widget/cls-books-gallery-widget.php:137
 msgid "Border Radius"
 msgstr ""
@@ -1068,9 +1068,10 @@ msgstr ""
 #: admin/view/partial/gallery-styles.php:548
 #: admin/view/partial/search-styles.php:24
 #: admin/view/partial/search-styles.php:110
-#: admin/view/partial/search-styles.php:177
-#: admin/view/partial/search-styles.php:207
-#: admin/view/partial/search-styles.php:229
+#: admin/view/partial/search-styles.php:175
+#: admin/view/partial/search-styles.php:204
+#: admin/view/partial/search-styles.php:233
+#: admin/view/partial/search-styles.php:271
 #: admin/view/partial/single-styles.php:293
 #: widget/cls-books-gallery-widget.php:142
 #: widget/cls-books-gallery-widget.php:184
@@ -1103,9 +1104,10 @@ msgstr ""
 #: admin/view/partial/gallery-styles.php:521
 #: admin/view/partial/gallery-styles.php:567
 #: admin/view/partial/search-styles.php:129
-#: admin/view/partial/search-styles.php:193
-#: admin/view/partial/search-styles.php:214
-#: admin/view/partial/search-styles.php:245
+#: admin/view/partial/search-styles.php:189
+#: admin/view/partial/search-styles.php:211
+#: admin/view/partial/search-styles.php:249
+#: admin/view/partial/search-styles.php:278
 #: admin/view/partial/single-styles.php:69
 #: admin/view/partial/single-styles.php:115
 #: admin/view/partial/single-styles.php:161
@@ -1127,7 +1129,8 @@ msgstr ""
 #: admin/view/partial/gallery-styles.php:297
 #: admin/view/partial/gallery-styles.php:364
 #: admin/view/partial/gallery-styles.php:407
-#: admin/view/partial/search-styles.php:150
+#: admin/view/partial/search-styles.php:148
+#: admin/view/partial/search-styles.php:256
 #: admin/view/partial/single-styles.php:88
 #: admin/view/partial/single-styles.php:134
 #: admin/view/partial/single-styles.php:180
@@ -1261,7 +1264,7 @@ msgid "Display Tags"
 msgstr ""
 
 #: admin/view/partial/search-content.php:329
-#: admin/view/partial/search-styles.php:172
+#: admin/view/partial/search-styles.php:170
 msgid "Search Button"
 msgstr ""
 
@@ -1300,12 +1303,20 @@ msgstr ""
 msgid "Input Fields"
 msgstr ""
 
-#: admin/view/partial/search-styles.php:202
+#: admin/view/partial/search-styles.php:199
 msgid "Search Button - Hover"
 msgstr ""
 
-#: admin/view/partial/search-styles.php:224
+#: admin/view/partial/search-styles.php:221
 msgid "Reset Button"
+msgstr ""
+
+#: admin/view/partial/search-styles.php:226
+msgid "Button Width"
+msgstr ""
+
+#: admin/view/partial/search-styles.php:266
+msgid "Reset Button - Hover"
 msgstr ""
 
 #: admin/view/partial/single-content.php:18
@@ -1594,27 +1605,27 @@ msgstr ""
 msgid "No Image Available"
 msgstr ""
 
-#: front/view/gallery.php:283 front/view/gallery.php:292
+#: front/view/gallery.php:284 front/view/gallery.php:293
 msgid "Showing"
 msgstr ""
 
-#: front/view/gallery.php:300
+#: front/view/gallery.php:301
 msgid "Default Sorting"
 msgstr ""
 
-#: front/view/gallery.php:301
+#: front/view/gallery.php:302
 msgid "Sort by latest"
 msgstr ""
 
-#: front/view/gallery.php:302
+#: front/view/gallery.php:303
 msgid "Sort by price: low to high"
 msgstr ""
 
-#: front/view/gallery.php:303
+#: front/view/gallery.php:304
 msgid "Sort by price: high to low"
 msgstr ""
 
-#: front/view/gallery.php:306
+#: front/view/gallery.php:307
 msgid "View"
 msgstr ""
 

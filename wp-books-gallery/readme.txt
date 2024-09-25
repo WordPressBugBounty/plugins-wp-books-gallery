@@ -3,8 +3,8 @@ Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Books Gallery, Books, Digital Library, Books Showcase, Affiliate Marketing
 Requires at least: 5.4
-Tested up to: 6.6.1
-Stable tag: 4.6.5
+Tested up to: 6.6.2
+Stable tag: 4.6.6
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -321,6 +321,14 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 
 == Changelog ==
+
+= 4.6.6 =
+* Freemius SDK updated to 2.8.1
+* Reset button font size option added
+* Reset button hover bg color option added
+* Reset button hover font color option added
+* Reset button hover border color option added
+* Small bug fixed
 
 = 4.6.5 =
 * Refresh button icon option added

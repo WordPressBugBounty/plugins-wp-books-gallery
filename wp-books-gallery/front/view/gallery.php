@@ -19,6 +19,7 @@ if ( empty( $wbg_general_settings ) ) {
     $wbg_display_buynow = 1;
 }
 // Load Styling
+include WBG_PATH . 'assets/css/search.php';
 include WBG_PATH . 'assets/css/gallery.php';
 // Gallery Settings Content
 $wbg_details_is_external = ( $wbg_details_is_external ? ' target="_blank"' : '' );

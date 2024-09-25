@@ -17,11 +17,11 @@ class WBG_Front {
         Wbg_Single_Content_Settings,
         Wbg_Single_Styles_Settings
     ;
-    private $wbg_version;
+    private $wbg_version, $wbg_assets_prefix;
 
     function __construct( $version ) {
         $this->wbg_version = $version;
-        $this->wbg_assets_prefix = substr( WBG_PRFX, 0, -1 ) . '-';
+        $this->wbg_assets_prefix = 'wbg-';
     }
 
     function wbg_front_assets() {
@@ -34,7 +34,7 @@ class WBG_Front {
             FALSE
         );
         wp_enqueue_style(
-            $this->wbg_assets_prefix . 'font-awesome',
+            'wbg-font-awesome',
             WBG_ASSETS . 'css/fontawesome/css/all.min.css',
             array(),
             $this->wbg_version,
@@ -42,7 +42,7 @@ class WBG_Front {
         );
         wp_enqueue_style(
             'wbg-front',
-            WBG_ASSETS . 'css/' . $this->wbg_assets_prefix . 'front.css',
+            WBG_ASSETS . 'css/wbg-front.css',
             array(),
             $this->wbg_version,
             FALSE
@@ -245,6 +245,35 @@ class WBG_Front {
         $output = '';
         ob_start();
         include WBG_PATH . 'front/view/single-book.php';
+        $output .= ob_get_clean();
+        return $output;
+    }
+
+    function wbg_load_single_search( $attr ) {
+        // General Settings
+        $wbgCoreSettings = $this->wbg_get_core_settings();
+        foreach ( $wbgCoreSettings as $core_name => $core_value ) {
+            if ( isset( $wbgCoreSettings[$core_name] ) ) {
+                ${"" . $core_name} = $core_value;
+            }
+        }
+        // Search Content
+        $wbgSearchContent = $this->wbg_get_search_content_settings();
+        foreach ( $wbgSearchContent as $sc_name => $sc_value ) {
+            if ( isset( $wbgSearchContent[$sc_name] ) ) {
+                ${"" . $sc_name} = $sc_value;
+            }
+        }
+        // Search Styling
+        $wbgSearchStyles = $this->wbg_get_search_styles_settings();
+        foreach ( $wbgSearchStyles as $ss_name => $ss_value ) {
+            if ( isset( $wbgSearchStyles[$ss_name] ) ) {
+                ${"" . $ss_name} = $ss_value;
+            }
+        }
+        $output = '';
+        ob_start();
+        include WBG_PATH . 'front/view/single-search.php';
         $output .= ob_get_clean();
         return $output;
     }

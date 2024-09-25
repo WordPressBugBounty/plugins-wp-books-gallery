@@ -113,6 +113,26 @@ trait Wbg_Search_Styles_Settings
                 'type'      => 'number',
                 'default'   => '22',
             ],
+            [
+                'name'      => 'wbg_reset_btn_font_size',
+                'type'      => 'number',
+                'default'   => '18',
+            ],
+            [
+                'name'      => 'wbg_search_reset_bg_color_hvr',
+                'type'      => 'text',
+                'default'   => '#6fa0df',
+            ],
+            [
+                'name'      => 'wbg_search_reset_font_color_hvr',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
+            [
+                'name'      => 'wbg_search_reset_border_color_hvr',
+                'type'      => 'text',
+                'default'   => '#6fa0df',
+            ],
         ];
     }
 }
