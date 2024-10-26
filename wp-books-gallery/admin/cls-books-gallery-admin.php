@@ -281,7 +281,7 @@ class WBG_Admin {
             'wbg_filesize'          => ( isset( $_POST['wbg_filesize'] ) ? sanitize_text_field( $_POST['wbg_filesize'] ) : '' ),
             'wbg_status'            => ( isset( $_POST['wbg_status'] ) ? sanitize_text_field( $_POST['wbg_status'] ) : 'active' ),
             'wbgp_img_url'          => ( isset( $_POST['wbgp_img_url'] ) ? sanitize_url( $_POST['wbgp_img_url'] ) : '' ),
-            'wbgp_regular_price'    => ( isset( $_POST['wbgp_regular_price'] ) && filter_var( $_POST['wbgp_regular_price'], FILTER_SANITIZE_NUMBER_INT ) ? $_POST['wbgp_regular_price'] : '' ),
+            'wbgp_regular_price'    => ( isset( $_POST['wbgp_regular_price'] ) && filter_var( $_POST['wbgp_regular_price'], FILTER_SANITIZE_NUMBER_INT ) ? $_POST['wbgp_regular_price'] : 0 ),
             'wbgp_sale_price'       => ( isset( $_POST['wbgp_sale_price'] ) && filter_var( $_POST['wbgp_sale_price'], FILTER_SANITIZE_NUMBER_INT ) ? $_POST['wbgp_sale_price'] : '' ),
             'wbg_cost_type'         => ( isset( $_POST['wbg_cost_type'] ) && filter_var( $_POST['wbg_cost_type'], FILTER_SANITIZE_STRING ) ? $_POST['wbg_cost_type'] : '' ),
             'wbg_is_featured'       => ( isset( $_POST['wbg_is_featured'] ) && filter_var( $_POST['wbg_is_featured'], FILTER_SANITIZE_STRING ) ? $_POST['wbg_is_featured'] : '' ),

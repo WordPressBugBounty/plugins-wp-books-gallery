@@ -29,6 +29,9 @@ $wbg_edition = get_post_meta( $post->ID, 'wbg_edition', true );
 $wbg_illustrator = get_post_meta( $post->ID, 'wbg_illustrator', true );
 $wbg_translator = get_post_meta( $post->ID, 'wbg_translator', true );
 $wbg_wc_product_type = get_post_meta( $post->ID, 'wbg_wc_product_type', true );
+if ( !$wbgp_regular_price ) {
+    $wbgp_regular_price = 0;
+}
 ?>
 <table class="form-table">
     <tr class="wbg-sub-title">

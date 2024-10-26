@@ -18,6 +18,7 @@ if ( empty( $wbg_general_settings ) ) {
     $wbg_display_author = 1;
     $wbg_display_buynow = 1;
 }
+$wbgpCurrencySymbol = $this->wbg_get_currency_symbol( $wbgp_currency );
 // Load Styling
 include WBG_PATH . 'assets/css/search.php';
 include WBG_PATH . 'assets/css/gallery.php';

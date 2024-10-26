@@ -689,4 +689,32 @@ trait Wbg_Core
       
     return $formats;
   }
+
+  function wbg_load_pricing( $currency, $id ) {
+    
+    $wbgp_regular_price  = get_post_meta( $id, 'wbgp_regular_price', true );
+    $wbgp_sale_price     = get_post_meta( $id, 'wbgp_sale_price', true );
+
+    $wbgp_regular_price     = intval( $wbgp_regular_price );
+    $wbgp_sale_price        = intval( $wbgp_sale_price );
+
+    if ( ! $wbgp_regular_price ) {
+        $wbgp_regular_price = 0;
+    }
+
+    //if ( ( '' != $wbgp_sale_price ) || ( '' != $wbgp_regular_price ) ) {
+      ?>
+      <div class="regular-price">
+          <?php
+          if ( empty( $wbgp_sale_price ) ) {
+              $regualr_price = ( $wbgp_regular_price > 0 ) ? number_format( ( esc_html( $wbgp_regular_price ) / 100 ), 2, ".", "" ) :  $wbgp_regular_price;
+              echo '<span class="wbgp-price price-after">' . esc_html( $currency ) . $regualr_price . '</span>'; 
+          } else {
+              echo '<span class="wbgp-price price-before">' . esc_html( $currency ) . number_format( ( esc_html( $wbgp_regular_price ) / 100 ), 2, ".", "" ) . '</span>&nbsp;&nbsp;<span class="wbgp-price price-after">' . esc_html( $currency ) . number_format( ( esc_html( $wbgp_sale_price ) / 100 ), 2, ".", "" ) . '</span>';
+          }
+          ?>
+      </div>
+      <?php
+    //}
+  }
 }

@@ -118,6 +118,11 @@ trait Wbg_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '0',
             ],
+            [
+                'name'      => 'wbg_single_container_bg_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
         ];
     }
 }

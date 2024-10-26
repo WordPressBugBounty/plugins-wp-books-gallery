@@ -542,6 +542,34 @@ _e( 'Display Sidebar', WBG_TXT_DOMAIN );
 echo ( $wbg_display_sidebar ? 'checked' : null );
 ?> >
             </td>
+            <th scope="row" style="text-align: right;">
+                <label for="wbg_single_display_searchbar"><?php 
+_e( 'Display Search Panel', WBG_TXT_DOMAIN );
+?>?</label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', WBG_TXT_DOMAIN ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+            <th scope="row" style="text-align: right;">
+                <label for="wbg_single_display_search_mobile"><?php 
+_e( 'Hide Search Panel in Mobile', WBG_TXT_DOMAIN );
+?>?</label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', WBG_TXT_DOMAIN ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
         </tr>
     </table>
     <hr>

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/mhmrajib
 Tags: Books Gallery, Books, Digital Library, Books Showcase, Affiliate Marketing
 Requires at least: 5.4
 Tested up to: 6.6.2
-Stable tag: 4.6.6
+Stable tag: 4.6.7
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -321,6 +321,13 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 
 == Changelog ==
+
+= 4.6.7 =
+* Freemius SDK updated to 2.9.0
+* Paragraph applied to the gallery description
+* Book details container background color option added
+* Css fixed
+* Code optimized
 
 = 4.6.6 =
 * Freemius SDK updated to 2.8.1

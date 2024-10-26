@@ -17,7 +17,7 @@ wp_nonce_field( 'wbg_detail_style_action', 'wbg_detail_style_nonce_field' );
     <table class="wbg-single-style-settings-table">
         <!-- Master Container -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Master Container', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -38,6 +38,17 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Background Color', WBG_TXT_DOMAIN );
+?></label>
+            </th>
+            <td colspan="3">
+                <input class="wbg-wp-color" type="text" name="wbg_single_container_bg_color" id="wbg_single_container_bg_color" value="<?php 
+esc_attr_e( $wbg_single_container_bg_color );
+?>">
+                <div id="colorpicker"></div>
+            </td>
         </tr>
         <tr>
             <th scope="row">
@@ -56,15 +67,16 @@ esc_attr_e( $wbg_single_container_margin_top );
 _e( 'Margin Bottom', WBG_TXT_DOMAIN );
 ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <input type="number" class="medium-text" min="0" max="200" name="wbg_single_container_margin_bottom" id="wbg_single_container_margin_bottom" value="<?php 
 esc_attr_e( $wbg_single_container_margin_bottom );
 ?>">
                 <code>px</code>
             </td>
         </tr>
+        <!-- Title -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Title', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -90,7 +102,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 _e( 'Font Size', WBG_TXT_DOMAIN );
 ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -102,7 +114,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Sub Title -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Sub Title', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -128,7 +140,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 _e( 'Font Size', WBG_TXT_DOMAIN );
 ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -140,7 +152,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Information Label -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Information Label', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -166,7 +178,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 _e( 'Font Size', WBG_TXT_DOMAIN );
 ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -178,7 +190,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Information Text -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Information Text', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -204,7 +216,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 _e( 'Font Size', WBG_TXT_DOMAIN );
 ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -216,7 +228,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Modal Popup -->
         <tr>
-            <th scope="row" colspan="4" style="text-align:left;">
+            <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
 _e( 'Modal Popup', WBG_TXT_DOMAIN );
 ?></span><hr>
@@ -242,7 +254,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 _e( 'Width', WBG_TXT_DOMAIN );
 ?></label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -281,8 +293,6 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Border Width', WBG_TXT_DOMAIN );

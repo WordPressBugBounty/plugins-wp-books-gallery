@@ -13,7 +13,9 @@ table.fixed {
 }
 
 table.wbg-search-settings-table,
-table.wbg-search-style-settings-table {
+table.wbg-search-style-settings-table,
+table.wbg-details-settings-table,
+table.wbg-single-style-settings-table {
     width: 100%;
 }
 

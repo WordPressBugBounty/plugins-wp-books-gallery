@@ -14,6 +14,9 @@ if ( have_posts() ) {
         ?>" <?php 
         post_class( 'wbg-book-single-section clearfix' );
         ?>>
+            
+            <?php 
+        ?>
 
             <div class="wbg-details-column wbg-details-wrapper">
 

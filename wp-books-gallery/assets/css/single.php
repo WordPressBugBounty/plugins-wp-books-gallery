@@ -5,6 +5,11 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 ?>
 <style type="text/css">
+    .wbg-book-single-section {
+        background: <?php 
+esc_attr_e( $wbg_single_container_bg_color );
+?> !important;
+    }
     .wbg-details-wrapper {
         <?php 
 if ( $wbg_display_sidebar ) {
@@ -88,6 +93,13 @@ if ( $wbg_enable_rtl ) {
     ?>
             .wbg-details-wrapper .wbg-details-book-info .wbg-details-image {
                 text-align: right;
+            }
+            <?php 
+}
+if ( $wbg_single_display_search_mobile ) {
+    ?>
+            .wbg-book-single-section form#wbg-search-form {
+                display: none;
             }
             <?php 
 }

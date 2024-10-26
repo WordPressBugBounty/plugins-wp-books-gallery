@@ -328,6 +328,16 @@ trait Wbg_Single_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Translator',
             ],
+            [
+                'name'      => 'wbg_single_display_searchbar',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_single_display_search_mobile',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }
