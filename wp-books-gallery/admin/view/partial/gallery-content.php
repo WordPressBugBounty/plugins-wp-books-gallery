@@ -506,6 +506,19 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!
 ?>
             </td>
         </tr>
+        <tr class="wbg_gallery_hide_price">
+            <th scope="row">
+                <label for="wbg_gallery_hide_price"><?php 
+_e( 'Hide Price', 'wp-books-gallery' );
+?>?</label>
+            </th>
+            <td colspan="3">
+                <input type="checkbox" name="wbg_gallery_hide_price" class="wbg_gallery_hide_price" id="wbg_gallery_hide_price" value="1"
+                    <?php 
+checked( $wbg_gallery_hide_price, 1 );
+?> >
+            </td>
+        </tr>
         <!-- Currency -->
         <tr>
             <th scope="row">
@@ -555,6 +568,28 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 ?></span>
                     <?php 
 ?>
+            </td>
+        </tr>
+        <tr class="wbg_publish_date_format">
+            <th scope="row" style="text-align: right;">
+                <label for="wbg_publish_date_format"><?php 
+_e( 'Publish Date Format', WBG_TXT_DOMAIN );
+?>:</label>
+            </th>
+            <td>
+                <input type="radio" name="wbg_publish_date_format" id="wbg_publish_date_format_full" value="full" <?php 
+echo ( 'year' !== $wbg_publish_date_format ? 'checked' : '' );
+?> >
+                <label for="wbg_publish_date_format_full"><span></span><?php 
+_e( 'Full', WBG_TXT_DOMAIN );
+?></label>
+                    &nbsp;&nbsp;
+                <input type="radio" name="wbg_publish_date_format" id="wbg_publish_date_format_year" value="year" <?php 
+echo ( 'year' === $wbg_publish_date_format ? 'checked' : '' );
+?> >
+                <label for="wbg_publish_date_format_year"><span></span><?php 
+_e( 'Only Year', WBG_TXT_DOMAIN );
+?></label>
             </td>
         </tr>
 

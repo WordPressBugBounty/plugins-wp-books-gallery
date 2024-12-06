@@ -571,6 +571,19 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!
 ?>
             </td>
         </tr>
+        <tr class="wbg_details_hide_price">
+            <th scope="row">
+                <label for="wbg_details_hide_price"><?php 
+_e( 'Hide Price', 'wp-books-gallery' );
+?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="wbg_details_hide_price" class="wbg_details_hide_price" id="wbg_details_hide_price" value="1"
+                    <?php 
+checked( $wbg_details_hide_price, 1 );
+?>>
+            </td>
+        </tr>
     </table>
     <hr>
     <p class="submit">

@@ -227,6 +227,11 @@ trait Wbg_Core_Settings
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'wbg_price_format',
+                'type'      => 'string',
+                'default'   => 'default',
+            ],
         ];
     }
 }

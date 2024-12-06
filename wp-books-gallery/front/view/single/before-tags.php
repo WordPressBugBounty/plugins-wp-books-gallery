@@ -68,7 +68,6 @@ if ( $wbg_display_publish_date ) {
         ?>:</b>
             <?php 
         if ( 'full' === $wbg_publish_date_format ) {
-            //echo date('d M, Y', strtotime( $wbgPublished ) );
             echo date_i18n( get_option( 'date_format' ), strtotime( $wbgPublished ) );
         } else {
             echo date( 'Y', strtotime( $wbgPublished ) );

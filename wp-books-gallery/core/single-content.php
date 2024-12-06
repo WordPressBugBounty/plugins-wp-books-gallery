@@ -338,6 +338,21 @@ trait Wbg_Single_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'wbg_details_hide_price',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_other_books_from_title',
+                'type'      => 'text',
+                'default'   => 'Other Books From',
+            ],
+            [
+                'name'      => 'wbg_other_books_by_title',
+                'type'      => 'text',
+                'default'   => 'Other Books By',
+            ],
         ];
     }
 }

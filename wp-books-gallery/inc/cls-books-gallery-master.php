@@ -24,7 +24,7 @@ class WBG_Master {
      */
     function __construct() {
         $this->wbg_version = WBG_VERSION;
-        add_action( 'plugins_loaded', array($this, 'wbg_load_plugin_textdomain') );
+        add_action( 'init', array($this, 'wbg_load_plugin_textdomain') );
         $this->wbg_load_dependencies();
         $this->wbg_trigger_admin_hooks();
         $this->wbg_trigger_front_hooks();

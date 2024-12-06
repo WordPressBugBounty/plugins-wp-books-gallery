@@ -3,36 +3,7 @@
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-$wbg_search_settings = get_option( 'wbg_search_settings' );
-if ( empty( $wbg_search_settings ) ) {
-    $wbg_display_search_panel = 1;
-    $wbg_display_search_title = 1;
-    $wbg_display_search_isbn = 1;
-    $wbg_display_search_category = 1;
-    $wbg_display_search_author = 1;
-}
-$wbg_general_settings = get_option( 'wbg_general_settings' );
-if ( empty( $wbg_general_settings ) ) {
-    $wbg_display_description = 1;
-    $wbg_display_category = 1;
-    $wbg_display_author = 1;
-    $wbg_display_buynow = 1;
-}
-$wbgpCurrencySymbol = $this->wbg_get_currency_symbol( $wbgp_currency );
-// Load Styling
-include WBG_PATH . 'assets/css/search.php';
-include WBG_PATH . 'assets/css/gallery.php';
-// Gallery Settings Content
-$wbg_details_is_external = ( $wbg_details_is_external ? ' target="_blank"' : '' );
-$wbg_dwnld_btn_url_same_tab = ( !$wbg_dwnld_btn_url_same_tab ? 'target="_blank"' : '' );
-// Shortcoded Options
-$wbg_author = '';
-$wbg_language = '';
-$wbgCategory = ( isset( $attr['category'] ) ? $attr['category'] : '' );
-$wbgDisplay = ( isset( $attr['isdisplay'] ) ? $attr['isdisplay'] : $wbg_books_per_page );
-$wbgPagination = ( isset( $attr['ispagination'] ) ? $attr['ispagination'] : $wbg_display_pagination );
-// true/0
-$wbgLayout = ( isset( $attr['layout'] ) ? $attr['layout'] : 'grid' );
+include 'gallery/header.php';
 if ( is_front_page() ) {
     $wbgPaged = ( get_query_var( 'page' ) ? get_query_var( 'page' ) : 1 );
 } else {
@@ -49,78 +20,8 @@ $wbg_front_search_query_array = array(
     )),
 );
 $wbgBooksArr = apply_filters( 'wbg_front_search_query_array', $wbg_front_search_query_array );
-// If display params found in shortcode
-if ( $wbgDisplay != '' ) {
-    $wbgBooksArr['posts_per_page'] = $wbgDisplay;
-}
-// If Pagination found in shortcode
-if ( $wbgPagination ) {
-    $wbgBooksArr['paged'] = $wbgPaged;
-}
-// Order by
-$wbg_orderby_arr = ['wbg_published_on', 'wbg_publisher'];
-if ( in_array( $wbg_gallary_sorting, $wbg_orderby_arr ) ) {
-    $wbgBooksArr['orderby'] = 'meta_value meta_value_num';
-    $wbgBooksArr['meta_key'] = $wbg_gallary_sorting;
-}
-if ( !in_array( $wbg_gallary_sorting, $wbg_orderby_arr ) ) {
-    $wbgBooksArr['orderby'] = $wbg_gallary_sorting;
-    $wbgBooksArr['order'] = $wbg_books_order;
-}
-// If Category params found in shortcode
-if ( $wbgCategory != '' ) {
-    $wbgBooksArr['tax_query'] = array(array(
-        'taxonomy' => 'book_category',
-        'field'    => 'name',
-        'terms'    => $wbgCategory,
-    ));
-}
-// For Template Category
-if ( is_tax( 'book_category' ) ) {
-    $wbg_archive_cat_slug = ( isset( get_queried_object()->slug ) ? get_queried_object()->slug : '' );
-    if ( $wbg_archive_cat_slug != '' ) {
-        $wbgBooksArr['tax_query'] = array(array(
-            'taxonomy' => 'book_category',
-            'field'    => 'slug',
-            'terms'    => $wbg_archive_cat_slug,
-        ));
-    }
-}
-// For Template Tag
-if ( is_tag() ) {
-    $wbg_tag_for_temp = ( isset( get_queried_object()->slug ) ? get_queried_object()->slug : '' );
-    if ( '' !== $wbg_tag_for_temp ) {
-        $wbgBooksArr['tag'] = $wbg_tag_for_temp;
-    }
-}
-// Front Sorting Operation
-// Sorting Operation
-$wbg_orderby_arr = ['title', 'date', 'rand'];
-if ( !in_array( $wbg_gallary_sorting, $wbg_orderby_arr ) ) {
-    $wbgBooksArr['meta_key'] = $wbg_gallary_sorting;
-}
-if ( isset( $_GET['orderby'] ) && $_GET['orderby'] === 'price' ) {
-    $wbgBooksArr['meta_key'] = 'wbgp_regular_price';
-    $wbgBooksArr['orderby'] = 'meta_value_num';
-    $wbgBooksArr['meta_type'] = 'DECIMAL';
-    $wbgBooksArr['order'] = 'ASC';
-}
-if ( isset( $_GET['orderby'] ) && $_GET['orderby'] === 'price-desc' ) {
-    $wbgBooksArr['meta_key'] = 'wbgp_regular_price';
-    $wbgBooksArr['orderby'] = 'meta_value_num';
-    $wbgBooksArr['meta_type'] = 'DECIMAL';
-    $wbgBooksArr['order'] = 'DESC';
-}
-if ( isset( $_GET['orderby'] ) && $_GET['orderby'] === 'date' ) {
-    $wbgBooksArr['orderby'] = 'date';
-    $wbgBooksArr['order'] = 'DESC';
-    $wbgBooksArr['suppress_filters'] = true;
-}
-if ( isset( $_GET['orderby'] ) && $_GET['orderby'] === 'default' ) {
-    $wbgBooksArr['orderby'] = $wbg_gallary_sorting;
-    $wbgBooksArr['order'] = $wbg_books_order;
-    $wbgBooksArr['suppress_filters'] = true;
-}
+include 'gallery/main-query.php';
+include 'gallery/sorting.php';
 //echo '<pre>';
 //print_r($wbgBooksArr);
 ?>
@@ -133,28 +34,7 @@ if ( $wbg_display_search_panel ) {
 // Main Query
 $wbgBooks = new WP_Query($wbgBooksArr);
 if ( $wbgBooks->have_posts() ) {
-    if ( $wbg_display_total_books ) {
-        $wbg_prev_posts = ($wbgPaged - 1) * $wbgBooks->query_vars['posts_per_page'];
-        $wbg_from = 1 + $wbg_prev_posts;
-        $wbg_to = count( $wbgBooks->posts ) + $wbg_prev_posts;
-        $wbg_of = $wbgBooks->found_posts;
-        ?>
-        <div class="wbg-total-books-title">
-          <?php 
-        _e( 'Showing', WBG_TXT_DOMAIN );
-        ?> <span><?php 
-        printf(
-            '%s-%s of %s',
-            $wbg_from,
-            $wbg_to,
-            $wbg_of
-        );
-        ?></span> <?php 
-        _e( 'Books', WBG_TXT_DOMAIN );
-        ?>
-        </div>
-        <?php 
-    }
+    include 'gallery/sorting-view-mode.php';
     ?>
     <div class="wbg-main-wrapper <?php 
     echo 'wbg-product-column-' . esc_attr( $wbg_gallary_column ) . ' wbg-product-column-mobile-' . esc_attr( $wbg_gallary_column_mobile );

@@ -202,6 +202,16 @@ trait Wbg_Gallery_Settings_Content
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'wbg_gallery_hide_price',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_publish_date_format',
+                'type'      => 'string',
+                'default'   => 'full',
+            ],
         ];
     }
 

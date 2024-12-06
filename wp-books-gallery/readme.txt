@@ -3,8 +3,8 @@ Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Books Gallery, Books, Digital Library, Books Showcase, Affiliate Marketing
 Requires at least: 5.4
-Tested up to: 6.6.2
-Stable tag: 4.6.7
+Tested up to: 6.7.1
+Stable tag: 4.6.8
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -321,6 +321,14 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 
 == Changelog ==
+
+= 4.6.8 =
+* Price hide option added to gallery page
+* Price hide option added to details page
+* Publish date format option added to gallery page
+* Code optimized
+* Max number increased for regular and sale price
+* Price format option added
 
 = 4.6.7 =
 * Freemius SDK updated to 2.9.0

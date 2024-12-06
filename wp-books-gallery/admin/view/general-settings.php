@@ -237,6 +237,23 @@ echo ( $wbg_enable_rtl ? 'checked' : '' );
 ?>>
                     </td>
                 </tr>
+                <!-- Price Format -->
+                <tr>
+                    <th scope="row">
+                        <label><?php 
+_e( 'Price Format', 'wp-books-gallery' );
+?></label>
+                    </th>
+                    <td colspan="3">
+                        <?php 
+?>
+                            <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                            <?php 
+?>
+                    </td>
+                </tr>
             </table>
             <br><hr>
             <b><?php 

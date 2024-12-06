@@ -690,31 +690,48 @@ trait Wbg_Core
     return $formats;
   }
 
-  function wbg_load_pricing( $currency, $id ) {
+  function wbg_load_pricing( $currency, $id, $format ) {
     
     $wbgp_regular_price  = get_post_meta( $id, 'wbgp_regular_price', true );
     $wbgp_sale_price     = get_post_meta( $id, 'wbgp_sale_price', true );
 
-    $wbgp_regular_price     = intval( $wbgp_regular_price );
-    $wbgp_sale_price        = intval( $wbgp_sale_price );
+    $wbgp_regular_price = intval( $wbgp_regular_price );
+    $wbgp_sale_price    = intval( $wbgp_sale_price );
 
     if ( ! $wbgp_regular_price ) {
         $wbgp_regular_price = 0;
     }
-
+    
     //if ( ( '' != $wbgp_sale_price ) || ( '' != $wbgp_regular_price ) ) {
       ?>
       <div class="regular-price">
           <?php
           if ( empty( $wbgp_sale_price ) ) {
-              $regualr_price = ( $wbgp_regular_price > 0 ) ? number_format( ( esc_html( $wbgp_regular_price ) / 100 ), 2, ".", "" ) :  $wbgp_regular_price;
+              $regualr_price = ( $wbgp_regular_price > 0 ) ? $this->load_price_format( $wbgp_regular_price, $format ) :  $wbgp_regular_price;
               echo '<span class="wbgp-price price-after">' . esc_html( $currency ) . $regualr_price . '</span>'; 
           } else {
-              echo '<span class="wbgp-price price-before">' . esc_html( $currency ) . number_format( ( esc_html( $wbgp_regular_price ) / 100 ), 2, ".", "" ) . '</span>&nbsp;&nbsp;<span class="wbgp-price price-after">' . esc_html( $currency ) . number_format( ( esc_html( $wbgp_sale_price ) / 100 ), 2, ".", "" ) . '</span>';
+              echo '<span class="wbgp-price price-before">' . esc_html( $currency ) . $this->load_price_format( $wbgp_regular_price, $format ) . '</span>&nbsp;&nbsp;<span class="wbgp-price price-after">' . esc_html( $currency ) . $this->load_price_format( $wbgp_sale_price, $format ) . '</span>';
           }
           ?>
       </div>
       <?php
     //}
+  }
+
+  function load_price_format( $price, $format ) {
+    
+    if ( 'default' === $format ) {
+      $price_format = number_format( ( esc_html( $price ) / 100 ), 2, ".", "" );
+    }
+
+    if ( 'comma' === $format ) {
+      $price_format = number_format( ( esc_html( $price ) / 100 ), 2 );
+    }
+
+    if ( 'space' === $format ) {
+      $price_format = number_format( ( esc_html( $price ) / 100 ), 2, "."," " );
+    }
+
+    return $price_format;
   }
 }
