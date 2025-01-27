@@ -25,8 +25,16 @@ if ( !defined( 'ABSPATH' ) ) {
                 <li>&#10003; Widget to Display Latest Books in Slide</li>
                 <li>&#10003; Display Book Details in PopUp</li>
                 <li>&#10003; Allow Only Loggedin Users to Download Books</li>
-                <li>&#10003; Book Author Bio in Details Page & Separate Author Page</li>
+                <li>&#10003; Book Author Bio in Details Page</li>
+                <li>&#10003; Separate Author Panel</li>
+                <li>&#10003; Individual Author Page with Book List</li>
+                <li>&#10003; Category wise Book List Page</li>
                 <li>&#10003; Lots of Book Details Meta Data</li>
+                <li>&#10003; Include Co-Author with Main Author</li>
+                <li>&#10003; Display Free or Premium Books With Shortcode</li>
+                <li>&#10003; Display Search Panel in the Details Page</li>
+                <li>&#10003; Display Only Search Panel in any Page</li>
+                <li>&#10003; Display a Single Book by book-id</li>
                 <li>
                     <a href="https://books-gallery.com/docs/available-shortcodes/" target="_blank">&#10003; Lots of Shortcoded Options &#128279;</a>
                 </li>

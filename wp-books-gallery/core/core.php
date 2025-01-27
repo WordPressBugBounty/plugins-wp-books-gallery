@@ -673,13 +673,14 @@ trait Wbg_Core
 
   function wbg_book_formats() {
 
-    $book_formats = get_terms( array( 'taxonomy' => 'book_format', 'hide_empty' => false, 'orderby' => 'name', 'order' => 'ASC',  'parent' => 0 ) );
-
     $formats = [];
     
     if ( taxonomy_exists( 'book_format' ) ) {
-      if ( count( $book_formats ) > 0 ) {
-        foreach ( $book_formats as $bf ) {
+
+      $get_formats = get_terms( array( 'taxonomy' => 'book_format', 'hide_empty' => false, 'orderby' => 'name', 'order' => 'ASC',  'parent' => 0 ) );
+
+      if ( count( $get_formats ) > 0 ) {
+        foreach ( $get_formats as $bf ) {
           $formats[] = $bf->name;
         }
       }  
@@ -735,3 +736,4 @@ trait Wbg_Core
     return $price_format;
   }
 }
+?>

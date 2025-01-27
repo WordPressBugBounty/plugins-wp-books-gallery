@@ -22,42 +22,42 @@ if ( '' != $wbg_title_s ) {
     $wbgBooksArr['s'] = $wbg_title_s;
 }
 if ( '' !== $wbg_category_s ) {
-    $wbgBooksArr['tax_query'] = array(array(
+    $wbgBooksArr['tax_query'][] = array(array(
         'taxonomy' => 'book_category',
         'field'    => 'name',
         'terms'    => $wbg_category_s,
     ));
 }
 if ( '' != $wbg_author_s ) {
-    $wbgBooksArr['meta_query'] = array(array(
+    $wbgBooksArr['meta_query'][] = array(array(
         'key'     => 'wbg_author',
         'value'   => $wbg_author_s,
         'compare' => '=',
     ));
 }
 if ( '' != $wbg_publisher_s ) {
-    $wbgBooksArr['meta_query'] = array(array(
+    $wbgBooksArr['meta_query'][] = array(array(
         'key'     => 'wbg_publisher',
         'value'   => $wbg_publisher_s,
         'compare' => '=',
     ));
 }
 if ( '' != $wbg_isbn_s ) {
-    $wbgBooksArr['meta_query'] = array(array(
+    $wbgBooksArr['meta_query'][] = array(array(
         'key'     => 'wbg_isbn',
         'value'   => $wbg_isbn_s,
         'compare' => '=',
     ));
 }
 if ( '' != $wbg_language_s ) {
-    $wbgBooksArr['meta_query'] = array(array(
+    $wbgBooksArr['meta_query'][] = array(array(
         'key'     => 'wbg_language',
         'value'   => $wbg_language_s,
         'compare' => '=',
     ));
 }
 if ( '' != $wbg_published_on_s ) {
-    $wbgBooksArr['meta_query'] = array(array(
+    $wbgBooksArr['meta_query'][] = array(array(
         'key'     => 'wbg_published_on',
         'value'   => $wbg_published_on_s,
         'compare' => 'LIKE',

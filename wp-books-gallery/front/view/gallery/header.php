@@ -28,7 +28,7 @@ $wbg_dwnld_btn_url_same_tab = ( !$wbg_dwnld_btn_url_same_tab ? 'target="_blank"'
 // Shortcoded Options
 $wbg_author = '';
 $wbg_language = '';
-$wbgCategory = ( isset( $attr['category'] ) ? $attr['category'] : '' );
+$wbgCategory = ( isset( $attr['category'] ) ? explode( ",", $attr['category'] ) : [] );
 $wbgDisplay = ( isset( $attr['isdisplay'] ) ? $attr['isdisplay'] : $wbg_books_per_page );
 $wbgPagination = ( isset( $attr['ispagination'] ) ? $attr['ispagination'] : $wbg_display_pagination );
 // true/0

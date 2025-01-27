@@ -418,19 +418,41 @@ p.wbg-no-books-found {
     margin-top: 0px;
 }
 
-.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span {
+.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span.wbg-single-book-info {
     font-size: 14px;
     display: inline-block;
     width: 100%;
     margin: 0px !important;
     padding: 0px !important;
     margin-bottom: 10px !important;
+    display: none;
 }
 
 .wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span b {
     color: #242424;
-    width: 160px;
+    width: 170px;
     display: inline-block;
+}
+
+.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span.wbg-single-book-info p {
+    display: inline;
+}
+
+a#wbgSingleLoadMoreDetails {
+    border: 3px solid #007185;
+    color: #007185;
+    display: none;
+    font-size: 14px;
+    line-height: 16px;
+    width: 120px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+a#wbgSingleLoadMoreDetails:hover {
+    color: #CC0000;
 }
 
 .wbg-details-wrapper .wbg-single-format-wise-price {

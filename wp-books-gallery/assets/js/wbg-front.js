@@ -124,4 +124,20 @@
         window.location.href = url.href;
     });
 
+    $(document).ready(function() {
+
+        if ($("span.wbg-single-book-info").length > 8) {
+            $("#wbgSingleLoadMoreDetails").css("display", "block");
+        }
+        $("span.wbg-single-book-info").slice(0, 8).css("display", "inline-block").show();
+        $("#wbgSingleLoadMoreDetails").on("click", function(e) {
+            e.preventDefault();
+            $("span.wbg-single-book-info:hidden").slice(0, 4).css("display", "inline-block").slideDown();
+            if ($("span.wbg-single-book-info:hidden").length == 0) {
+                $("#wbgSingleLoadMoreDetails").text("No More Info Available").addClass("wbgNoMoreInfoAvailable");
+            }
+        });
+
+    });
+
 })(window, jQuery);

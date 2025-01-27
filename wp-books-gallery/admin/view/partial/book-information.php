@@ -29,6 +29,8 @@ $wbg_edition = get_post_meta( $post->ID, 'wbg_edition', true );
 $wbg_illustrator = get_post_meta( $post->ID, 'wbg_illustrator', true );
 $wbg_translator = get_post_meta( $post->ID, 'wbg_translator', true );
 $wbg_wc_product_type = get_post_meta( $post->ID, 'wbg_wc_product_type', true );
+$wbg_narrator = get_post_meta( $post->ID, 'wbg_narrator', true );
+$wbg_listening_length = get_post_meta( $post->ID, 'wbg_listening_length', true );
 if ( !$wbgp_regular_price ) {
     $wbgp_regular_price = 0;
 }
@@ -391,6 +393,8 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 ?>
         </td>
     </tr>
+    <?php 
+?>
 
     <?php 
 do_action( 'wbg_admin_book_meta_after_filesize' );

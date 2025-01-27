@@ -5,6 +5,7 @@ if ( !defined( 'ABSPATH' ) ) {
 }
 $wbgiUploadMsg = '';
 $wbg_api_from = 'gb';
+$title = '';
 if ( isset( $_POST['saveSettings'] ) ) {
     if ( !isset( $_POST['wbg_api_import_nonce_field'] ) || !wp_verify_nonce( $_POST['wbg_api_import_nonce_field'], 'wbg_api_import_action' ) ) {
         print 'Sorry, your nonce did not verify.';
@@ -27,8 +28,10 @@ if ( isset( $_POST['saveSettings'] ) ) {
                     $call_api = wp_remote_get( $url );
                     //0689816138
                     $data = (array) json_decode( wp_remote_retrieve_body( $call_api ) );
-                    //echo '<pre>';
-                    //print_r( $data );
+                    /*
+                    echo '<pre>';
+                    print_r( $data );
+                    */
                     if ( 'gb' === $wbg_api_from ) {
                         if ( isset( $data['items'] ) ) {
                             $data = (array) $data['items'][0];
@@ -48,8 +51,6 @@ if ( isset( $_POST['saveSettings'] ) ) {
                         }
                     }
                     if ( 'ol' === $wbg_api_from ) {
-                        //echo '<pre>';
-                        //print_r( $data );
                         if ( isset( $data["ISBN:{$isbn}"] ) ) {
                             $data = (array) $data["ISBN:{$isbn}"];
                             $data = (array) $data['details'];
@@ -65,18 +66,6 @@ if ( isset( $_POST['saveSettings'] ) ) {
                             $language = ( isset( $data['languages'][0]->key ) ? sanitize_text_field( $data['languages'][0]->key ) : '' );
                             $language = ( '/languages/eng' === $language ? 'English' : $language );
                             $publishedDate = ( 4 === strlen( $publishedDate ) ? $publishedDate . '-01-01' : date( 'Y-m-d', strtotime( $publishedDate ) ) );
-                            /*
-                            echo "Title = " . $title . '<br>';
-                            echo "Authors = " . $authors . '<br>'; //@implode(",", $data['authors']) . '<br>';
-                            echo "Categories = " . $categories . '<br>';
-                            echo "Publisher = " . $publisher . '<br>';
-                            echo "Published Date = " . $publishedDate . '<br>';
-                            echo "Pages = " . $pageCount . '<br>';    
-                            echo "Images = " . $imageLink . '<br>';   
-                            echo "ISBN-13 = " . $isbn13 . '<br>';    
-                            echo "Language = " . $language . '<br>';  
-                            echo "Description = " . $description . '<br>';
-                            */
                         }
                     }
                     if ( '' !== $title ) {

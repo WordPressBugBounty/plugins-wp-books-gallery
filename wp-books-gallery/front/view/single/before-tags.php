@@ -9,7 +9,7 @@ if ( $wbg_author_info ) {
         $wbg_author_term = get_term_by( 'name', $wbgAuthor, 'book_author' );
         $wbg_author_slug = ( !empty( $wbg_author_term ) ? $wbg_author_term->slug : '' );
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_author_label );
         ?>:</b>
@@ -26,26 +26,28 @@ if ( $wbg_author_info ) {
 }
 // Category
 if ( $wbg_display_category ) {
-    ?>
-    <span>
-        <b><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<?php 
-    esc_html_e( $wbg_category_label );
-    ?>:</b>
+    if ( !empty( $wbgCategory ) ) {
+        ?>
+        <span class="wbg-single-book-info">
+            <b><i class="fa fa-list-ul" aria-hidden="true"></i>&nbsp;<?php 
+        esc_html_e( $wbg_category_label );
+        ?>:</b>
+            <?php 
+        $wbgCatArray = array();
+        foreach ( $wbgCategory as $cat ) {
+            $wbgCatArray[] = "<a href='" . esc_url( home_url( '/book-category/' . urlencode( $cat->slug ) ) ) . "' class='wbg-single-link'>" . $cat->name . "</a>";
+        }
+        echo implode( ', ', $wbgCatArray );
+        ?>
+        </span>
         <?php 
-    $wbgCatArray = array();
-    foreach ( $wbgCategory as $cat ) {
-        $wbgCatArray[] = "<a href='" . esc_url( home_url( '/book-category/' . urlencode( $cat->slug ) ) ) . "' class='wbg-single-link'>" . $cat->name . "</a>";
     }
-    echo implode( ', ', $wbgCatArray );
-    ?>
-    </span>
-    <?php 
 }
 // Publisher
 if ( $wbg_display_publisher ) {
     if ( !empty( $wbgPublisher ) ) {
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-building" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_publisher_label );
         ?>:</b>
@@ -62,7 +64,7 @@ if ( $wbg_display_publisher ) {
 if ( $wbg_display_publish_date ) {
     if ( !empty( $wbgPublished ) ) {
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_publish_date_label );
         ?>:</b>
@@ -81,7 +83,7 @@ if ( $wbg_display_publish_date ) {
 if ( $wbg_display_isbn ) {
     if ( !empty( $wbgIsbn ) ) {
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-barcode" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_isbn_label );
         ?>:</b>
@@ -92,10 +94,11 @@ if ( $wbg_display_isbn ) {
         <?php 
     }
 }
+// Pages
 if ( $wbg_display_page ) {
     if ( !empty( $wbgPages ) ) {
         ?>
-    <span>
+    <span class="wbg-single-book-info">
         <b><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_page_label );
         ?>:</b>
@@ -106,10 +109,11 @@ if ( $wbg_display_page ) {
     <?php 
     }
 }
+// Country
 if ( $wbg_display_country ) {
     if ( !empty( $wbgCountry ) ) {
         ?>
-    <span>
+    <span class="wbg-single-book-info">
         <b><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_country_label );
         ?>:</b>
@@ -120,10 +124,11 @@ if ( $wbg_display_country ) {
     <?php 
     }
 }
+// Language
 if ( $wbg_display_language ) {
     if ( !empty( $wbgLanguage ) ) {
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_language_label );
         ?>:</b>
@@ -134,10 +139,11 @@ if ( $wbg_display_language ) {
         <?php 
     }
 }
+// Dimension
 if ( $wbg_display_dimension ) {
     if ( !empty( $wbgDimension ) ) {
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-arrows" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_dimension_label );
         ?>:</b>
@@ -148,10 +154,11 @@ if ( $wbg_display_dimension ) {
         <?php 
     }
 }
+// Filesize
 if ( $wbg_display_filesize ) {
     if ( !empty( $wbgFilesize ) ) {
         ?>
-        <span>
+        <span class="wbg-single-book-info">
             <b><i class="fa fa-file" aria-hidden="true"></i>&nbsp;<?php 
         esc_html_e( $wbg_filesize_label );
         ?>:</b>

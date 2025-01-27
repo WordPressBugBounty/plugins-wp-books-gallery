@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Books Gallery\n"
-"POT-Creation-Date: 2024-12-06 22:59+0600\n"
+"POT-Creation-Date: 2025-01-27 17:15+0600\n"
 "PO-Revision-Date: 2021-12-27 03:58+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -374,15 +374,19 @@ msgstr ""
 msgid "Format Wise Price & Url"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:690
+#: admin/cls-books-gallery-admin.php:428 front/view/single.php:66
+msgid "Best Sellers Rank"
+msgstr ""
+
+#: admin/cls-books-gallery-admin.php:704
 msgid "Set Book Cover Here"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:691
+#: admin/cls-books-gallery-admin.php:705
 msgid "Remove Book Cover Here"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:736
+#: admin/cls-books-gallery-admin.php:750
 msgid "Books Gallery Sidebar"
 msgstr ""
 
@@ -413,11 +417,11 @@ msgstr ""
 #: admin/view/general-settings.php:148 admin/view/general-settings.php:173
 #: admin/view/general-settings.php:231 admin/view/general-settings.php:260
 #: admin/view/general-settings.php:307 admin/view/general-settings.php:322
-#: admin/view/partial/book-information.php:47
-#: admin/view/partial/book-information.php:83
-#: admin/view/partial/book-information.php:122
-#: admin/view/partial/book-information.php:142
-#: admin/view/partial/book-information.php:325
+#: admin/view/partial/book-information.php:49
+#: admin/view/partial/book-information.php:85
+#: admin/view/partial/book-information.php:124
+#: admin/view/partial/book-information.php:144
+#: admin/view/partial/book-information.php:327
 #: admin/view/partial/gallery-content.php:177
 #: admin/view/partial/gallery-content.php:195
 #: admin/view/partial/gallery-content.php:216
@@ -463,7 +467,7 @@ msgstr ""
 #: admin/view/partial/single-styles.php:286
 #: admin/view/partial/single-styles.php:307
 #: admin/view/partial/single-styles.php:326
-#: admin/view/partial/single-styles.php:345 admin/view/wbg-api-import.php:215
+#: admin/view/partial/single-styles.php:345 admin/view/wbg-api-import.php:200
 msgid "Upgrade to Professional!"
 msgstr ""
 
@@ -581,83 +585,83 @@ msgstr ""
 msgid "Save Settings"
 msgstr ""
 
-#: admin/view/partial/book-information.php:41
+#: admin/view/partial/book-information.php:43
 #: admin/view/partial/single-styles.php:118
 msgid "Sub Title"
 msgstr ""
 
-#: admin/view/partial/book-information.php:61
+#: admin/view/partial/book-information.php:63
 msgid "Primary Author"
 msgstr ""
 
-#: admin/view/partial/book-information.php:69
+#: admin/view/partial/book-information.php:71
 #: admin/view/partial/gallery-content.php:92
 msgid "Publisher"
 msgstr ""
 
-#: admin/view/partial/book-information.php:77
+#: admin/view/partial/book-information.php:79
 msgid "Co-Publisher"
 msgstr ""
 
-#: admin/view/partial/book-information.php:100
+#: admin/view/partial/book-information.php:102
 msgid "Published On"
 msgstr ""
 
-#: admin/view/partial/book-information.php:108
+#: admin/view/partial/book-information.php:110
 #: admin/view/partial/search-content.php:68
 #: admin/view/partial/search-content.php:294
 #: admin/view/partial/search-content.php:313
 msgid "ISBN"
 msgstr ""
 
-#: admin/view/partial/book-information.php:116
+#: admin/view/partial/book-information.php:118
 msgid "ISBN-13"
 msgstr ""
 
-#: admin/view/partial/book-information.php:136
-#: front/view/single/before-tags.php:238
+#: admin/view/partial/book-information.php:138
+#: front/view/single/before-tags.php:268
 msgid "ASIN"
 msgstr ""
 
-#: admin/view/partial/book-information.php:156
+#: admin/view/partial/book-information.php:158
 msgid "Pages"
 msgstr ""
 
-#: admin/view/partial/book-information.php:164
+#: admin/view/partial/book-information.php:166
 #: admin/view/partial/gallery-content.php:95
 msgid "Country"
 msgstr ""
 
-#: admin/view/partial/book-information.php:172
+#: admin/view/partial/book-information.php:174
 #: admin/view/partial/gallery-content.php:94
 msgid "Language"
 msgstr ""
 
-#: admin/view/partial/book-information.php:180
+#: admin/view/partial/book-information.php:182
 msgid "Dimension"
 msgstr ""
 
-#: admin/view/partial/book-information.php:188
+#: admin/view/partial/book-information.php:190
 msgid "Download URL"
 msgstr ""
 
-#: admin/view/partial/book-information.php:194
+#: admin/view/partial/book-information.php:196
 msgid "Add File"
 msgstr ""
 
-#: admin/view/partial/book-information.php:195
+#: admin/view/partial/book-information.php:197
 msgid "Remove File"
 msgstr ""
 
-#: admin/view/partial/book-information.php:200
+#: admin/view/partial/book-information.php:202
 msgid "Sale Product Type"
 msgstr ""
 
-#: admin/view/partial/book-information.php:206
-#: admin/view/partial/book-information.php:229
-#: admin/view/partial/book-information.php:301
-#: admin/view/partial/book-information.php:349
-#: admin/view/partial/book-information.php:370
+#: admin/view/partial/book-information.php:208
+#: admin/view/partial/book-information.php:231
+#: admin/view/partial/book-information.php:303
+#: admin/view/partial/book-information.php:351
+#: admin/view/partial/book-information.php:372
 #: admin/view/partial/gallery-content.php:286
 #: admin/view/partial/gallery-content.php:305
 #: admin/view/partial/gallery-content.php:367
@@ -675,99 +679,109 @@ msgstr ""
 msgid "Please Upgrade Now!"
 msgstr ""
 
-#: admin/view/partial/book-information.php:213
+#: admin/view/partial/book-information.php:215
 msgid "External/Affiliate Product"
 msgstr ""
 
-#: admin/view/partial/book-information.php:214
+#: admin/view/partial/book-information.php:216
 msgid "Internal Product"
 msgstr ""
 
-#: admin/view/partial/book-information.php:223
+#: admin/view/partial/book-information.php:225
 msgid "Buy From URL"
 msgstr ""
 
-#: admin/view/partial/book-information.php:223
+#: admin/view/partial/book-information.php:225
 msgid "Select Internal Product"
 msgstr ""
 
-#: admin/view/partial/book-information.php:267
+#: admin/view/partial/book-information.php:269
 msgid "Select a Product"
 msgstr ""
 
-#: admin/view/partial/book-information.php:287
+#: admin/view/partial/book-information.php:289
 msgid "File Size"
 msgstr ""
 
-#: admin/view/partial/book-information.php:295
+#: admin/view/partial/book-information.php:297
 msgid "Cost Type"
 msgstr ""
 
-#: admin/view/partial/book-information.php:308
+#: admin/view/partial/book-information.php:310
 msgid "Free"
 msgstr ""
 
-#: admin/view/partial/book-information.php:311
+#: admin/view/partial/book-information.php:313
 msgid "Premium"
 msgstr ""
 
-#: admin/view/partial/book-information.php:319
+#: admin/view/partial/book-information.php:321
 msgid "Is Featured"
 msgstr ""
 
-#: admin/view/partial/book-information.php:332
+#: admin/view/partial/book-information.php:334
 msgid "Yes"
 msgstr ""
 
-#: admin/view/partial/book-information.php:335
+#: admin/view/partial/book-information.php:337
 msgid "No"
 msgstr ""
 
-#: admin/view/partial/book-information.php:343
+#: admin/view/partial/book-information.php:345
 msgid "Regular Price"
 msgstr ""
 
-#: admin/view/partial/book-information.php:356
-#: admin/view/partial/book-information.php:377
+#: admin/view/partial/book-information.php:358
+#: admin/view/partial/book-information.php:379
 msgid "Use 999 For 9.99"
 msgstr ""
 
-#: admin/view/partial/book-information.php:364
+#: admin/view/partial/book-information.php:366
 msgid "Discount Price"
 msgstr ""
 
-#: admin/view/partial/book-information.php:385
+#: admin/view/partial/book-information.php:387
 msgid "Item Weight"
 msgstr ""
 
-#: admin/view/partial/book-information.php:391
-#: admin/view/partial/book-information.php:411
-#: admin/view/partial/book-information.php:431
-#: admin/view/partial/book-information.php:451
+#: admin/view/partial/book-information.php:393
+#: admin/view/partial/book-information.php:413
+#: admin/view/partial/book-information.php:433
+#: admin/view/partial/book-information.php:453
 msgid "Upgrade to Professional"
 msgstr ""
 
-#: admin/view/partial/book-information.php:405
+#: admin/view/partial/book-information.php:407
 msgid "Edition"
 msgstr ""
 
-#: admin/view/partial/book-information.php:425
+#: admin/view/partial/book-information.php:427
 msgid "Illustrator"
 msgstr ""
 
-#: admin/view/partial/book-information.php:445
+#: admin/view/partial/book-information.php:447
 msgid "Translator"
 msgstr ""
 
-#: admin/view/partial/book-information.php:468
+#: admin/view/partial/book-information.php:470
+#: front/view/single/before-tags.php:364
+msgid "Narrator"
+msgstr ""
+
+#: admin/view/partial/book-information.php:478
+#: front/view/single/before-tags.php:376
+msgid "Listening Length"
+msgstr ""
+
+#: admin/view/partial/book-information.php:492
 msgid "Status"
 msgstr ""
 
-#: admin/view/partial/book-information.php:472 wp-books-gallery.php:156
+#: admin/view/partial/book-information.php:496 wp-books-gallery.php:156
 msgid "Active"
 msgstr ""
 
-#: admin/view/partial/book-information.php:475 wp-books-gallery.php:156
+#: admin/view/partial/book-information.php:499 wp-books-gallery.php:156
 msgid "Inactive"
 msgstr ""
 
@@ -1591,47 +1605,47 @@ msgstr ""
 msgid "Details Settings"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:147
+#: admin/view/wbg-api-import.php:135
 msgid "Books Imported Successfully"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:156
+#: admin/view/wbg-api-import.php:144
 msgid "Books Already Imported!"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:171
+#: admin/view/wbg-api-import.php:156
 msgid "No ISBN Provided!"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:179
+#: admin/view/wbg-api-import.php:164
 msgid "Import Books From API"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:197
+#: admin/view/wbg-api-import.php:182
 msgid "Import From"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:201
+#: admin/view/wbg-api-import.php:186
 msgid "Open Library"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:204
+#: admin/view/wbg-api-import.php:189
 msgid "Google Books"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:209
+#: admin/view/wbg-api-import.php:194
 msgid "Provide Your ISBN"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:221
+#: admin/view/wbg-api-import.php:206
 msgid "ISBN-10, ISBN-13"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:222
+#: admin/view/wbg-api-import.php:207
 msgid "Use comma between multiple ISBN/s"
 msgstr ""
 
-#: admin/view/wbg-api-import.php:230
+#: admin/view/wbg-api-import.php:215
 msgid "Import Books"
 msgstr ""
 
@@ -1686,6 +1700,10 @@ msgstr ""
 
 #: front/view/single-modal.php:31 wp-books-gallery.php:123
 msgid "Tags"
+msgstr ""
+
+#: front/view/single.php:74
+msgid "More Details"
 msgstr ""
 
 #: lib/freemius-integrator.php:57

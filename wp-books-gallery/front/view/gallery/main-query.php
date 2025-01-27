@@ -22,7 +22,7 @@ if ( !in_array( $wbg_gallary_sorting, $wbg_orderby_arr ) ) {
     $wbgBooksArr['order'] = $wbg_books_order;
 }
 // If Category params found in shortcode
-if ( $wbgCategory != '' ) {
+if ( !empty( $wbgCategory ) ) {
     $wbgBooksArr['tax_query'] = array(array(
         'taxonomy' => 'book_category',
         'field'    => 'name',

@@ -291,6 +291,8 @@ class WBG_Admin {
             'wbg_translator'        => ( isset( $_POST['wbg_translator'] ) ? sanitize_text_field( $_POST['wbg_translator'] ) : '' ),
             'wbg_editorial_reviews' => ( isset( $_POST['wbg_editorial_reviews'] ) ? wp_kses_post( $_POST['wbg_editorial_reviews'] ) : null ),
             'wbg_wc_product_type'   => ( isset( $_POST['wbg_wc_product_type'] ) ? sanitize_text_field( $_POST['wbg_wc_product_type'] ) : 'ext' ),
+            'wbg_narrator'          => ( isset( $_POST['wbg_narrator'] ) ? sanitize_text_field( $_POST['wbg_narrator'] ) : '' ),
+            'wbg_listening_length'  => ( isset( $_POST['wbg_listening_length'] ) ? sanitize_text_field( $_POST['wbg_listening_length'] ) : '' ),
         );
         $wbg_books_meta = apply_filters( 'wbg_books_meta', $wbg_books_meta_params, $wbg_books_meta_posts );
         foreach ( $wbg_books_meta as $key => $value ) {
@@ -494,6 +496,18 @@ class WBG_Admin {
 
     function wbg_format_price_link() {
         require_once WBG_PATH . 'admin/view/partial/formats.php';
+    }
+
+    function wbg_best_sellers_rank() {
+        global $post;
+        $wbg_best_sellers_rank = get_post_meta( $post->ID, 'wbg_best_sellers_rank', true );
+        $settings = array(
+            'media_buttons' => false,
+            'editor_height' => 200,
+        );
+        $content = wp_kses_post( $wbg_best_sellers_rank );
+        $editor_id = 'wbg_best_sellers_rank';
+        wp_editor( $content, $editor_id, $settings );
     }
 
 }

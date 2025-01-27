@@ -13,11 +13,17 @@ if ( is_front_page() ) {
 $wbg_front_search_query_array = array(
     'post_type'   => 'books',
     'post_status' => 'publish',
-    'meta_query'  => array(array(
-        'key'     => 'wbg_status',
-        'value'   => 'active',
-        'compare' => '=',
-    )),
+    'meta_query'  => array(
+        'relation' => 'AND',
+        array(
+            'key'     => 'wbg_status',
+            'value'   => 'active',
+            'compare' => '=',
+        ),
+    ),
+    'tax_query'   => array(
+        'relation' => 'AND',
+    ),
 );
 $wbgBooksArr = apply_filters( 'wbg_front_search_query_array', $wbg_front_search_query_array );
 include 'gallery/main-query.php';

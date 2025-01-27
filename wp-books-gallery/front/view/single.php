@@ -39,7 +39,7 @@ if ( have_posts() ) {
             $wbgTagsSeparator = ' |';
             $wgbOutput = '';
             if ( !empty( $wbgPostTags ) ) {
-                $wgbOutput .= "<span><b><i class='fa-solid fa-tags'></i>&nbsp;" . esc_attr( $wbg_details_tag_label ) . ":</b>";
+                $wgbOutput .= "<span class='wbg-single-book-info'><b><i class='fa-solid fa-tags'></i>&nbsp;" . esc_attr( $wbg_details_tag_label ) . ":</b>";
                 foreach ( $wbgPostTags as $tag ) {
                     $wgbOutput .= '&nbsp;<a href="' . get_tag_link( $tag->term_id ) . '" class="wbg-single-link">' . $tag->name . '</a>' . $wbgTagsSeparator;
                 }
@@ -48,6 +48,11 @@ if ( have_posts() ) {
             }
         }
         ?>
+                        
+                        <a href="#" id="wbgSingleLoadMoreDetails"><?php 
+        _e( 'More Details', 'wp-books-gallery' );
+        ?></a>
+
                         <span class="wbg-single-button-container">
                             <?php 
         // Download Button
@@ -104,19 +109,15 @@ if ( have_posts() ) {
         }
         ?>
                         </span>
-
                     </div>
-
                 </div>
 
                 <?php 
-        ?>
-
-                <div class="wbg-details-description">
-                    <?php 
+        // Description
         if ( $wbg_display_description ) {
             if ( !empty( get_the_content() ) ) {
                 ?>
+                        <div class="wbg-details-description">
                             <div class="wbg-details-description-title">
                                 <b><i class="fa fa-pencil" aria-hidden="true"></i>&nbsp;<?php 
                 esc_html_e( $wbg_description_label );
@@ -128,13 +129,10 @@ if ( have_posts() ) {
                 the_content();
                 ?>
                             </div>
-                            <?php 
+                        </div>
+                        <?php 
             }
         }
-        ?>
-                </div>
-
-                <?php 
         // Back Button
         if ( !$wbg_hide_back_button ) {
             echo '<br>';
