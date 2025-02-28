@@ -226,6 +226,22 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 ?>
             </td>
         </tr>
+        <tr>
+            <th scope="row">
+                <label><?php 
+_e( 'Anchor Hover Color', WBG_TXT_DOMAIN );
+?></label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+        </tr>
         <!-- Modal Popup -->
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">

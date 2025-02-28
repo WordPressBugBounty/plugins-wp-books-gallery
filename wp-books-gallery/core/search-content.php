@@ -50,10 +50,13 @@ trait Wbg_Search_Content_Settings
             if ( ! in_array('coauthor', $searchItems) ) {
 				$searchItems[] = 'coauthor';
 			}
+            if ( ! in_array('readingage', $searchItems) ) {
+				$searchItems[] = 'readingage';
+			}
 
         } else {
 
-            $searchItems = array( 'title', 'isbn', 'category', 'year', 'language',  'author', 'publisher', 'format', 'series', 'isbn13', 'tags', 'coauthor' );
+            $searchItems = array( 'title', 'isbn', 'category', 'year', 'language',  'author', 'publisher', 'format', 'series', 'isbn13', 'tags', 'coauthor', 'readingage' );
         }
 
         return apply_filters( 'wbg_search_items', $searchItems );
@@ -246,6 +249,21 @@ trait Wbg_Search_Content_Settings
                 'name'      => 'wbg_display_co_author_order',
                 'type'      => 'string',
                 'default'   => 'asc',
+            ],
+            [
+                'name'      => 'wbg_display_search_reading_age',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_display_reading_age_order',
+                'type'      => 'string',
+                'default'   => 'asc',
+            ],
+            [
+                'name'      => 'wbg_search_reading_age_default',
+                'type'      => 'text',
+                'default'   => 'All Reading Age',
             ],
         ];
     }

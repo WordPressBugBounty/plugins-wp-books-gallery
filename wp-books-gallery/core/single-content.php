@@ -353,6 +353,11 @@ trait Wbg_Single_Content_Settings
                 'type'      => 'text',
                 'default'   => 'Other Books By',
             ],
+            [
+                'name'      => 'wbg_details_hide_load_more',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

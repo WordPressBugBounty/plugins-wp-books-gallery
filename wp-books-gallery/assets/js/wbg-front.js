@@ -10,6 +10,7 @@
     var wbgSelectSort = document.getElementById('wbg-select-sort');
     var wbgSlide = document.getElementById('wbg-view-slide-id');
     var wbgWidget = document.getElementById('wbg-view-widget-id');
+    var wbgSingleLoadMoreDetails = document.getElementById('wbgSingleLoadMoreDetails');
 
     if (wbgSingleModal != null) {
         $(".wbg-single-modal").iziModal({
@@ -126,6 +127,9 @@
 
     $(document).ready(function() {
 
+        if (wbgSingleLoadMoreDetails == null) {
+            $("span.wbg-single-book-info").css("display", "block");
+        }
         if ($("span.wbg-single-book-info").length > 8) {
             $("#wbgSingleLoadMoreDetails").css("display", "block");
         }

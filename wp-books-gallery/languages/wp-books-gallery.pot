@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Books Gallery\n"
-"POT-Creation-Date: 2025-01-27 17:15+0600\n"
+"POT-Creation-Date: 2025-02-28 15:38+0600\n"
 "PO-Revision-Date: 2021-12-27 03:58+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -238,6 +238,7 @@ msgid "Search Reading Age"
 msgstr ""
 
 #: admin/cls-books-gallery-admin.php:290
+#: admin/view/partial/search-content.php:371
 msgid "All Reading Age"
 msgstr ""
 
@@ -374,7 +375,7 @@ msgstr ""
 msgid "Format Wise Price & Url"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:428 front/view/single.php:66
+#: admin/cls-books-gallery-admin.php:428 front/view/single.php:68
 msgid "Best Sellers Rank"
 msgstr ""
 
@@ -463,11 +464,12 @@ msgstr ""
 #: admin/view/partial/single-styles.php:194
 #: admin/view/partial/single-styles.php:221
 #: admin/view/partial/single-styles.php:240
-#: admin/view/partial/single-styles.php:267
-#: admin/view/partial/single-styles.php:286
+#: admin/view/partial/single-styles.php:261
+#: admin/view/partial/single-styles.php:288
 #: admin/view/partial/single-styles.php:307
-#: admin/view/partial/single-styles.php:326
-#: admin/view/partial/single-styles.php:345 admin/view/wbg-api-import.php:200
+#: admin/view/partial/single-styles.php:328
+#: admin/view/partial/single-styles.php:347
+#: admin/view/partial/single-styles.php:366 admin/view/wbg-api-import.php:200
 msgid "Upgrade to Professional!"
 msgstr ""
 
@@ -578,10 +580,10 @@ msgstr ""
 #: admin/view/general-settings.php:343
 #: admin/view/partial/gallery-content.php:496
 #: admin/view/partial/gallery-styles.php:592
-#: admin/view/partial/search-content.php:399
+#: admin/view/partial/search-content.php:428
 #: admin/view/partial/search-styles.php:296
-#: admin/view/partial/single-content.php:674
-#: admin/view/partial/single-styles.php:362
+#: admin/view/partial/single-content.php:681
+#: admin/view/partial/single-styles.php:383
 msgid "Save Settings"
 msgstr ""
 
@@ -894,6 +896,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:231
 #: admin/view/partial/search-content.php:260
 #: admin/view/partial/search-content.php:329
+#: admin/view/partial/search-content.php:358
 msgid "Order By"
 msgstr ""
 
@@ -906,6 +909,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:235
 #: admin/view/partial/search-content.php:264
 #: admin/view/partial/search-content.php:333
+#: admin/view/partial/search-content.php:362
 msgid "Ascending"
 msgstr ""
 
@@ -918,6 +922,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:238
 #: admin/view/partial/search-content.php:267
 #: admin/view/partial/search-content.php:336
+#: admin/view/partial/search-content.php:365
 msgid "Descending"
 msgstr ""
 
@@ -995,7 +1000,7 @@ msgstr ""
 
 #: admin/view/partial/gallery-content.php:271
 #: admin/view/partial/gallery-content.php:299
-#: admin/view/partial/search-content.php:363
+#: admin/view/partial/search-content.php:392
 msgid "Button Text"
 msgstr ""
 
@@ -1082,14 +1087,14 @@ msgstr ""
 #: admin/view/partial/search-styles.php:182
 #: admin/view/partial/search-styles.php:240
 #: admin/view/partial/search-styles.php:285
-#: admin/view/partial/single-styles.php:320
+#: admin/view/partial/single-styles.php:341
 #: widget/cls-books-gallery-widget.php:132
 msgid "Border Color"
 msgstr ""
 
 #: admin/view/partial/gallery-styles.php:31
 #: admin/view/partial/single-styles.php:24
-#: admin/view/partial/single-styles.php:280
+#: admin/view/partial/single-styles.php:301
 msgid "Width"
 msgstr ""
 
@@ -1128,7 +1133,7 @@ msgstr ""
 #: admin/view/partial/search-styles.php:233
 #: admin/view/partial/search-styles.php:271
 #: admin/view/partial/single-styles.php:46
-#: admin/view/partial/single-styles.php:301
+#: admin/view/partial/single-styles.php:322
 #: widget/cls-books-gallery-widget.php:142
 #: widget/cls-books-gallery-widget.php:184
 msgid "Background Color"
@@ -1272,6 +1277,7 @@ msgstr ""
 #: admin/view/partial/search-content.php:241
 #: admin/view/partial/search-content.php:270
 #: admin/view/partial/search-content.php:339
+#: admin/view/partial/search-content.php:368
 msgid "Default Option"
 msgstr ""
 
@@ -1331,29 +1337,34 @@ msgstr ""
 msgid "All Co-Authors"
 msgstr ""
 
-#: admin/view/partial/search-content.php:358
+#: admin/view/partial/search-content.php:352
+#: admin/view/partial/single-content.php:121
+msgid "Display Reading Age"
+msgstr ""
+
+#: admin/view/partial/search-content.php:387
 #: admin/view/partial/search-styles.php:170
 msgid "Search Button"
 msgstr ""
 
-#: admin/view/partial/search-content.php:366
-#: admin/view/partial/search-content.php:386
+#: admin/view/partial/search-content.php:395
+#: admin/view/partial/search-content.php:415
 msgid "Search Books"
 msgstr ""
 
-#: admin/view/partial/search-content.php:372
+#: admin/view/partial/search-content.php:401
 msgid "Refresh Button"
 msgstr ""
 
-#: admin/view/partial/search-content.php:377
+#: admin/view/partial/search-content.php:406
 msgid "Hide Button"
 msgstr ""
 
-#: admin/view/partial/search-content.php:383
+#: admin/view/partial/search-content.php:412
 msgid "Button Icon"
 msgstr ""
 
-#: admin/view/partial/search-content.php:389
+#: admin/view/partial/search-content.php:418
 msgid "Display as Text"
 msgstr ""
 
@@ -1362,7 +1373,7 @@ msgid "Search Panel"
 msgstr ""
 
 #: admin/view/partial/search-styles.php:83
-#: admin/view/partial/single-styles.php:339
+#: admin/view/partial/single-styles.php:360
 #: widget/cls-books-gallery-widget.php:127
 msgid "Border Width"
 msgstr ""
@@ -1401,10 +1412,6 @@ msgstr ""
 
 #: admin/view/partial/single-content.php:100
 msgid "Series Label"
-msgstr ""
-
-#: admin/view/partial/single-content.php:121
-msgid "Display Reading Age"
 msgstr ""
 
 #: admin/view/partial/single-content.php:139
@@ -1581,6 +1588,10 @@ msgstr ""
 msgid "Hide Search Panel in Mobile"
 msgstr ""
 
+#: admin/view/partial/single-content.php:670
+msgid "Hide Load More Button"
+msgstr ""
+
 #: admin/view/partial/single-styles.php:19
 msgid "Master Container"
 msgstr ""
@@ -1593,11 +1604,15 @@ msgstr ""
 msgid "Information Text"
 msgstr ""
 
-#: admin/view/partial/single-styles.php:256
+#: admin/view/partial/single-styles.php:255
+msgid "Anchor Hover Color"
+msgstr ""
+
+#: admin/view/partial/single-styles.php:277
 msgid "Modal Popup"
 msgstr ""
 
-#: admin/view/partial/single-styles.php:261
+#: admin/view/partial/single-styles.php:282
 msgid "Height"
 msgstr ""
 
@@ -1702,7 +1717,7 @@ msgstr ""
 msgid "Tags"
 msgstr ""
 
-#: front/view/single.php:74
+#: front/view/single.php:77
 msgid "More Details"
 msgstr ""
 

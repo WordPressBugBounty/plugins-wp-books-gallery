@@ -67,7 +67,8 @@
         '#wbg_search_reset_bg_color_hvr',
         '#wbg_search_reset_font_color_hvr',
         '#wbg_search_reset_border_color_hvr',
-        '#wbg_single_container_bg_color'
+        '#wbg_single_container_bg_color',
+        '#wbg_single_anchor_hv_color'
     ];
 
     $.each(wbgColorPicker, function(index, value) {

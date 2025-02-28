@@ -123,6 +123,11 @@ trait Wbg_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#FFFFFF',
             ],
+            [
+                'name'      => 'wbg_single_anchor_hv_color',
+                'type'      => 'text',
+                'default'   => '#CC0000',
+            ],
         ];
     }
 }

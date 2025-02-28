@@ -35,8 +35,10 @@ if ( $wbg_display_sidebar ) {
         color: #242424;
         text-decoration: none;
     }
-    a.wbg-single-link:hover {
-        color: #CC0000;
+    .wbg-details-wrapper .wbg-details-summary span a.wbg-single-link:hover {
+        color: <?php 
+esc_attr_e( $wbg_single_anchor_hv_color );
+?>;
     }
     .wbg-details-summary span a.wbg-btn,
     a.wbg-btn-back {

@@ -583,6 +583,17 @@ _e( 'Hide Price', 'wp-books-gallery' );
 checked( $wbg_details_hide_price, 1 );
 ?>>
             </td>
+            <th scope="row">
+                <label for="wbg_details_hide_load_more"><?php 
+_e( 'Hide Load More Button', 'wp-books-gallery' );
+?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="wbg_details_hide_load_more" class="wbg_details_hide_load_more" id="wbg_details_hide_load_more" value="1"
+                    <?php 
+checked( $wbg_details_hide_load_more, 1 );
+?>>
+            </td>
         </tr>
     </table>
     <hr>

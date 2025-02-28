@@ -34,6 +34,7 @@ if ( have_posts() ) {
                         
                         <?php 
         include 'single/before-tags.php';
+        // Tags
         if ( !$wbg_details_hide_tag ) {
             $wbgPostTags = get_the_tags();
             $wbgTagsSeparator = ' |';
@@ -47,11 +48,14 @@ if ( have_posts() ) {
                 echo trim( $wgbOutput, $wbgTagsSeparator );
             }
         }
+        if ( !$wbg_details_hide_load_more ) {
+            ?>
+                            <a href="#" id="wbgSingleLoadMoreDetails"><?php 
+            _e( 'More Details', 'wp-books-gallery' );
+            ?></a>
+                            <?php 
+        }
         ?>
-                        
-                        <a href="#" id="wbgSingleLoadMoreDetails"><?php 
-        _e( 'More Details', 'wp-books-gallery' );
-        ?></a>
 
                         <span class="wbg-single-button-container">
                             <?php 
