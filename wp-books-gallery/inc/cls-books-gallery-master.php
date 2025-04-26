@@ -31,8 +31,7 @@ class WBG_Master {
     }
 
     function wbg_load_plugin_textdomain() {
-        $wbgLangPath = WBG_TXT_DOMAIN;
-        load_plugin_textdomain( WBG_TXT_DOMAIN, FALSE, $wbgLangPath . '/languages/' );
+        load_plugin_textdomain( 'wp-books-gallery', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
     }
 
     private function wbg_load_dependencies() {
@@ -107,13 +106,6 @@ class WBG_Master {
             10
         );
         $wbg_front->wbg_load_shortcode();
-    }
-
-    private function wbg_trigger_widget_hooks() {
-        new Wbg_Widget();
-        add_action( 'widgets_init', function () {
-            register_widget( 'Wbg_Widget' );
-        } );
     }
 
     function wbg_run() {

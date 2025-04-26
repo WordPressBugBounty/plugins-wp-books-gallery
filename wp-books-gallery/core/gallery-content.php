@@ -212,6 +212,16 @@ trait Wbg_Gallery_Settings_Content
                 'type'      => 'string',
                 'default'   => 'full',
             ],
+            [
+                'name'      => 'wbg_display_publisher_gallery',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_publisher_label_txt_gallery',
+                'type'      => 'text',
+                'default'   => 'Publisher',
+            ],
         ];
     }
 

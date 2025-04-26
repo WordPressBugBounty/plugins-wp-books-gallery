@@ -251,6 +251,13 @@ esc_attr_e( $wbg_title_length );
 ?>">
             </td>
         </tr>
+        <tr>
+            <td colspan="4">
+                <b><?php 
+_e( 'Book Info', 'wp-books-gallery' );
+?>&nbsp;::</b>
+            </td>
+        </tr>
         <tr class="wbg_display_category">
             <th scope="row">
                 <label for="wbg_display_category"><?php 
@@ -390,6 +397,38 @@ esc_attr_e( $wbg_description_length );
 ?>">
             </td>
         </tr>
+        <!-- Publisher -->
+        <tr>
+            <th scope="row">
+                <label for="wbg_display_publisher_gallery"><?php 
+_e( 'Display Publisher', 'wp-books-gallery' );
+?>?</label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Publisher Label Text', 'wp-books-gallery' );
+?>:</label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+        </tr>
+        <tr><td colspan="4">&nbsp;</td></tr>
         <tr class="wbg_display_buynow">
             <th scope="row">
                 <label for="wbg_display_buynow"><?php 
@@ -573,7 +612,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         <tr class="wbg_publish_date_format">
             <th scope="row" style="text-align: right;">
                 <label for="wbg_publish_date_format"><?php 
-_e( 'Publish Date Format', WBG_TXT_DOMAIN );
+_e( 'Publish Date Format', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -581,14 +620,14 @@ _e( 'Publish Date Format', WBG_TXT_DOMAIN );
 echo ( 'year' !== $wbg_publish_date_format ? 'checked' : '' );
 ?> >
                 <label for="wbg_publish_date_format_full"><span></span><?php 
-_e( 'Full', WBG_TXT_DOMAIN );
+_e( 'Full', 'wp-books-gallery' );
 ?></label>
                     &nbsp;&nbsp;
                 <input type="radio" name="wbg_publish_date_format" id="wbg_publish_date_format_year" value="year" <?php 
 echo ( 'year' === $wbg_publish_date_format ? 'checked' : '' );
 ?> >
                 <label for="wbg_publish_date_format_year"><span></span><?php 
-_e( 'Only Year', WBG_TXT_DOMAIN );
+_e( 'Only Year', 'wp-books-gallery' );
 ?></label>
             </td>
         </tr>

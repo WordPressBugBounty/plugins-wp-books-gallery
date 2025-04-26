@@ -7,10 +7,9 @@ if ( !defined( 'ABSPATH' ) ) {
 * Widget Master Class
 */
 class Wbg_Widget extends WP_Widget {
-    //use Cab_Core, Hmcab_Personal_Settings, Hmcab_Social_Settings, Hmcab_Template_Settings, Hmcab_Styles_Post_Settings;
     function __construct() {
-        parent::__construct( 'wbg-widget', __( 'Books Gallery', WBG_TXT_DOMAIN ), array(
-            'description' => __( 'Books Gallery Widget', WBG_TXT_DOMAIN ),
+        parent::__construct( 'wbg-widget', __( 'Books Gallery', 'wp-books-gallery' ), array(
+            'description' => __( 'Books Gallery Widget', 'wp-books-gallery' ),
         ) );
         add_action( 'load-widgets.php', array(&$this, 'wbg_color_picker_load') );
     }
@@ -106,7 +105,7 @@ class Wbg_Widget extends WP_Widget {
 		}
 		</style>
 		<?php 
-        _e( 'Upgrade to professional', WBG_TXT_DOMAIN );
+        _e( 'Upgrade to professional', 'wp-books-gallery' );
         //==========================
         echo $args['after_widget'];
     }
@@ -119,7 +118,7 @@ class Wbg_Widget extends WP_Widget {
      * @param array $instance Previously saved values from database.
      */
     public function form( $instance ) {
-        $title = ( isset( $instance['title'] ) ? $instance['title'] : __( 'Books Gallery', WBG_TXT_DOMAIN ) );
+        $title = ( isset( $instance['title'] ) ? $instance['title'] : __( 'Books Gallery', 'wp-books-gallery' ) );
         $wbg_wl_border_width = ( isset( $instance['wbg_wl_cat_font_size'] ) && filter_var( $instance['wbg_wl_border_width'], FILTER_SANITIZE_NUMBER_INT ) ? $instance['wbg_wl_border_width'] : 0 );
         $wbg_wl_border_color = ( isset( $instance['wbg_wl_border_color'] ) ? sanitize_text_field( $instance['wbg_wl_border_color'] ) : '#DDDDDD' );
         $wbg_wl_border_radius = ( !empty( $instance['wbg_wl_border_radius'] ) && filter_var( $instance['wbg_wl_border_radius'], FILTER_SANITIZE_NUMBER_INT ) ? $instance['wbg_wl_border_radius'] : 0 );
@@ -137,7 +136,7 @@ class Wbg_Widget extends WP_Widget {
         ?>
 		<p>
 			<label><?php 
-        _e( 'Title', WBG_TXT_DOMAIN );
+        _e( 'Title', 'wp-books-gallery' );
         ?>:</label>
 			<input class="widefat" id="<?php 
         echo $this->get_field_id( 'title' );
@@ -148,11 +147,11 @@ class Wbg_Widget extends WP_Widget {
         ?>">
 		</p>
 		<hr><label><?php 
-        _e( 'Container', WBG_TXT_DOMAIN );
+        _e( 'Container', 'wp-books-gallery' );
         ?>:</label><hr>
 		<p>
 			<label><?php 
-        _e( 'Border Width', WBG_TXT_DOMAIN );
+        _e( 'Border Width', 'wp-books-gallery' );
         ?>:</label>
 			<input type="number" min="0" max="10" step="1" class="tiny-text" id="<?php 
         echo $this->get_field_id( 'wbg_wl_border_width' );
@@ -162,12 +161,12 @@ class Wbg_Widget extends WP_Widget {
         esc_attr_e( $wbg_wl_border_width );
         ?>">
 			<?php 
-        esc_html_e( 'px', WBG_TXT_DOMAIN );
+        esc_html_e( 'px', 'wp-books-gallery' );
         ?>
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Border Color', WBG_TXT_DOMAIN );
+        _e( 'Border Color', 'wp-books-gallery' );
         ?>:</label>
 			<input type="text" class="wbg-color-picker" id="<?php 
         echo $this->get_field_id( 'wbg_wl_border_color' );
@@ -180,7 +179,7 @@ class Wbg_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Border Radius', WBG_TXT_DOMAIN );
+        _e( 'Border Radius', 'wp-books-gallery' );
         ?>:</label>
 			<input type="number" min="0" max="30" step="1" class="tiny-text" id="<?php 
         echo $this->get_field_id( 'wbg_wl_border_radius' );
@@ -190,12 +189,12 @@ class Wbg_Widget extends WP_Widget {
         esc_attr_e( $wbg_wl_border_radius );
         ?>">
 			<?php 
-        esc_html_e( 'px', WBG_TXT_DOMAIN );
+        esc_html_e( 'px', 'wp-books-gallery' );
         ?>
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Background Color', WBG_TXT_DOMAIN );
+        _e( 'Background Color', 'wp-books-gallery' );
         ?>:</label>
 			<input type="text" class="wbg-color-picker" id="<?php 
         echo $this->get_field_id( 'wbg_wl_bg_color' );
@@ -208,7 +207,7 @@ class Wbg_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Padding', WBG_TXT_DOMAIN );
+        _e( 'Padding', 'wp-books-gallery' );
         ?>:</label>
 			<input type="number" min="0" max="20" step="1" class="tiny-text" id="<?php 
         echo $this->get_field_id( 'wbg_wl_container_padding' );
@@ -220,11 +219,11 @@ class Wbg_Widget extends WP_Widget {
 			px
 		</p>
 		<hr><label><?php 
-        _e( 'Book Title', WBG_TXT_DOMAIN );
+        _e( 'Book Title', 'wp-books-gallery' );
         ?>:</label><hr>
 		<p>
 			<label><?php 
-        _e( 'Font Color', WBG_TXT_DOMAIN );
+        _e( 'Font Color', 'wp-books-gallery' );
         ?>:</label>
 			<input type="text" class="wbg-color-picker" id="<?php 
         echo $this->get_field_id( 'wbg_wl_title_color' );
@@ -237,7 +236,7 @@ class Wbg_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Font Size', WBG_TXT_DOMAIN );
+        _e( 'Font Size', 'wp-books-gallery' );
         ?>:</label>
 			<input type="number" min="12" max="34" step="1" class="tiny-text" id="<?php 
         echo $this->get_field_id( 'wbg_wl_title_font_size' );
@@ -247,15 +246,15 @@ class Wbg_Widget extends WP_Widget {
         esc_attr_e( $wbg_wl_title_font_size );
         ?>">
 			<?php 
-        esc_html_e( 'px', WBG_TXT_DOMAIN );
+        esc_html_e( 'px', 'wp-books-gallery' );
         ?>
 		</p>
 		<hr><label><?php 
-        _e( 'Category / Author', WBG_TXT_DOMAIN );
+        _e( 'Category / Author', 'wp-books-gallery' );
         ?>:</label><hr>
 		<p>
 			<label><?php 
-        _e( 'Font Color', WBG_TXT_DOMAIN );
+        _e( 'Font Color', 'wp-books-gallery' );
         ?>:</label>
 			<input type="text" class="wbg-color-picker" id="<?php 
         echo $this->get_field_id( 'wbg_wl_category_color' );
@@ -268,7 +267,7 @@ class Wbg_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Font Size', WBG_TXT_DOMAIN );
+        _e( 'Font Size', 'wp-books-gallery' );
         ?>:</label>
 			<input type="number" min="11" max="18" step="1" class="tiny-text" id="<?php 
         echo $this->get_field_id( 'wbg_wl_cat_font_size' );
@@ -278,17 +277,17 @@ class Wbg_Widget extends WP_Widget {
         esc_attr_e( $wbg_wl_cat_font_size );
         ?>">
 			<?php 
-        esc_html_e( 'px', WBG_TXT_DOMAIN );
+        esc_html_e( 'px', 'wp-books-gallery' );
         ?>
 		</p>
 		<hr><label><?php 
-        _e( 'Rating', WBG_TXT_DOMAIN );
+        _e( 'Rating', 'wp-books-gallery' );
         ?>:</label><hr>
 		<p> 
 			<label for="<?php 
         echo $this->get_field_id( 'wbg_wl_rating' );
         ?>"><?php 
-        _e( 'Display Rating', WBG_TXT_DOMAIN );
+        _e( 'Display Rating', 'wp-books-gallery' );
         ?>?</label>
 			<input type="checkbox" class="checkbox" id="<?php 
         echo $this->get_field_id( 'wbg_wl_rating' );
@@ -299,13 +298,13 @@ class Wbg_Widget extends WP_Widget {
         ?> />
 		</p>
 		<hr><label><?php 
-        _e( 'Download Button', WBG_TXT_DOMAIN );
+        _e( 'Download Button', 'wp-books-gallery' );
         ?>:</label><hr>
 		<p> 
 			<label for="<?php 
         echo $this->get_field_id( 'wbg_wl_download_btn' );
         ?>"><?php 
-        _e( 'Check to show', WBG_TXT_DOMAIN );
+        _e( 'Check to show', 'wp-books-gallery' );
         ?>:</label>
 			<input type="checkbox" class="checkbox" id="<?php 
         echo $this->get_field_id( 'wbg_wl_download_btn' );
@@ -317,7 +316,7 @@ class Wbg_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Background Color', WBG_TXT_DOMAIN );
+        _e( 'Background Color', 'wp-books-gallery' );
         ?>:</label>
 			<input type="text" class="wbg-color-picker" id="<?php 
         echo $this->get_field_id( 'wbg_wl_download_btn_bg_color' );
@@ -330,7 +329,7 @@ class Wbg_Widget extends WP_Widget {
 		</p>
 		<p>
 			<label><?php 
-        _e( 'Font Color', WBG_TXT_DOMAIN );
+        _e( 'Font Color', 'wp-books-gallery' );
         ?>:</label>
 			<input type="text" class="wbg-color-picker" id="<?php 
         echo $this->get_field_id( 'wbg_wl_dnld_btn_font_clr' );
@@ -342,13 +341,13 @@ class Wbg_Widget extends WP_Widget {
 			<div id="colorpicker"></div>
 		</p>
 		<hr><label><?php 
-        _e( 'Buy Button', WBG_TXT_DOMAIN );
+        _e( 'Buy Button', 'wp-books-gallery' );
         ?>:</label><hr>
 		<p> 
 			<label for="<?php 
         echo $this->get_field_id( 'wbg_wl_buy_btn' );
         ?>"><?php 
-        _e( 'Check to show', WBG_TXT_DOMAIN );
+        _e( 'Check to show', 'wp-books-gallery' );
         ?>:</label>
 			<input type="checkbox" class="checkbox" id="<?php 
         echo $this->get_field_id( 'wbg_wl_buy_btn' );
@@ -373,7 +372,7 @@ class Wbg_Widget extends WP_Widget {
      */
     public function update( $new_instance, $old_instance ) {
         $instance = array();
-        $instance['title'] = ( isset( $new_instance['title'] ) ? strip_tags( $new_instance['title'] ) : __( 'Books Gallery', WBG_TXT_DOMAIN ) );
+        $instance['title'] = ( isset( $new_instance['title'] ) ? strip_tags( $new_instance['title'] ) : __( 'Books Gallery', 'wp-books-gallery' ) );
         $instance['wbg_wl_border_width'] = ( filter_var( $new_instance['wbg_wl_border_width'], FILTER_SANITIZE_NUMBER_INT ) ? $new_instance['wbg_wl_border_width'] : 0 );
         $instance['wbg_wl_border_color'] = ( isset( $new_instance['wbg_wl_border_color'] ) ? sanitize_text_field( $new_instance['wbg_wl_border_color'] ) : '#DDDDDD' );
         $instance['wbg_wl_border_radius'] = ( filter_var( $new_instance['wbg_wl_border_radius'], FILTER_SANITIZE_NUMBER_INT ) ? $new_instance['wbg_wl_border_radius'] : 0 );

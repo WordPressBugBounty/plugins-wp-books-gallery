@@ -33,8 +33,8 @@ class WBG_Admin {
         $wbg_cpt_menu = 'edit.php?post_type=books';
         add_submenu_page(
             $wbg_cpt_menu,
-            __( 'General Settings', WBG_TXT_DOMAIN ),
-            __( 'General Settings', WBG_TXT_DOMAIN ),
+            __( 'General Settings', 'wp-books-gallery' ),
+            __( 'General Settings', 'wp-books-gallery' ),
             'manage_options',
             'wbg-core-settings',
             array($this, WBG_PRFX . 'general_settings'),
@@ -42,8 +42,8 @@ class WBG_Admin {
         );
         add_submenu_page(
             $wbg_cpt_menu,
-            __( 'Gallery Settings', WBG_TXT_DOMAIN ),
-            __( 'Gallery Settings', WBG_TXT_DOMAIN ),
+            __( 'Gallery Settings', 'wp-books-gallery' ),
+            __( 'Gallery Settings', 'wp-books-gallery' ),
             'manage_options',
             'wbg-general-settings',
             array($this, 'wbg_gallery_settings'),
@@ -51,8 +51,8 @@ class WBG_Admin {
         );
         add_submenu_page(
             $wbg_cpt_menu,
-            __( 'Search Panel Settings', WBG_TXT_DOMAIN ),
-            __( 'Search Panel Settings', WBG_TXT_DOMAIN ),
+            __( 'Search Panel Settings', 'wp-books-gallery' ),
+            __( 'Search Panel Settings', 'wp-books-gallery' ),
             'manage_options',
             'wbg-search-panel-settings',
             array($this, WBG_PRFX . 'search_panel_settings'),
@@ -60,8 +60,8 @@ class WBG_Admin {
         );
         add_submenu_page(
             $wbg_cpt_menu,
-            __( 'Book Detail Settings', WBG_TXT_DOMAIN ),
-            __( 'Book Detail Settings', WBG_TXT_DOMAIN ),
+            __( 'Book Detail Settings', 'wp-books-gallery' ),
+            __( 'Book Detail Settings', 'wp-books-gallery' ),
             'manage_options',
             'wbg-details-settings',
             array($this, WBG_PRFX . 'details_settings'),
@@ -69,8 +69,8 @@ class WBG_Admin {
         );
         add_submenu_page(
             $wbg_cpt_menu,
-            __( 'API Import', WBG_TXT_DOMAIN ),
-            __( 'API Import', WBG_TXT_DOMAIN ),
+            __( 'API Import', 'wp-books-gallery' ),
+            __( 'API Import', 'wp-books-gallery' ),
             'manage_options',
             'wbg-api-import',
             array($this, WBG_PRFX . 'api_import'),
@@ -78,8 +78,8 @@ class WBG_Admin {
         );
         add_submenu_page(
             $wbg_cpt_menu,
-            __( 'Usage & Tutorial', WBG_TXT_DOMAIN ),
-            __( 'Usage & Tutorial', WBG_TXT_DOMAIN ),
+            __( 'Usage & Tutorial', 'wp-books-gallery' ),
+            __( 'Usage & Tutorial', 'wp-books-gallery' ),
             'manage_options',
             'wbg-get-help',
             array($this, WBG_PRFX . 'get_help'),
@@ -144,23 +144,23 @@ class WBG_Admin {
 
     function wbg_custom_post_type() {
         $labels = array(
-            'name'               => __( 'Books', WBG_TXT_DOMAIN ),
-            'singular_name'      => __( 'Book', WBG_TXT_DOMAIN ),
-            'menu_name'          => __( 'WBG Books', WBG_TXT_DOMAIN ),
-            'parent_item_colon'  => __( 'Parent Book', WBG_TXT_DOMAIN ),
-            'all_items'          => __( 'All Books', WBG_TXT_DOMAIN ),
-            'view_item'          => __( 'View Book', WBG_TXT_DOMAIN ),
-            'add_new_item'       => __( 'Add New Book', WBG_TXT_DOMAIN ),
-            'add_new'            => __( 'Add New', WBG_TXT_DOMAIN ),
-            'edit_item'          => __( 'Edit Book', WBG_TXT_DOMAIN ),
-            'update_item'        => __( 'Update Book', WBG_TXT_DOMAIN ),
-            'search_items'       => __( 'Search Book', WBG_TXT_DOMAIN ),
-            'not_found'          => __( 'Not Found', WBG_TXT_DOMAIN ),
-            'not_found_in_trash' => __( 'Not found in Trash', WBG_TXT_DOMAIN ),
+            'name'               => __( 'Books', 'wp-books-gallery' ),
+            'singular_name'      => __( 'Book', 'wp-books-gallery' ),
+            'menu_name'          => __( 'WBG Books', 'wp-books-gallery' ),
+            'parent_item_colon'  => __( 'Parent Book', 'wp-books-gallery' ),
+            'all_items'          => __( 'All Books', 'wp-books-gallery' ),
+            'view_item'          => __( 'View Book', 'wp-books-gallery' ),
+            'add_new_item'       => __( 'Add New Book', 'wp-books-gallery' ),
+            'add_new'            => __( 'Add New', 'wp-books-gallery' ),
+            'edit_item'          => __( 'Edit Book', 'wp-books-gallery' ),
+            'update_item'        => __( 'Update Book', 'wp-books-gallery' ),
+            'search_items'       => __( 'Search Book', 'wp-books-gallery' ),
+            'not_found'          => __( 'Not Found', 'wp-books-gallery' ),
+            'not_found_in_trash' => __( 'Not found in Trash', 'wp-books-gallery' ),
         );
         $args = array(
-            'label'               => __( 'books', WBG_TXT_DOMAIN ),
-            'description'         => __( 'Description For Books', WBG_TXT_DOMAIN ),
+            'label'               => __( 'books', 'wp-books-gallery' ),
+            'description'         => __( 'Description For Books', 'wp-books-gallery' ),
             'labels'              => $labels,
             'supports'            => array(
                 'title',
@@ -194,17 +194,17 @@ class WBG_Admin {
 
     function wbg_taxonomy_for_books() {
         $labels = array(
-            'name'              => __( 'Book Categories', WBG_TXT_DOMAIN ),
-            'singular_name'     => __( 'Book Category', WBG_TXT_DOMAIN ),
-            'search_items'      => __( 'Search Book Categories', WBG_TXT_DOMAIN ),
-            'all_items'         => __( 'All Book Categories', WBG_TXT_DOMAIN ),
-            'parent_item'       => __( 'Parent Book Category', WBG_TXT_DOMAIN ),
-            'parent_item_colon' => __( 'Parent Book Category:', WBG_TXT_DOMAIN ),
-            'edit_item'         => __( 'Edit Book Category', WBG_TXT_DOMAIN ),
-            'update_item'       => __( 'Update Book Category', WBG_TXT_DOMAIN ),
-            'add_new_item'      => __( 'Add New Book Category', WBG_TXT_DOMAIN ),
-            'new_item_name'     => __( 'New Book Category Name', WBG_TXT_DOMAIN ),
-            'menu_name'         => __( 'Book Categories', WBG_TXT_DOMAIN ),
+            'name'              => __( 'Book Categories', 'wp-books-gallery' ),
+            'singular_name'     => __( 'Book Category', 'wp-books-gallery' ),
+            'search_items'      => __( 'Search Book Categories', 'wp-books-gallery' ),
+            'all_items'         => __( 'All Book Categories', 'wp-books-gallery' ),
+            'parent_item'       => __( 'Parent Book Category', 'wp-books-gallery' ),
+            'parent_item_colon' => __( 'Parent Book Category:', 'wp-books-gallery' ),
+            'edit_item'         => __( 'Edit Book Category', 'wp-books-gallery' ),
+            'update_item'       => __( 'Update Book Category', 'wp-books-gallery' ),
+            'add_new_item'      => __( 'Add New Book Category', 'wp-books-gallery' ),
+            'new_item_name'     => __( 'New Book Category Name', 'wp-books-gallery' ),
+            'menu_name'         => __( 'Book Categories', 'wp-books-gallery' ),
         );
         register_taxonomy( 'book_category', array('books'), array(
             'hierarchical'      => true,
@@ -223,7 +223,7 @@ class WBG_Admin {
     function wbg_book_details_metaboxes() {
         add_meta_box(
             'wbg_book_details_link',
-            __( 'Book Information', WBG_TXT_DOMAIN ),
+            __( 'Book Information', 'wp-books-gallery' ),
             array($this, WBG_PRFX . 'book_details_content'),
             'books',
             'normal',
@@ -233,7 +233,7 @@ class WBG_Admin {
         remove_meta_box( 'postimagediv', 'books', 'side' );
         add_meta_box(
             'postimagediv',
-            __( 'Book Cover Image', WBG_TXT_DOMAIN ),
+            __( 'Book Cover Image', 'wp-books-gallery' ),
             'post_thumbnail_meta_box',
             'books',
             'side',
@@ -422,10 +422,10 @@ class WBG_Admin {
         ?>">
 			<span class="wbg-closebtn">&times;</span>
 			<strong><?php 
-        esc_html_e( ucfirst( $type ), WBG_TXT_DOMAIN );
+        esc_html_e( ucfirst( $type ), 'wp-books-gallery' );
         ?>!</strong>
 			<?php 
-        esc_html_e( $msg, WBG_TXT_DOMAIN );
+        esc_html_e( $msg, 'wp-books-gallery' );
         ?>
 		</div>
 		<?php 
@@ -433,8 +433,8 @@ class WBG_Admin {
 
     function wbg_change_featured_image_link_text( $content ) {
         if ( 'books' === get_post_type() ) {
-            $content = str_replace( 'Set featured image', __( 'Set Book Cover Here', WBG_TXT_DOMAIN ), $content );
-            $content = str_replace( 'Remove featured image', __( 'Remove Book Cover Here', WBG_TXT_DOMAIN ), $content );
+            $content = str_replace( 'Set featured image', __( 'Set Book Cover Here', 'wp-books-gallery' ), $content );
+            $content = str_replace( 'Remove featured image', __( 'Remove Book Cover Here', 'wp-books-gallery' ), $content );
         }
         return $content;
     }
@@ -471,7 +471,7 @@ class WBG_Admin {
 
     function wbg_register_sidebar() {
         register_sidebar( array(
-            'name'          => __( 'Books Gallery Sidebar', WBG_TXT_DOMAIN ),
+            'name'          => __( 'Books Gallery Sidebar', 'wp-books-gallery' ),
             'id'            => 'wbg-gallery-sidebar',
             'description'   => '',
             'class'         => 'sidebar',

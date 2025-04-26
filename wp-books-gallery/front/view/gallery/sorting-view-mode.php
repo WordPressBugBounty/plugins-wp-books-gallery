@@ -11,7 +11,7 @@ if ( $wbg_display_total_books ) {
     ?>
       <div class="wbg-total-books-title">
         <?php 
-    _e( 'Showing', WBG_TXT_DOMAIN );
+    _e( 'Showing', 'wp-books-gallery' );
     ?> <span><?php 
     printf(
         '%s-%s of %s',
@@ -20,7 +20,7 @@ if ( $wbg_display_total_books ) {
         $wbg_of
     );
     ?></span> <?php 
-    _e( 'Books', WBG_TXT_DOMAIN );
+    _e( 'Books', 'wp-books-gallery' );
     ?>
       </div>
       <?php 

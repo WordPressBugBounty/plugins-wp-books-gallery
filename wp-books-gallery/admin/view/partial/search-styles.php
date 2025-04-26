@@ -19,49 +19,49 @@ wp_nonce_field( 'wbg_search_style_action', 'wbg_search_style_nonce_field' );
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
-_e( 'Search Panel', WBG_TXT_DOMAIN );
+_e( 'Search Panel', 'wp-books-gallery' );
 ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', WBG_TXT_DOMAIN );
+_e( 'Background Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Border Color', WBG_TXT_DOMAIN );
+_e( 'Border Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Border Radius', WBG_TXT_DOMAIN );
+_e( 'Border Radius', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -70,14 +70,14 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Border Width', WBG_TXT_DOMAIN );
+_e( 'Border Width', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td colspan="1">
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -87,49 +87,49 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
-_e( 'Input Fields', WBG_TXT_DOMAIN );
+_e( 'Input Fields', 'wp-books-gallery' );
 ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', WBG_TXT_DOMAIN );
+_e( 'Background Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', WBG_TXT_DOMAIN );
+_e( 'Font Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Size', WBG_TXT_DOMAIN );
+_e( 'Font Size', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', WBG_TXT_DOMAIN ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -139,14 +139,14 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
-_e( 'Search Button', WBG_TXT_DOMAIN );
+_e( 'Search Button', 'wp-books-gallery' );
 ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', WBG_TXT_DOMAIN );
+_e( 'Background Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -157,7 +157,7 @@ esc_attr_e( $wbg_btn_color );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Border Color', WBG_TXT_DOMAIN );
+_e( 'Border Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -168,7 +168,7 @@ esc_attr_e( $wbg_btn_border_color );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', WBG_TXT_DOMAIN );
+_e( 'Font Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -182,14 +182,14 @@ esc_attr_e( $wbg_btn_font_color );
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
-_e( 'Search Button - Hover', WBG_TXT_DOMAIN );
+_e( 'Search Button - Hover', 'wp-books-gallery' );
 ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', WBG_TXT_DOMAIN );
+_e( 'Background Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -200,7 +200,7 @@ esc_attr_e( $wbg_search_btn_bg_color_hover );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', WBG_TXT_DOMAIN );
+_e( 'Font Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -214,14 +214,14 @@ esc_attr_e( $wbg_search_font_color_hover );
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
-_e( 'Reset Button', WBG_TXT_DOMAIN );
+_e( 'Reset Button', 'wp-books-gallery' );
 ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Button Width', WBG_TXT_DOMAIN );
+_e( 'Button Width', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -232,7 +232,7 @@ esc_attr_e( $wbg_reset_btn_width );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', WBG_TXT_DOMAIN );
+_e( 'Background Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -243,7 +243,7 @@ esc_attr_e( $wbg_search_reset_bg_color );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Border Color', WBG_TXT_DOMAIN );
+_e( 'Border Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -256,7 +256,7 @@ esc_attr_e( $wbg_search_reset_border_color );
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', WBG_TXT_DOMAIN );
+_e( 'Font Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -267,7 +267,7 @@ esc_attr_e( $wbg_search_reset_font_color );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Size', WBG_TXT_DOMAIN );
+_e( 'Font Size', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -281,14 +281,14 @@ esc_attr_e( $wbg_reset_btn_font_size );
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">
                 <hr><span><?php 
-_e( 'Reset Button - Hover', WBG_TXT_DOMAIN );
+_e( 'Reset Button - Hover', 'wp-books-gallery' );
 ?></span><hr>
             </th>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', WBG_TXT_DOMAIN );
+_e( 'Background Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -299,7 +299,7 @@ esc_attr_e( $wbg_search_reset_bg_color_hvr );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', WBG_TXT_DOMAIN );
+_e( 'Font Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -310,7 +310,7 @@ esc_attr_e( $wbg_search_reset_font_color_hvr );
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Border Color', WBG_TXT_DOMAIN );
+_e( 'Border Color', 'wp-books-gallery' );
 ?>:</label>
             </th>
             <td>
@@ -325,7 +325,7 @@ esc_attr_e( $wbg_search_reset_border_color_hvr );
     <p class="submit">
         <button id="updateSearchStyles" name="updateSearchStyles" class="button button-primary wbg-button">
             <i class="fa fa-check-circle" aria-hidden="true"></i>&nbsp;<?php 
-_e( 'Save Settings', WBG_TXT_DOMAIN );
+_e( 'Save Settings', 'wp-books-gallery' );
 ?>
         </button>
     </p>

@@ -50,5 +50,5 @@ if ( 'f' === $wbg_book_cover_priority ) {
 }
 ?>
 <div class="wbg-details-image">
-    <img src="<?php echo esc_url( $wbg_img ); ?>" alt="<?php _e( 'No Image Available', WBG_TXT_DOMAIN ); ?>">
+    <img src="<?php echo esc_url( $wbg_img ); ?>" alt="<?php _e( 'No Image Available', 'wp-books-gallery' ); ?>">
 </div>
