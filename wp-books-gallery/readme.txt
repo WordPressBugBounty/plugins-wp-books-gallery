@@ -3,8 +3,8 @@ Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: Books Gallery, Books, Digital Library, Books Showcase, Affiliate Marketing
 Requires at least: 5.4
-Tested up to: 6.8
-Stable tag: 4.7.1
+Tested up to: 6.8.1
+Stable tag: 4.7.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -321,6 +321,10 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 
 == Changelog ==
+
+= 4.7.2 =
+* Freemius SDK updated to 2.12.0
+* Gallery style admin page layout improved
 
 = 4.7.1 =
 * Textdomain changed from define to real textdomain

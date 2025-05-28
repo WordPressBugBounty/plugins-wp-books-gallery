@@ -17,7 +17,7 @@ wp_nonce_field( 'wbg_gallery_s_action', 'wbg_gallery_s_nonce_field' );
     <table class="wbg-general-style-settings-table">
         <!-- Parent Container -->
         <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Container', 'wp-books-gallery' );
 ?></label><hr>
@@ -40,7 +40,7 @@ esc_attr_e( $wbg_container_border_color );
 _e( 'Width', 'wp-books-gallery' );
 ?></label>
             </th>
-            <td colspan="3">
+            <td>
                 <input type="number" min="40" max="2000" step="1" name="wbg_container_width" value="<?php 
 esc_attr_e( $wbg_container_width );
 ?>">
@@ -57,8 +57,6 @@ echo '%';
 ?></option>
                 </select>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Margin Top', 'wp-books-gallery' );
@@ -70,6 +68,8 @@ esc_attr_e( $wbg_container_margin_top );
 ?>">
                 <code>px</code>
             </td>
+        </tr>
+        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Margin Bottom', 'wp-books-gallery' );
@@ -81,8 +81,6 @@ esc_attr_e( $wbg_container_margin_bottom );
 ?>">
                 <code>px</code>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Padding', 'wp-books-gallery' );
@@ -121,7 +119,7 @@ esc_attr_e( $wbg_container_bg_color );
         </tr>
         <!-- Book Item -->
         <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Book Item', 'wp-books-gallery' );
 ?></label><hr>
@@ -150,8 +148,6 @@ esc_attr_e( $wbg_loop_book_bg_color );
 ?>">
                 <div id="colorpicker"></div>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label for="wbg_hide_hover_shadow"><?php 
 _e( 'Hide Hover Shadow', 'wp-books-gallery' );
@@ -169,7 +165,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Title -->
         <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Title', 'wp-books-gallery' );
 ?></label><hr>
@@ -198,8 +194,6 @@ esc_attr_e( $wbg_title_hover_color );
 ?>">
                 <div id="colorpicker"></div>
             </td>
-        </tr>
-        <tr class="wbg_title_font_size">
             <th scope="row">
                 <label for="wbg_title_font_size"><?php 
 _e( 'Font Size', 'wp-books-gallery' );
@@ -214,7 +208,7 @@ esc_attr_e( $wbg_title_font_size );
         </tr>
         <!-- Description -->
         <tr>
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Description', 'wp-books-gallery' );
 ?></label><hr>
@@ -246,7 +240,7 @@ esc_attr_e( $wbg_description_font_size );
         </tr>
         <!-- Format -->
         <tr>
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Format', 'wp-books-gallery' );
 ?></label><hr>
@@ -284,7 +278,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Category -->
         <tr>
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Category', 'wp-books-gallery' );
 ?></label><hr>
@@ -322,7 +316,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Author -->
         <tr>
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Author', 'wp-books-gallery' );
 ?></label><hr>
@@ -360,7 +354,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Price -->
         <tr>
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Price', 'wp-books-gallery' );
 ?></label><hr>
@@ -395,8 +389,6 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Font Size', 'wp-books-gallery' );
@@ -414,7 +406,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Download Button -->
         <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Download Button', 'wp-books-gallery' );
 ?></label><hr>
@@ -443,8 +435,6 @@ esc_attr_e( $wbg_download_btn_font_color );
 ?>">
                 <div id="colorpicker"></div>
             </td>
-        </tr>
-        <tr>
             <th scope="row">
                 <label><?php 
 _e( 'Font Size', 'wp-books-gallery' );
@@ -462,7 +452,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
         </tr>
         <!-- Download Button Hover -->
         <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Download Button Hover', 'wp-books-gallery' );
 ?></label><hr>
@@ -494,7 +484,7 @@ esc_attr_e( $wbg_download_btn_font_color_hvr );
         </tr>
         <!-- Pagination -->
         <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
+            <th scope="row" colspan="6" style="text-align: left;">
                 <hr><label><?php 
 _e( 'Pagination', 'wp-books-gallery' );
 ?></label><hr>
@@ -529,19 +519,25 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
-        </tr>
-        <!-- Pagination Hover -->
-        <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
-                <hr><label><?php 
-_e( 'Pagination Hover', 'wp-books-gallery' );
-?></label><hr>
+            <th scope="row">
+                <label><?php 
+_e( 'Font Size', 'wp-books-gallery' );
+?></label>
             </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', 'wp-books-gallery' );
+_e( 'Hover Background Color', 'wp-books-gallery' );
 ?></label>
             </th>
             <td>
@@ -555,7 +551,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', 'wp-books-gallery' );
+_e( 'Hover Font Color', 'wp-books-gallery' );
 ?></label>
             </th>
             <td>
@@ -567,19 +563,25 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
-        </tr>
-        <!-- Pagination Active -->
-        <tr class="wbg_download_btn">
-            <th scope="row" colspan="4" style="text-align: left;">
-                <hr><label><?php 
-_e( 'Pagination Active', 'wp-books-gallery' );
-?></label><hr>
+            <th scope="row">
+                <label><?php 
+_e( 'Active Background Color', 'wp-books-gallery' );
+?></label>
             </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
         </tr>
         <tr>
             <th scope="row">
                 <label><?php 
-_e( 'Background Color', 'wp-books-gallery' );
+_e( 'Active Font Color', 'wp-books-gallery' );
 ?></label>
             </th>
             <td>
@@ -593,7 +595,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
             </td>
             <th scope="row">
                 <label><?php 
-_e( 'Font Color', 'wp-books-gallery' );
+_e( 'Border Radius', 'wp-books-gallery' );
 ?></label>
             </th>
             <td>

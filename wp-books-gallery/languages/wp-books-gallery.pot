@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Books Gallery\n"
-"POT-Creation-Date: 2025-04-26 05:59+0600\n"
+"POT-Creation-Date: 2025-05-28 19:03+0600\n"
 "PO-Revision-Date: 2021-12-27 03:58+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -309,7 +309,7 @@ msgstr ""
 
 #: admin/cls-books-gallery-admin.php:338
 #: admin/view/partial/gallery-content.php:90
-#: admin/view/partial/gallery-styles.php:273 wp-books-gallery.php:122
+#: admin/view/partial/gallery-styles.php:267 wp-books-gallery.php:122
 msgid "Author"
 msgstr ""
 
@@ -432,23 +432,25 @@ msgstr ""
 #: admin/view/partial/gallery-content.php:378
 #: admin/view/partial/gallery-content.php:475
 #: admin/view/partial/gallery-content.php:498
-#: admin/view/partial/gallery-styles.php:112
-#: admin/view/partial/gallery-styles.php:192
-#: admin/view/partial/gallery-styles.php:211
-#: admin/view/partial/gallery-styles.php:238
-#: admin/view/partial/gallery-styles.php:257
-#: admin/view/partial/gallery-styles.php:284
-#: admin/view/partial/gallery-styles.php:303
-#: admin/view/partial/gallery-styles.php:330
-#: admin/view/partial/gallery-styles.php:349
-#: admin/view/partial/gallery-styles.php:370
-#: admin/view/partial/gallery-styles.php:413
-#: admin/view/partial/gallery-styles.php:462
-#: admin/view/partial/gallery-styles.php:481
-#: admin/view/partial/gallery-styles.php:508
-#: admin/view/partial/gallery-styles.php:527
-#: admin/view/partial/gallery-styles.php:554
-#: admin/view/partial/gallery-styles.php:573
+#: admin/view/partial/gallery-styles.php:108
+#: admin/view/partial/gallery-styles.php:186
+#: admin/view/partial/gallery-styles.php:205
+#: admin/view/partial/gallery-styles.php:232
+#: admin/view/partial/gallery-styles.php:251
+#: admin/view/partial/gallery-styles.php:278
+#: admin/view/partial/gallery-styles.php:297
+#: admin/view/partial/gallery-styles.php:324
+#: admin/view/partial/gallery-styles.php:343
+#: admin/view/partial/gallery-styles.php:362
+#: admin/view/partial/gallery-styles.php:403
+#: admin/view/partial/gallery-styles.php:452
+#: admin/view/partial/gallery-styles.php:471
+#: admin/view/partial/gallery-styles.php:490
+#: admin/view/partial/gallery-styles.php:511
+#: admin/view/partial/gallery-styles.php:530
+#: admin/view/partial/gallery-styles.php:549
+#: admin/view/partial/gallery-styles.php:570
+#: admin/view/partial/gallery-styles.php:589
 #: admin/view/partial/search-styles.php:30
 #: admin/view/partial/search-styles.php:49
 #: admin/view/partial/search-styles.php:68
@@ -581,7 +583,7 @@ msgstr ""
 
 #: admin/view/general-settings.php:343
 #: admin/view/partial/gallery-content.php:541
-#: admin/view/partial/gallery-styles.php:592
+#: admin/view/partial/gallery-styles.php:608
 #: admin/view/partial/search-content.php:428
 #: admin/view/partial/search-styles.php:296
 #: admin/view/partial/single-content.php:681
@@ -955,7 +957,7 @@ msgid "Category Label Text"
 msgstr ""
 
 #: admin/view/partial/gallery-content.php:152
-#: admin/view/partial/gallery-styles.php:227
+#: admin/view/partial/gallery-styles.php:221
 msgid "Category"
 msgstr ""
 
@@ -1098,7 +1100,7 @@ msgid "Container"
 msgstr ""
 
 #: admin/view/partial/gallery-styles.php:24
-#: admin/view/partial/gallery-styles.php:90
+#: admin/view/partial/gallery-styles.php:88
 #: admin/view/partial/search-styles.php:43
 #: admin/view/partial/search-styles.php:182
 #: admin/view/partial/search-styles.php:240
@@ -1114,7 +1116,7 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:43
+#: admin/view/partial/gallery-styles.php:41
 #: admin/view/partial/single-styles.php:55
 msgid "Margin Top"
 msgstr ""
@@ -1124,24 +1126,23 @@ msgstr ""
 msgid "Margin Bottom"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:59
+#: admin/view/partial/gallery-styles.php:57
 #: widget/cls-books-gallery-widget.php:146
 msgid "Padding"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:66
+#: admin/view/partial/gallery-styles.php:64
+#: admin/view/partial/gallery-styles.php:583
 #: admin/view/partial/search-styles.php:62
 #: widget/cls-books-gallery-widget.php:136
 msgid "Border Radius"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:75
-#: admin/view/partial/gallery-styles.php:97
-#: admin/view/partial/gallery-styles.php:391
-#: admin/view/partial/gallery-styles.php:434
-#: admin/view/partial/gallery-styles.php:456
-#: admin/view/partial/gallery-styles.php:502
-#: admin/view/partial/gallery-styles.php:548
+#: admin/view/partial/gallery-styles.php:73
+#: admin/view/partial/gallery-styles.php:95
+#: admin/view/partial/gallery-styles.php:383
+#: admin/view/partial/gallery-styles.php:424
+#: admin/view/partial/gallery-styles.php:446
 #: admin/view/partial/search-styles.php:24
 #: admin/view/partial/search-styles.php:110
 #: admin/view/partial/search-styles.php:175
@@ -1155,15 +1156,15 @@ msgstr ""
 msgid "Background Color"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:85
+#: admin/view/partial/gallery-styles.php:83
 msgid "Book Item"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:106
+#: admin/view/partial/gallery-styles.php:102
 msgid "Hide Hover Shadow"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:128
+#: admin/view/partial/gallery-styles.php:124
 #: admin/view/partial/single-content.php:532
 #: admin/view/partial/single-content.php:547
 #: admin/view/partial/single-styles.php:72
@@ -1171,17 +1172,15 @@ msgstr ""
 msgid "Title"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:133
-#: admin/view/partial/gallery-styles.php:164
-#: admin/view/partial/gallery-styles.php:186
-#: admin/view/partial/gallery-styles.php:232
-#: admin/view/partial/gallery-styles.php:278
-#: admin/view/partial/gallery-styles.php:324
-#: admin/view/partial/gallery-styles.php:398
-#: admin/view/partial/gallery-styles.php:441
-#: admin/view/partial/gallery-styles.php:475
-#: admin/view/partial/gallery-styles.php:521
-#: admin/view/partial/gallery-styles.php:567
+#: admin/view/partial/gallery-styles.php:129
+#: admin/view/partial/gallery-styles.php:158
+#: admin/view/partial/gallery-styles.php:180
+#: admin/view/partial/gallery-styles.php:226
+#: admin/view/partial/gallery-styles.php:272
+#: admin/view/partial/gallery-styles.php:318
+#: admin/view/partial/gallery-styles.php:390
+#: admin/view/partial/gallery-styles.php:431
+#: admin/view/partial/gallery-styles.php:465
 #: admin/view/partial/search-styles.php:129
 #: admin/view/partial/search-styles.php:189
 #: admin/view/partial/search-styles.php:211
@@ -1197,17 +1196,18 @@ msgstr ""
 msgid "Font Color"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:140
+#: admin/view/partial/gallery-styles.php:136
 msgid "Hover Color"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:149
-#: admin/view/partial/gallery-styles.php:171
-#: admin/view/partial/gallery-styles.php:205
-#: admin/view/partial/gallery-styles.php:251
-#: admin/view/partial/gallery-styles.php:297
-#: admin/view/partial/gallery-styles.php:364
-#: admin/view/partial/gallery-styles.php:407
+#: admin/view/partial/gallery-styles.php:143
+#: admin/view/partial/gallery-styles.php:165
+#: admin/view/partial/gallery-styles.php:199
+#: admin/view/partial/gallery-styles.php:245
+#: admin/view/partial/gallery-styles.php:291
+#: admin/view/partial/gallery-styles.php:356
+#: admin/view/partial/gallery-styles.php:397
+#: admin/view/partial/gallery-styles.php:484
 #: admin/view/partial/search-styles.php:148
 #: admin/view/partial/search-styles.php:256
 #: admin/view/partial/single-styles.php:96
@@ -1219,41 +1219,49 @@ msgstr ""
 msgid "Font Size"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:159
+#: admin/view/partial/gallery-styles.php:153
 msgid "Description"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:181
+#: admin/view/partial/gallery-styles.php:175
 msgid "Format"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:319
+#: admin/view/partial/gallery-styles.php:313
 msgid "Price"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:343
+#: admin/view/partial/gallery-styles.php:337
 msgid "Before Discount Color"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:386
+#: admin/view/partial/gallery-styles.php:378
 #: widget/cls-books-gallery-widget.php:177
 msgid "Download Button"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:429
+#: admin/view/partial/gallery-styles.php:419
 msgid "Download Button Hover"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:451
+#: admin/view/partial/gallery-styles.php:441
 msgid "Pagination"
 msgstr ""
 
-#: admin/view/partial/gallery-styles.php:497
-msgid "Pagination Hover"
+#: admin/view/partial/gallery-styles.php:505
+msgid "Hover Background Color"
+msgstr ""
+
+#: admin/view/partial/gallery-styles.php:524
+msgid "Hover Font Color"
 msgstr ""
 
 #: admin/view/partial/gallery-styles.php:543
-msgid "Pagination Active"
+msgid "Active Background Color"
+msgstr ""
+
+#: admin/view/partial/gallery-styles.php:564
+msgid "Active Font Color"
 msgstr ""
 
 #: admin/view/partial/search-content.php:20
