@@ -133,6 +133,26 @@ trait Wbg_Search_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#6fa0df',
             ],
+            [
+                'name'      => 'wbg_search_btn_font_size',
+                'type'      => 'number',
+                'default'   => '14',
+            ],
+            [
+                'name'      => 'wbg_search_btn_font_weight',
+                'type'      => 'text',
+                'default'   => '700',
+            ],
+            [
+                'name'      => 'wbg_search_panel_margin_top',
+                'type'      => 'number',
+                'default'   => '0',
+            ],
+            [
+                'name'      => 'wbg_search_panel_margin_btm',
+                'type'      => 'number',
+                'default'   => '10',
+            ],
         ];
     }
 }

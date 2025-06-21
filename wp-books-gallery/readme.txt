@@ -4,7 +4,7 @@ Donate link: https://www.paypal.me/mhmrajib
 Tags: Books Gallery, Books, Digital Library, Books Showcase, Affiliate Marketing
 Requires at least: 5.4
 Tested up to: 6.8.1
-Stable tag: 4.7.2
+Stable tag: 4.7.3
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -321,6 +321,12 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 
 == Changelog ==
+
+= 4.7.3 =
+* Search button font size option added
+* Search button font weight option added
+* Search container margin top option added
+* Search container margin bottom option added
 
 = 4.7.2 =
 * Freemius SDK updated to 2.12.0

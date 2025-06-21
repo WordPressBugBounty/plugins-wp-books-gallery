@@ -9,6 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     background: <?php esc_html_e( $wbg_search_panel_bg_color ); ?>;
     border: <?php esc_html_e( $wbg_search_panel_border_width ); ?>px solid <?php esc_html_e( $wbg_search_panel_border_color ); ?>;
     border-radius: <?php esc_html_e( $wbg_search_panel_border_radius ); ?>px;
+    margin-top: <?php esc_html_e( $wbg_search_panel_margin_top ); ?>px;
+    margin-bottom: <?php esc_html_e( $wbg_search_panel_margin_btm ); ?>px;
 }
 /* Search Input */
 .wbg-search-container .wbg-search-item input[type="text"],
@@ -25,6 +27,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     background: <?php echo esc_html( $wbg_btn_color ); ?>;
     border: 1px solid <?php echo esc_html( $wbg_btn_border_color ); ?>;
     color: <?php echo esc_html( $wbg_btn_font_color ); ?>;
+    font-size: <?php esc_html_e( $wbg_search_btn_font_size ); ?>px;
+    font-weight: <?php esc_html_e( $wbg_search_btn_font_weight ); ?>;
 }
 .wbg-search-container .wbg-search-item .submit-btn:hover {
     background: <?php echo esc_html( $wbg_search_btn_bg_color_hover ); ?>;

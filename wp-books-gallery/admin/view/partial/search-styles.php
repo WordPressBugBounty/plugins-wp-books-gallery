@@ -82,6 +82,28 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
                     <?php 
 ?>
             </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Margin Top', 'wp-books-gallery' );
+?>:</label>
+            </th>
+            <td colspan="1">
+                <input type="number" class="small-text" min="0" max="100" name="wbg_search_panel_margin_top" id="wbg_search_panel_margin_top" value="<?php 
+esc_attr_e( $wbg_search_panel_margin_top );
+?>">
+                <code>px</code>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Margin Bottom', 'wp-books-gallery' );
+?>:</label>
+            </th>
+            <td colspan="1">
+                <input type="number" class="small-text" min="0" max="100" name="wbg_search_panel_margin_btm" id="wbg_search_panel_margin_btm" value="<?php 
+esc_attr_e( $wbg_search_panel_margin_btm );
+?>">
+                <code>px</code>
+            </td>
         </tr>
         <!-- Input Fields -->
         <tr>
@@ -176,6 +198,73 @@ _e( 'Font Color', 'wp-books-gallery' );
 esc_attr_e( $wbg_btn_font_color );
 ?>">
                 <div id="colorpicker"></div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php 
+_e( 'Font Size', 'wp-books-gallery' );
+?>:</label>
+            </th>
+            <td>
+                <input type="number" class="small-text" min="11" max="36" name="wbg_search_btn_font_size" id="wbg_search_btn_font_size" value="<?php 
+esc_attr_e( $wbg_search_btn_font_size );
+?>">
+                <code>px</code>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Font Weight', 'wp-books-gallery' );
+?>:</label>
+            </th>
+            <td>
+                <select name="wbg_search_btn_font_weight" class="medium-text">
+                    <option value="100" <?php 
+echo ( '100' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '100', 'wp-books-gallery' );
+?></option>
+                    <option value="200" <?php 
+echo ( '200' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '200', 'wp-books-gallery' );
+?></option>
+                    <option value="300" <?php 
+echo ( '300' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '300', 'wp-books-gallery' );
+?></option>
+                    <option value="400" <?php 
+echo ( '400' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '400', 'wp-books-gallery' );
+?></option>
+                    <option value="500" <?php 
+echo ( '500' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '500', 'wp-books-gallery' );
+?></option>
+                    <option value="600" <?php 
+echo ( '600' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '600', 'wp-books-gallery' );
+?></option>
+                    <option value="700" <?php 
+echo ( '700' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '700', 'wp-books-gallery' );
+?></option>
+                    <option value="800" <?php 
+echo ( '800' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '800', 'wp-books-gallery' );
+?></option>
+                    <option value="900" <?php 
+echo ( '900' === $wbg_search_btn_font_weight ? 'selected' : '' );
+?> ><?php 
+_e( '900', 'wp-books-gallery' );
+?></option>
+                </select>
             </td>
         </tr>
         <!-- Search Button: Hover -->
