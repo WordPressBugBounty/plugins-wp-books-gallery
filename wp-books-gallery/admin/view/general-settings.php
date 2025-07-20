@@ -254,6 +254,36 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 ?>
                     </td>
                 </tr>
+                <tr class="wbg_enable_rtl">
+                    <th scope="row">
+                        <label for="wbg_display_free_as_price"><?php 
+_e( 'Display Free Instead of 0 Price', 'wp-books-gallery' );
+?>?</label>
+                    </th>
+                    <td>
+                        <?php 
+?>
+                            <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                            <?php 
+?>
+                    </td>
+                    <th scope="row">
+                        <label><?php 
+_e( 'Free Label Text', 'wp-books-gallery' );
+?></label>
+                    </th>
+                    <td>
+                        <?php 
+?>
+                            <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                            <?php 
+?>
+                    </td>
+                </tr>
             </table>
             <br><hr>
             <b><?php 
@@ -268,18 +298,22 @@ _e( 'Source', 'wp-books-gallery' );
                     <td style="background: #FFF; border:0px; text-align:left; width: 20%;"><b><?php 
 _e( 'Alter Text', 'wp-books-gallery' );
 ?></b></td>
-                    <td style="background: #FFF; border:0px; text-align:left;"><b><?php 
+                    <td style="background: #FFF; border:0px; text-align:left; width: 20%;"><b><?php 
 _e( 'Choose Icon', 'wp-books-gallery' );
+?></b></td>
+                    <td style="background: #FFF; border:0px; text-align:left;"><b><?php 
+_e( 'Button Color', 'wp-books-gallery' );
 ?></b></td>
                 </tr>
             </table>
-            <div style="height: 270px; overflow-y: scroll; overflow-x:hidden;">
+            <div style="height: 320px; overflow-y: scroll; overflow-x:hidden;">
                 <table class="wbg-general-settings-table" style="width: 100%;">
                     <?php 
 $wbg_sale_sources = $this->wbg_mss_items();
 foreach ( $wbg_sale_sources as $source ) {
     $var = 'wbg_mss_alt_txt_' . str_replace( ' ', '_', strtolower( $source ) );
     $icon = 'wbg_mss_' . str_replace( ' ', '_', strtolower( $source ) ) . '_icon';
+    $color = 'wbg_mss_' . str_replace( ' ', '_', strtolower( $source ) ) . '_color';
     ?>
                         <tr>
                             <th scope="row" style="width: 15%;">
@@ -287,6 +321,15 @@ foreach ( $wbg_sale_sources as $source ) {
     esc_html_e( $source );
     ?></label>
                             </th>
+                            <td style="width: 20%;">
+                                <?php 
+    ?>
+                                    <span><?php 
+    echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+    ?></span>
+                                    <?php 
+    ?>
+                            </td>
                             <td style="width: 20%;">
                                 <?php 
     ?>

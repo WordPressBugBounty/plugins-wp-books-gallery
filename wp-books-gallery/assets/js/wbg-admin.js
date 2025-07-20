@@ -68,7 +68,22 @@
         '#wbg_search_reset_font_color_hvr',
         '#wbg_search_reset_border_color_hvr',
         '#wbg_single_container_bg_color',
-        '#wbg_single_anchor_hv_color'
+        '#wbg_single_anchor_hv_color',
+        '#wbg_single_rprice_font_color',
+        '#wbg_single_dprice_font_color',
+        '#wbg_mss_alibris_color',
+        '#wbg_mss_amazon_color',
+        '#wbg_mss_amazon_kindle_color',
+        '#wbg_mss_apple_books_color',
+        '#wbg_mss_bookshop_org_color',
+        '#wbg_mss_google_play_color',
+        '#wbg_mss_kobo_color',
+        '#wbg_mss_lifeway_color',
+        '#wbg_mss_mardel_color',
+        '#wbg_mss_smashwords_color',
+        '#wbg_mss_sony_reader_color',
+        '#wbg_mss_waterstones_color',
+        '#wbg_mss_barnes_and_noble_color'
     ];
 
     $.each(wbgColorPicker, function(index, value) {

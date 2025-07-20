@@ -73,7 +73,8 @@ if ( $wbgBooks->have_posts() ) {
         $feat_image = '<img src="' . esc_url( $wbg_default_book_cover_url ) . '" alt="' . get_the_title() . '" style="height:' . $wbg_book_cover_size_imp . 'px; object-fit: fill;">';
         if ( 'f' === $wbg_book_cover_priority ) {
             if ( get_the_post_thumbnail( get_the_ID() ) ) {
-                $feat_image = get_the_post_thumbnail( $post->ID, $wbg_book_cover_resulution );
+                //$feat_image = get_the_post_thumbnail(  $post->ID, $wbg_book_cover_resulution );
+                $feat_image = '<img src="' . esc_url( get_the_post_thumbnail_url( $post->ID, $wbg_book_cover_resulution ) ) . '" alt="' . get_the_title() . '" style="height:' . $wbg_book_cover_size_imp . 'px; object-fit: fill;">';
             } else {
                 if ( $wbgImgUrl ) {
                     $feat_image = '<img src="' . esc_url( $wbgImgUrl ) . '" alt="' . get_the_title() . '" style="height:' . $wbg_book_cover_size_imp . 'px; object-fit: fill;">';

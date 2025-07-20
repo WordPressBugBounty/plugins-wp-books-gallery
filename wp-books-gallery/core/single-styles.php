@@ -128,6 +128,21 @@ trait Wbg_Single_Styles_Settings
                 'type'      => 'text',
                 'default'   => '#CC0000',
             ],
+            [
+                'name'      => 'wbg_single_rprice_font_color',
+                'type'      => 'text',
+                'default'   => '#13b651',
+            ],
+            [
+                'name'      => 'wbg_single_dprice_font_color',
+                'type'      => 'text',
+                'default'   => '#ff7162',
+            ],
+            [
+                'name'      => 'wbg_single_price_font_size',
+                'type'      => 'number',
+                'default'   => '16',
+            ],
         ];
     }
 }

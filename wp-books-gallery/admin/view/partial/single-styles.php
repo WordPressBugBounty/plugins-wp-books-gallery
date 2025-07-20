@@ -150,6 +150,58 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 ?>
             </td>
         </tr>
+        <!-- Price -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align: left;">
+                <hr><label><?php 
+_e( 'Price', 'wp-books-gallery' );
+?></label><hr>
+            </th>
+        </tr>
+        <tr>
+            <th scope="row">
+                <label><?php 
+_e( 'Font Color', 'wp-books-gallery' );
+?></label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Before Discount Color', 'wp-books-gallery' );
+?></label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+            <th scope="row">
+                <label><?php 
+_e( 'Font Size', 'wp-books-gallery' );
+?></label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
+        </tr>
         <!-- Information Label -->
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">

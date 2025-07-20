@@ -232,6 +232,81 @@ trait Wbg_Core_Settings
                 'type'      => 'string',
                 'default'   => 'default',
             ],
+            [
+                'name'      => 'wbg_display_free_as_price',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_display_free_as_price_lbl',
+                'type'      => 'text',
+                'default'   => 'Free',
+            ],
+            [
+                'name'      => 'wbg_mss_alibris_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_amazon_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_amazon_kindle_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_apple_books_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_barnes_&_noble_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_bookshop_org_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_google_play_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_kobo_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_lifeway_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_mardel_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_smashwords_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_sony_reader_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
+            [
+                'name'      => 'wbg_mss_waterstones_color',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
     }
 }
