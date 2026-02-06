@@ -307,6 +307,16 @@ trait Wbg_Core_Settings
                 'type'      => 'text',
                 'default'   => '',
             ],
+            [
+                'name'      => 'wbg_sub_title_prefix',
+                'type'      => 'text',
+                'default'   => '-',
+            ],
+            [
+                'name'      => 'wbg_inc_book_post_cat',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
         ];
     }
 }

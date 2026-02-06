@@ -15,9 +15,9 @@ if ( !$wbg_display_details_page ) {
     ?>
         <a class="wgb-item-link" href="<?php 
     echo esc_url( get_the_permalink( $post->ID ) );
-    ?>" <?php 
+    ?>" target="_<?php 
     esc_attr_e( $wbg_details_is_external );
-    ?>>
+    ?>">
             <?php 
     echo $feat_image;
     ?>
@@ -58,12 +58,11 @@ if ( '1' == $wbg_display_category ) {
         ?>
             <span class="loop-category">
                 <?php 
-        echo esc_html( $wbg_cat_label_txt );
-        ?>
-                <?php 
-        $wbgCatArray = array();
+        echo esc_html( $wbg_cat_label_txt ) . '&nbsp;';
+        $wbgCatArray = [];
         foreach ( $wbgCategory as $cat ) {
-            $wbgCatArray[] = '<a href="' . esc_url( home_url( '/book-category/' . urlencode( $cat->slug ) ) ) . '" class="wbg-list-author">' . $cat->name . '</a>';
+            $cat_url = '?wbg_category_s=' . urlencode( $cat->name );
+            $wbgCatArray[] = '<a href="' . esc_url( $cat_url ) . '" class="wbg-list-author">' . esc_html( $cat->name ) . '</a>';
         }
         echo implode( ', ', $wbgCatArray );
         ?>
@@ -79,16 +78,12 @@ if ( $wbg_display_author ) {
         ?>
             <span class="loop-author">
                 <?php 
+        $wbgAuthorArray = [];
         esc_html_e( $wbg_author_label_txt );
-        ?>
-                <a href="<?php 
-        echo esc_url( $author_url );
-        ?>" class="wbg-single-link">
-                    <?php 
-        esc_html_e( $wbgAuthor );
-        ?>
-                </a>
-                <?php 
+        $wbgAuthorArray[] = '<a href="' . esc_url( $author_url ) . '" class="wbg-single-link">' . esc_html( $wbgAuthor ) . '</a>';
+        if ( !empty( $wbgAuthorArray ) ) {
+            echo "&nbsp;" . implode( ", ", $wbgAuthorArray );
+        }
         ?>
             </span>
             <?php 

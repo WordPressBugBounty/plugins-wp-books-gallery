@@ -7,6 +7,7 @@
     max-width: 1100px;
     min-height: 100px;
     margin: 0 auto;
+    white-space: initial;
 }
 
 .wbg-main-wrapper {
@@ -26,10 +27,11 @@
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s ease-in-out;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .wbg-main-wrapper .wbg-item:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 3px #999;
 }
 
 .wbg-main-wrapper .wbg-item img {
@@ -76,6 +78,10 @@
     word-wrap: anywhere;
 }
 
+.wbg-main-wrapper .wbg-item .wbg-description-content p {
+    margin-bottom: 10px;
+}
+
 .wbg-main-wrapper .wbg-item span {
     font-size: 14px;
     display: inline-block;
@@ -87,10 +93,16 @@
     text-align: center;
 }
 
+.wbg-main-wrapper .wbg-item span a {
+    text-decoration: none;
+    color: #212121;
+    font-size: 12px;
+}
+
 .wbg-main-wrapper .wbg-item a.wbg-btn,
 .wbg-main-wrapper .wbg-item-list-wrapper a.wbg-btn,
-.wbg-details-summary span a.wbg-btn,
-.wbg-details-wrapper a.wbg-btn-back {
+.wbg-details-summary .wbg-single-button-container a.button.wbg-btn,
+.wbg-details-wrapper a.button.wbg-btn-back {
     display: inline-block;
     margin: 0;
     margin-top: 5px;
@@ -109,7 +121,8 @@
     background: #269FC6;
 }
 
-.wbg-main-wrapper .wbg-item a.wbg-btn {
+.wbg-main-wrapper .wbg-item a.wbg-btn,
+.wbg-details-wrapper a.button.wbg-btn-back {
     margin-top: 15px;
 }
 
@@ -275,7 +288,7 @@ div.wbg-pagination>ul.page-numbers>li>a.page-numbers:hover {
 }
 
 .wbg-search-container .wbg-search-item input[type='text'] {
-    width: 93%;
+    width: 99.5%;
     margin: 0;
     padding: 0 0 0 10px;
     background: #FFF;
@@ -310,23 +323,31 @@ div.wbg-pagination>ul.page-numbers>li>a.page-numbers:hover {
     background: #FFF;
     color: #666666;
     font-size: 18px;
-    line-height: 25px;
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
     display: inline-block;
     width: 45px;
     height: 45px;
-    line-height: 40px;
+    line-height: 45px;
     border: 1px solid #666666;
     text-decoration: none;
     text-align: center;
+    position: relative;
 }
 
 .wbg-search-container .wbg-search-item a#wbg-search-refresh:hover {
     background: #6fa0df;
     border: 1px solid #6fa0df;
     color: #FFF;
+}
+
+.wbg-search-container .wbg-search-item a#wbg-search-refresh .fa.fa-refresh {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 p.wbg-no-books-found {
@@ -418,7 +439,7 @@ p.wbg-no-books-found {
     margin-top: 0px;
 }
 
-.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span.wbg-single-book-info {
+.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary .wbg-single-book-info {
     font-size: 14px;
     display: inline-block;
     width: 100%;
@@ -428,13 +449,19 @@ p.wbg-no-books-found {
     display: none;
 }
 
-.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span b {
+.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary .wbg-single-book-info b {
     color: #242424;
     width: 170px;
     display: inline-block;
+    vertical-align: top;
 }
 
-.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary span.wbg-single-book-info p {
+.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary .wbg-single-book-info .single-book-info-value {
+    width: calc(100% - 180px);
+    display: inline-block;
+}
+
+.wbg-details-wrapper .wbg-details-book-info .wbg-details-summary .wbg-single-book-info p {
     display: inline;
 }
 
@@ -562,6 +589,37 @@ h3.wbg-slide-title {
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 700;
+}
+
+ul.wbg-details-share-wrapper {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+ul.wbg-details-share-wrapper li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+ul.wbg-details-share-wrapper li a.wbg-share-on-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    background: #333333;
+    text-decoration: none;
+}
+
+ul.wbg-details-share-wrapper li a.wbg-share-on-link:hover {
+    background: #777;
 }
 
 
@@ -847,6 +905,7 @@ a.button.wbg-btn.single-book {
         text-align: center;
     }
     .wbg-search-container .wbg-search-item input[type="text"],
+    .selectize-control.single .selectize-input,
     .wbg-search-container .wbg-search-item .submit-btn {
         margin-bottom: 7px;
     }

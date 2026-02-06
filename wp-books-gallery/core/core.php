@@ -700,7 +700,9 @@ trait Wbg_Core
     $wbgp_sale_price    = intval( $wbgp_sale_price );
 
     if ( ! $wbgp_regular_price ) {
-      $wbgp_regular_price = ( ! $free_price ) ? esc_html( $currency ) . '0' : esc_html( $free_lbl );
+      $regualr_price = ( ! $free_price ) ? esc_html( $currency ) . '0' : esc_html( $free_lbl );
+    } else {
+      $regualr_price = esc_html( $currency ) . $this->load_price_format( $wbgp_regular_price, $format );
     }
     
     //if ( ( '' != $wbgp_sale_price ) || ( '' != $wbgp_regular_price ) ) {
@@ -708,7 +710,6 @@ trait Wbg_Core
       <div class="regular-price">
           <?php
           if ( empty( $wbgp_sale_price ) ) {
-              $regualr_price = ( $wbgp_regular_price > 0 ) ? esc_html( $currency ) . $this->load_price_format( $wbgp_regular_price, $format ) :  $wbgp_regular_price;
               echo '<span class="wbgp-price price-after">' . $regualr_price . '</span>'; 
           } else {
               echo '<span class="wbgp-price price-before">' . esc_html( $currency ) . $this->load_price_format( $wbgp_regular_price, $format ) . '</span>&nbsp;&nbsp;<span class="wbgp-price price-after">' . esc_html( $currency ) . $this->load_price_format( $wbgp_sale_price, $format ) . '</span>';

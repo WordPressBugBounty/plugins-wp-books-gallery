@@ -66,7 +66,7 @@ _e( 'Prefered Author', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -83,7 +83,7 @@ _e( 'Download When Logged-in', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -100,7 +100,7 @@ _e( 'Affiliate Code', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -114,7 +114,7 @@ _e( 'Code Apply To URL', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -131,7 +131,7 @@ _e( 'Book Cover Priority', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -148,7 +148,7 @@ _e( 'Hide Book Cover', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -219,7 +219,7 @@ _e( 'Buy Button Icon', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -248,13 +248,13 @@ _e( 'Price Format', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
                     </td>
                 </tr>
-                <tr class="wbg_enable_rtl">
+                <tr class="wbg_display_free_as_price">
                     <th scope="row">
                         <label for="wbg_display_free_as_price"><?php 
 _e( 'Display Free Instead of 0 Price', 'wp-books-gallery' );
@@ -264,7 +264,7 @@ _e( 'Display Free Instead of 0 Price', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
@@ -278,10 +278,38 @@ _e( 'Free Label Text', 'wp-books-gallery' );
                         <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <label><?php 
+_e( 'Subtitle Prefix', 'wp-books-gallery' );
+?></label>
+                    </th>
+                    <td>
+                        <?php 
+?>
+                            <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
+?></span>
+                            <?php 
+?>
+                    </td>
+                </tr>
+                <tr class="wbg_inc_book_post_cat">
+                    <th scope="row">
+                        <label for="wbg_inc_book_post_cat"><?php 
+_e( 'Include Books in Post Category', 'wp-books-gallery' );
+?>?</label>
+                    </th>
+                    <td colspan="3">
+                        <input type="checkbox" name="wbg_inc_book_post_cat" class="wbg_inc_book_post_cat" id="wbg_inc_book_post_cat" value="1" <?php 
+checked( $wbg_inc_book_post_cat, 1 );
+?> />
                     </td>
                 </tr>
             </table>
@@ -290,70 +318,19 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professi
 _e( 'Multiple Sale Sources', 'wp-books-gallery' );
 ?> ::</b>
             <hr><br>
-            <table class="wbg-general-settings-table" style="width: 100%;">
-                <tr>
-                    <th scope="row" style="width: 15%;"><b><?php 
-_e( 'Source', 'wp-books-gallery' );
-?></b></th>
-                    <td style="background: #FFF; border:0px; text-align:left; width: 20%;"><b><?php 
-_e( 'Alter Text', 'wp-books-gallery' );
-?></b></td>
-                    <td style="background: #FFF; border:0px; text-align:left; width: 20%;"><b><?php 
-_e( 'Choose Icon', 'wp-books-gallery' );
-?></b></td>
-                    <td style="background: #FFF; border:0px; text-align:left;"><b><?php 
-_e( 'Button Color', 'wp-books-gallery' );
-?></b></td>
-                </tr>
-            </table>
-            <div style="height: 320px; overflow-y: scroll; overflow-x:hidden;">
-                <table class="wbg-general-settings-table" style="width: 100%;">
-                    <?php 
-$wbg_sale_sources = $this->wbg_mss_items();
-foreach ( $wbg_sale_sources as $source ) {
-    $var = 'wbg_mss_alt_txt_' . str_replace( ' ', '_', strtolower( $source ) );
-    $icon = 'wbg_mss_' . str_replace( ' ', '_', strtolower( $source ) ) . '_icon';
-    $color = 'wbg_mss_' . str_replace( ' ', '_', strtolower( $source ) ) . '_color';
-    ?>
-                        <tr>
-                            <th scope="row" style="width: 15%;">
-                                <label><?php 
-    esc_html_e( $source );
-    ?></label>
-                            </th>
-                            <td style="width: 20%;">
-                                <?php 
-    ?>
-                                    <span><?php 
-    echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
-    ?></span>
-                                    <?php 
-    ?>
-                            </td>
-                            <td style="width: 20%;">
-                                <?php 
-    ?>
-                                    <span><?php 
-    echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
-    ?></span>
-                                    <?php 
-    ?>
-                            </td>
-                            <td>
-                                <?php 
-    ?>
-                                    <span><?php 
-    echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
-    ?></span>
-                                    <?php 
-    ?>
-                            </td>
-                        </tr>
-                        <?php 
-}
+            <?php 
 ?>
+                <table class="wbg-general-settings-table" style="width: 100%;">
+                    <tr>
+                        <th scope="row" style="width: 100%; text-align: left;">
+                            <b><span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
+?></span></b>
+                        </th>
+                    </tr>
                 </table>
-            </div>
+                <?php 
+?>
             <br>
             <hr>
             <p class="submit">

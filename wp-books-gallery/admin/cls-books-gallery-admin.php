@@ -143,6 +143,7 @@ class WBG_Admin {
     }
 
     function wbg_custom_post_type() {
+        $bg_slug = ( !empty( get_option( 'wbg_cpt_slug' ) ) ? get_option( 'wbg_cpt_slug' ) : 'books' );
         $labels = array(
             'name'               => __( 'Books', 'wp-books-gallery' ),
             'singular_name'      => __( 'Book', 'wp-books-gallery' ),
@@ -186,7 +187,7 @@ class WBG_Admin {
             'query_var'           => true,
             'taxonomies'          => array('category', 'post_tag'),
             'rewrite'             => array(
-                'slug' => 'books',
+                'slug' => esc_html( $bg_slug ),
             ),
         );
         register_post_type( 'books', $args );

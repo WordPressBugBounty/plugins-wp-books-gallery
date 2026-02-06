@@ -35,16 +35,16 @@ if ( $wbg_display_sidebar ) {
         color: #242424;
         text-decoration: none;
     }
-    .wbg-details-wrapper .wbg-details-summary span a.wbg-single-link:hover {
+    .wbg-details-wrapper .wbg-details-summary .wbg-single-book-info a.wbg-single-link:hover {
         color: <?php 
 esc_attr_e( $wbg_single_anchor_hv_color );
 ?>;
     }
-    .wbg-details-summary span a.wbg-btn,
-    a.wbg-btn-back {
+    .wbg-details-summary .wbg-single-button-container a.button.wbg-btn,
+    .wbg-details-wrapper a.button.wbg-btn-back {
         display: inline-block;
     }
-    .wbg-details-summary span a.wbg-btn:hover {
+    .wbg-details-summary .wbg-single-button-container a.button.wbg-btn:hover {
         background: <?php 
 esc_attr_e( $wbg_download_btn_color_hvr );
 ?> !important;
@@ -52,8 +52,16 @@ esc_attr_e( $wbg_download_btn_color_hvr );
 esc_attr_e( $wbg_download_btn_font_color_hvr );
 ?> !important;
     }
-    .wbg-details-wrapper .wbg-details-summary span b .fa,
-    .wbg-details-wrapper .wbg-details-summary span b .fa-solid {
+    .wbg-details-wrapper a.button.wbg-btn-back:hover {
+        background: <?php 
+esc_attr_e( $wbg_back_btn_bg_color_hvr );
+?> !important;
+        color: <?php 
+esc_attr_e( $wbg_back_btn_font_color_hvr );
+?> !important;
+    }
+    .wbg-details-wrapper .wbg-details-summary .wbg-single-book-info b .fa,
+    .wbg-details-wrapper .wbg-details-summary .wbg-single-book-info b .fa-solid {
         width: 25px;
         text-align: center;
     }

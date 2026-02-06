@@ -25,7 +25,7 @@ _e( 'Display Sub-Title', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -48,7 +48,7 @@ _e( 'Display Format', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -62,7 +62,7 @@ _e( 'Format Label', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -78,7 +78,7 @@ _e( 'Display Series', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -92,7 +92,7 @@ _e( 'Series Label', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -108,7 +108,7 @@ _e( 'Display Reading Age', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -122,7 +122,7 @@ _e( 'Reading Age Label', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -138,7 +138,7 @@ _e( 'Display Grade Level', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -152,7 +152,7 @@ _e( 'Grade Level Label', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -459,6 +459,27 @@ esc_attr_e( $wbg_details_tag_label );
 ?>">
             </td>
         </tr>
+        <tr>
+            <th scope="row" colspan="6">
+                <hr>
+            </th>
+        </tr>
+        <?php 
+?>
+        <tr class="wbg_display_download_button">
+            <th scope="row" style="text-align: right;">
+                <label for="wbg_display_download_button"><?php 
+_e( 'Hide Download Button', 'wp-books-gallery' );
+?>?</label>
+            </th>
+            <td>
+                <input type="checkbox" name="wbg_display_download_button" id="wbg_display_download_button" value="1" <?php 
+echo ( $wbg_display_download_button ? 'checked' : null );
+?> >
+            </td>
+            <?php 
+?>
+        </tr>
         <tr class="wbg_display_description">
             <th scope="row" style="text-align: right;">
                 <label for="wbg_display_description"><?php 
@@ -483,25 +504,6 @@ esc_attr_e( $wbg_description_label );
 esc_attr_e( $wbg_description_label );
 ?>">
             </td>
-        </tr>
-        <tr>
-            <th scope="row" colspan="6">
-                <hr>
-            </th>
-        </tr>
-        <tr class="wbg_display_download_button">
-            <th scope="row" style="text-align: right;">
-                <label for="wbg_display_download_button"><?php 
-_e( 'Hide Download Button', 'wp-books-gallery' );
-?>?</label>
-            </th>
-            <td>
-                <input type="checkbox" name="wbg_display_download_button" id="wbg_display_download_button" value="1" <?php 
-echo ( $wbg_display_download_button ? 'checked' : null );
-?> >
-            </td>
-            <?php 
-?>
         </tr>
         <!-- Hide Other Books From / Author Panel -->
         <?php 
@@ -530,6 +532,20 @@ esc_attr_e( $wbg_back_button_label );
 esc_attr_e( $wbg_back_button_label );
 ?>">
             </td>
+            <th scope="row" style="text-align: right;">
+                <label><?php 
+_e( 'Back Button Icon', 'wp-books-gallery' );
+?>:</label>
+            </th>
+            <td>
+                <?php 
+?>
+                    <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
+?></span>
+                    <?php 
+?>
+            </td>
         </tr>
         <tr class="wbg_display_sidebar">
             <th scope="row" style="text-align: right;">
@@ -551,7 +567,7 @@ _e( 'Display Search Panel', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>
@@ -565,7 +581,7 @@ _e( 'Hide Search Panel in Mobile', 'wp-books-gallery' );
                 <?php 
 ?>
                     <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Please Upgrade Now!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                     <?php 
 ?>

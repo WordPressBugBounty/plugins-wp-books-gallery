@@ -14,13 +14,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 /* Search Input */
 .wbg-search-container .wbg-search-item input[type="text"],
-.selectize-control.single .selectize-input {
+.selectize-control.single .selectize-input,
+.selectize-dropdown [data-selectable].option {
     background-color: <?php esc_html_e( $wbg_search_panel_input_bg_color ); ?>;
     color: <?php esc_html_e( $wbg_search_input_font_color ); ?>!important;
     font-size: <?php esc_html_e( $wbg_search_input_font_size ); ?>px;
 }
 .selectize-input input {
     color: <?php esc_html_e( $wbg_search_input_font_color ); ?>!important;
+}
+
+.selectize-dropdown [data-selectable].option {
+    cursor: pointer;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 5px;
 }
 /* Search Button */
 .wbg-search-container .wbg-search-item .submit-btn {

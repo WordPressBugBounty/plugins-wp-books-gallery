@@ -76,4 +76,5 @@ if ( !function_exists( 'wbg_fs' ) ) {
     }
 
     wbg_fs()->add_action( 'after_uninstall', 'wbg_fs_uninstall_cleanup' );
+    wbg_fs()->add_filter( 'pricing/show_annual_in_monthly', '__return_false' );
 }

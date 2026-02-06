@@ -23,7 +23,7 @@ $wbgpCurrencySymbol = $this->wbg_get_currency_symbol( $wbgp_currency );
 include WBG_PATH . 'assets/css/search.php';
 include WBG_PATH . 'assets/css/gallery.php';
 // Gallery Settings Content
-$wbg_details_is_external = ( $wbg_details_is_external ? ' target="_blank"' : '' );
+$wbg_details_is_external = ( $wbg_details_is_external ? 'blank' : 'self' );
 $wbg_dwnld_btn_url_same_tab = ( !$wbg_dwnld_btn_url_same_tab ? 'target="_blank"' : '' );
 // Shortcoded Options
 $wbg_author = '';

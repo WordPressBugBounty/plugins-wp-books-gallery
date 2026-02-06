@@ -106,12 +106,12 @@ trait Wbg_Search_Styles_Settings
             [
                 'name'      => 'wbg_search_input_font_color',
                 'type'      => 'text',
-                'default'   => '#009900',
+                'default'   => '#242424',
             ],
             [
                 'name'      => 'wbg_search_input_font_size',
                 'type'      => 'number',
-                'default'   => '22',
+                'default'   => '14',
             ],
             [
                 'name'      => 'wbg_reset_btn_font_size',

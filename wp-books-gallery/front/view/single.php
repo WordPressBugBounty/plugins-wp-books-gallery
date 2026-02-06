@@ -33,21 +33,7 @@ if ( have_posts() ) {
         ?></h1>
                         
                         <?php 
-        include 'single/before-tags.php';
-        // Tags
-        if ( !$wbg_details_hide_tag ) {
-            $wbgPostTags = get_the_tags();
-            $wbgTagsSeparator = ' |';
-            $wgbOutput = '';
-            if ( !empty( $wbgPostTags ) ) {
-                $wgbOutput .= "<span class='wbg-single-book-info'><b><i class='fa-solid fa-tags'></i>&nbsp;" . esc_attr( $wbg_details_tag_label ) . ":</b>";
-                foreach ( $wbgPostTags as $tag ) {
-                    $wgbOutput .= '&nbsp;<a href="' . get_tag_link( $tag->term_id ) . '" class="wbg-single-link">' . $tag->name . '</a>' . $wbgTagsSeparator;
-                }
-                $wgbOutput .= '</span>';
-                echo trim( $wgbOutput, $wbgTagsSeparator );
-            }
-        }
+        include 'single/book-info.php';
         if ( !$wbg_details_hide_load_more ) {
             ?>
                             <a href="#" id="wbgSingleLoadMoreDetails"><?php 
@@ -56,7 +42,6 @@ if ( have_posts() ) {
                             <?php 
         }
         ?>
-
                         <span class="wbg-single-button-container">
                             <?php 
         // Download Button
@@ -139,13 +124,14 @@ if ( have_posts() ) {
         }
         // Back Button
         if ( !$wbg_hide_back_button ) {
-            echo '<br>';
             if ( '' !== $wbg_gallery_page_slug ) {
                 ?>
                         <a href="<?php 
                 echo esc_url( home_url( '/' . $wbg_gallery_page_slug ) );
                 ?>" class="button wbg-btn-back">
-                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>&nbsp;<?php 
+                            <i class="<?php 
+                esc_attr_e( $wbg_back_button_icon );
+                ?>" aria-hidden="true"></i>&nbsp;<?php 
                 esc_html_e( $wbg_back_button_label );
                 ?>
                         </a>
@@ -154,7 +140,9 @@ if ( have_posts() ) {
             if ( '' === $wbg_gallery_page_slug ) {
                 ?>
                         <a href="#" onclick="javascript:history.back();" class="button wbg-btn-back">
-                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>&nbsp;<?php 
+                            <i class="<?php 
+                esc_attr_e( $wbg_back_button_icon );
+                ?>" aria-hidden="true"></i>&nbsp;<?php 
                 esc_html_e( $wbg_back_button_label );
                 ?>
                         </a>

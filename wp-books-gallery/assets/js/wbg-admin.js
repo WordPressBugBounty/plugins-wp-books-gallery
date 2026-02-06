@@ -83,7 +83,11 @@
         '#wbg_mss_smashwords_color',
         '#wbg_mss_sony_reader_color',
         '#wbg_mss_waterstones_color',
-        '#wbg_mss_barnes_and_noble_color'
+        '#wbg_mss_barnes_and_noble_color',
+        '#wbg_back_btn_bg_color',
+        '#wbg_back_btn_font_color',
+        '#wbg_back_btn_bg_color_hvr',
+        '#wbg_back_btn_font_color_hvr'
     ];
 
     $.each(wbgColorPicker, function(index, value) {

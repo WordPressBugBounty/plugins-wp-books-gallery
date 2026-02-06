@@ -1,25 +1,27 @@
-=== HM Books Gallery ===
+=== HM Books Gallery - Build a Book Showcase, Store or a Library in minutes ===
 Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: Books Gallery, Books, Digital Library, Books Showcase, Affiliate Marketing
+Tags: affiliate marketing, books, book, pdf, documents
 Requires at least: 5.4
-Tested up to: 6.8.2
-Stable tag: 4.7.4
+Tested up to: 6.9
+Stable tag: 4.7.8
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-WordPress Books Gallery is the Best Books Showcase Plugin which will build a beautiful mobile-friendly Book Store in a few minutes.
+Book Gallery will build a mobile-friendly Book Store, Showcase or Library in a few minutes. You can also display pdfs, documents in a grid/list view.
 
 == Description ==
 
-**WordPress Books Gallery** is the **Best Books Showcase & Library Plugin for WordPress** which will build a beautiful mobile-friendly Books Store, Books Gallery or a Digital Library in a few minutes.
+**WordPress Book Gallery** is the **Best Book Showcase & Library Plugin for WordPress** which will build a beautiful mobile-friendly Book Store, Book Gallery or a Digital Library in a few minutes.
 
-**Here are 3 Simple reasons why you should start using WordPress Books Gallery Plugin on your website:**
+Although this plugin is called **Books Gallery**, you can also use this plugin as your PDFs library or Documents organizer and display them in a list or grid view.
+
+**Here are 3 Simple reasons why you should start using WordPress Book Gallery Plugin on your website:**
 
 **✅ Online Digital Library**
 
-With this WordPress Digital Library Plugin you can create your own online book store to display your books. Visitors can download books for free or buy them from a third party site. 
+With this WordPress Digital Library Plugin you can create your own online book store to showcase your books. Visitors can download books for free or buy them from a third party site. 
 
 **✅ Easy Affiliate Marketing**
 
@@ -63,6 +65,8 @@ WordPress Books Gallery Plugin is a simple, effective and powerful plugin to Sel
 * Can be integrated to WooCommerce and sell Books
 * Book Reviews & Ratings
 * Font Awesome Free 6.1.1 integrated
+* Can be use as your PDFs library
+* Can be use as Documents organizer
 
 
 **✅ Options In Gallery Settings**
@@ -261,7 +265,7 @@ Install WordPress Books Gallery as a regular WordPress plugin. Here are differen
 
 **Install by upload plugin:**
 
-1. Download the latest version of WordPress Books Gallery (.zip file)
+1. Download the latest version of WordPress Book Gallery (.zip file)
 2. In your Admin, go to menu Plugins > Add New
 3. Select "Upload Plugin"
 4. Click on "Choose File"
@@ -278,22 +282,22 @@ Go to “Add New Book” and add your Books as many as you want.
 Now you need to insert the shortcode [wp_books_gallery] at any page through TinyMCE editor.
 
 = I have applied the shortocode but front page is not like as your demo! =
-Please dont use only "books" as your page url slug. Try to use something else or add extra word like "our-books".
+Please dont use only "books" as your page url slug. Try to use something else or add extra word like "our-books", "library" etc.
 
-= Only 10 books are showing, although there are much more books. How Can I increase them? =
-You need to upgrade to the Pro vesion to display molre than 10 books with pagination. If you’re interested to get the Pro, Please go to [Upgrade to Pro!](https://books-gallery.com/pricing-faq/) Page.
+= Only 20 books are showing, although there are much more books. How Can I increase them? =
+You need to upgrade to the Pro vesion to display molre than 20 books with pagination. If you’re interested to get the Pro, Please go to [Upgrade to Pro!](https://books-gallery.com/pricing-faq/) Page.
 
 = How To Display Pagination In Books Gallery? =
-You need to upgrade to the Pro vesion to display molre than 10 books with pagination. If you’re interested to get the Pro, Please go to [Upgrade to Pro!](https://books-gallery.com/pricing-faq/) Page.
+You need to upgrade to the Pro vesion to display molre than 20 books with pagination. If you’re interested to get the Pro, Please go to [Upgrade to Pro!](https://books-gallery.com/pricing-faq/) Page.
 
 = Book details page showing 404! =
 Please go to Settings -> Permalinks. Just Save Changes and refresh the page.
 
 = Is the Plugin fully responsive? =
-Yes, this plugin is fully responsive. You can control to show the number of books columns on different devices (Desktop, mobile etc.).
+Yes, Book Gallery plugin is fully responsive. You can control to show the number of books columns on different devices (Desktop, mobile etc.).
 
 = Do I need coding skills to showcase Books? =
-Not at all! This plugin is very easy to use. No more pain writing any shortcode attributes to display Books on your website. With just a few clicks, you can amazingly showcase your Books using the Shortcode [wp_books_gallery].
+Not at all! This Book Gallery plugin is very easy to use. No more pain writing any shortcode attributes to display Books on your website. With just a few clicks, you can amazingly showcase your Books using the Shortcode [wp_books_gallery].
 
 = Will it automatically use my existing Books when Upgrade to Pro? =
 Yes. If you already have Books in the free version, you will automatically get the Books to use in the Pro version.
@@ -310,17 +314,38 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 == Screenshots ==
 
-1. Showing Books Gallery Grid View
-2. Showing Books Gallery List View
-3. Books Gallery Single Page View
-4. Books Gallery Featured Books View (Pro)
-5. Main Gallery Content Settings Page 
-6. Main Gallery Styling Settings Page
-7. Gallery Search Panel Settings Page
-8. Gallery Single Page Settings Page
+1. Book Gallery Grid View
+2. Book Gallery List View
+3. Book Gallery Single Page View
+4. Book Gallery Featured Books View (Pro)
+5. Books Gallery Content Settings Page
+6. Books Gallery Styling Settings Page
+7. Book Gallery Search Panel Settings Page
+8. Book Gallery Single Page Settings Page
 
 
 == Changelog ==
+
+= 4.7.8 =
+* Added book gallery slug option in permalink settings
+* Improved CSS for cleaner layouts
+* Added option to include books in the post category
+* Fixed minor bugs
+
+= 4.7.7 =
+* Freemius SDK updated to 2.13.0
+* Slick css min applied
+
+= 4.7.6 =
+* Author display issue in the details page fixed
+* Book details open in the same tab issue fixed
+* Search dropdown option font size issue fixed
+
+= 4.7.5 =
+* Freemius SDK updated to 2.12.2
+* CSS fixed
+* Refresh button center issue fixed
+* Code optimized
 
 = 4.7.4 =
 * Gallery image thumbnail issue fixed

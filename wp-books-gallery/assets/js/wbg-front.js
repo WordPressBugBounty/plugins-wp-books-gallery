@@ -3,15 +3,14 @@
     // USE STRICT
     "use strict";
 
-    // searchable dropdown select
-    $('div.wbg-search-item select.wbg-selectize').selectize();
-
     var wbgSingleModal = document.getElementById('wbg-single-modal-id');
     var wbgSelectSort = document.getElementById('wbg-select-sort');
     var wbgSlide = document.getElementById('wbg-view-slide-id');
     var wbgWidget = document.getElementById('wbg-view-widget-id');
     var wbgSingleLoadMoreDetails = document.getElementById('wbgSingleLoadMoreDetails');
+    var wbgurl = new URL(window.location.href);
 
+    // Display book info in modal
     if (wbgSingleModal != null) {
         $(".wbg-single-modal").iziModal({
             width: parseInt(wbgAdminScriptObj.modalWidth),
@@ -36,9 +35,6 @@
             });
         });
     }
-
-    var wbgurl = new URL(window.location.href);
-    var wbgparams = '';
 
     if (wbgSlide != null) {
         var slides_to_show = $('#wbg-view-slide-id').data("slides");
@@ -100,19 +96,10 @@
     }
 
     if (wbgSelectSort != null) {
+
         $('select#wbg-select-sort').on('change', function() {
-            if ($(this).val() === '') {
-                wbgurl.searchParams.set('orderby', 'default');
-            }
-            if ($(this).val() === 'date') {
-                wbgurl.searchParams.set('orderby', 'date');
-            }
-            if ($(this).val() === 'price-low') {
-                wbgurl.searchParams.set('orderby', 'price');
-            }
-            if ($(this).val() === 'price-high') {
-                wbgurl.searchParams.set('orderby', 'price-desc');
-            }
+
+            wbgurl.searchParams.set('orderby', $(this).val());
             window.location.href = wbgurl.href;
         });
     }
@@ -141,7 +128,9 @@
                 $("#wbgSingleLoadMoreDetails").text("No More Info Available").addClass("wbgNoMoreInfoAvailable");
             }
         });
-
     });
+
+    // searchable dropdown select
+    $('div.wbg-search-item select.wbg-selectize').selectize();
 
 })(window, jQuery);

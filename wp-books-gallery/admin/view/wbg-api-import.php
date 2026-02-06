@@ -179,7 +179,7 @@ _e( 'Provide Your ISBN', 'wp-books-gallery' );
                     <?php 
 ?>
                             <span><?php 
-echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Upgrade to Professional!', 'wp-books-gallery' ) . '</a>';
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
 ?></span>
                             <?php 
 ?>

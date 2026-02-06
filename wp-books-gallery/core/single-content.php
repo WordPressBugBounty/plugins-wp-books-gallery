@@ -358,6 +358,21 @@ trait Wbg_Single_Content_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'wbg_back_button_icon',
+                'type'      => 'text',
+                'default'   => 'fa fa-angle-double-left',
+            ],
+            [
+                'name'      => 'wbg_hide_share_option',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_share_option_label',
+                'type'      => 'text',
+                'default'   => 'Share',
+            ],
         ];
     }
 }

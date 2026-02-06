@@ -143,6 +143,31 @@ trait Wbg_Single_Styles_Settings
                 'type'      => 'number',
                 'default'   => '16',
             ],
+            [
+                'name'      => 'wbg_back_btn_bg_color',
+                'type'      => 'text',
+                'default'   => '#269FC6',
+            ],
+            [
+                'name'      => 'wbg_back_btn_font_color',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
+            [
+                'name'      => 'wbg_back_btn_font_size',
+                'type'      => 'number',
+                'default'   => '14',
+            ],
+            [
+                'name'      => 'wbg_back_btn_bg_color_hvr',
+                'type'      => 'text',
+                'default'   => '#0274be',
+            ],
+            [
+                'name'      => 'wbg_back_btn_font_color_hvr',
+                'type'      => 'text',
+                'default'   => '#FFFFFF',
+            ],
         ];
     }
 }

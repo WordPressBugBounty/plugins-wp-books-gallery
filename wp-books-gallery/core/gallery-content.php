@@ -222,6 +222,16 @@ trait Wbg_Gallery_Settings_Content
                 'type'      => 'text',
                 'default'   => 'Publisher',
             ],
+            [
+                'name'      => 'wbg_gallery_hide_format',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_gallery_sorting_options',
+                'type'      => 'textarea',
+                'default'   => 'latest, priceLH, priceHL',
+            ],
         ];
     }
 
