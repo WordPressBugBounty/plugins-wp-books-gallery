@@ -98,6 +98,9 @@ if ( $wbgBooks->have_posts() ) {
         if ( 'grid-classic' === $wbg_gallary_template ) {
             include 'gallery/layout/grid-classic.php';
         }
+        if ( 'grid-only-img' === $wbg_gallary_template ) {
+            include 'gallery/layout/grid-only-img.php';
+        }
     }
     ?>
     </div>

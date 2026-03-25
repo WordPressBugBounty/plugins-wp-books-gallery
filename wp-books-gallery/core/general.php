@@ -2,6 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
 /**
 * Trait: Slide Settings
 */
@@ -314,6 +315,11 @@ trait Wbg_Core_Settings
             ],
             [
                 'name'      => 'wbg_inc_book_post_cat',
+                'type'      => 'boolean',
+                'default'   => false,
+            ],
+            [
+                'name'      => 'wbg_display_sidebar_archive_page',
                 'type'      => 'boolean',
                 'default'   => false,
             ],

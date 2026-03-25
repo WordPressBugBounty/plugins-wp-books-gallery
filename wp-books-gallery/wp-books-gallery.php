@@ -1,15 +1,15 @@
 <?php
 
 /**
- * Plugin Name:	        HM Books Gallery
+ * Plugin Name:	        WP Books Gallery
  * Plugin URI:	        https://wordpress.org/plugins/wp-books-gallery/
- * Description:	        Best Books Showcase & Library Plugin for WordPress which will build a beautiful mobile-friendly Book Store, Gallery, Library in a few minutes.
- * Version:		        4.7.8
+ * Description:	        WordPress Book Gallery will build a mobile-friendly book gallery, book showcase, or book library in a few minutes.
+ * Version:		        4.7.9
  * Requires at least:   5.4
  * Requires PHP:        7.2
  * Author:		        HM Plugin
  * Author URI:	        https://hmplugin.com
- * Tested up to:        6.9
+ * Tested up to:        6.9.4
  * Text Domain:         wp-books-gallery
  * Domain Path:         /languages
  * License:		        GPL-2.0+
@@ -28,7 +28,7 @@ if ( function_exists( 'wbg_fs' ) ) {
         define( 'WBG_PRFX', 'wbg_' );
         define( 'WBG_CLS_PRFX', 'cls-books-gallery-' );
         define( 'WBG_TXT_DOMAIN', 'wp-books-gallery' );
-        define( 'WBG_VERSION', '4.7.8' );
+        define( 'WBG_VERSION', '4.7.9' );
         require_once WBG_PATH . "/lib/freemius-integrator.php";
         require_once WBG_PATH . 'inc/' . WBG_CLS_PRFX . 'master.php';
         $wbg = new WBG_Master();
@@ -69,6 +69,7 @@ if ( function_exists( 'wbg_fs' ) ) {
         // include your custom post type on category and tags pages
         function wbg_custom_post_type_cat_filter(  $query  ) {
             global $pagenow;
+            $wbgIncBookPostCatEnabled = false;
             $wbgCoreSettings = get_option( 'wbg_core_settings' );
             if ( !empty( $wbgCoreSettings ) ) {
                 $wbgIncBookPostCatEnabled = ( isset( $wbgCoreSettings['wbg_inc_book_post_cat'] ) ? $wbgCoreSettings['wbg_inc_book_post_cat'] : false );

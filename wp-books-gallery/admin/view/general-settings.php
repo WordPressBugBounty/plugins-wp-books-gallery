@@ -284,7 +284,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
 ?>
                     </td>
                 </tr>
-                <tr>
+                <tr class="Subtitle Prefix">
                     <th scope="row">
                         <label><?php 
 _e( 'Subtitle Prefix', 'wp-books-gallery' );
@@ -309,6 +309,18 @@ _e( 'Include Books in Post Category', 'wp-books-gallery' );
                     <td colspan="3">
                         <input type="checkbox" name="wbg_inc_book_post_cat" class="wbg_inc_book_post_cat" id="wbg_inc_book_post_cat" value="1" <?php 
 checked( $wbg_inc_book_post_cat, 1 );
+?> />
+                    </td>
+                </tr>
+                <tr class="wbg_display_sidebar_archive_page">
+                    <th scope="row">
+                        <label for="wbg_display_sidebar_archive_page"><?php 
+_e( 'Display Sidebar in Archive Page', 'wp-books-gallery' );
+?>?</label>
+                    </th>
+                    <td colspan="3">
+                        <input type="checkbox" name="wbg_display_sidebar_archive_page" class="wbg_display_sidebar_archive_page" id="wbg_display_sidebar_archive_page" value="1" <?php 
+checked( $wbg_display_sidebar_archive_page, 1 );
 ?> />
                     </td>
                 </tr>

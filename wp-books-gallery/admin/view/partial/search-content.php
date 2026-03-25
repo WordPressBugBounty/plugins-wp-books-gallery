@@ -28,10 +28,15 @@ echo ( '1' === $wbg_display_search_panel ? 'checked' : '' );
             </td>
         </tr>
         <tr>
-            <th scope="row" colspan="6" style="text-align: left;">
-                <hr><span>&nbsp;<?php 
+            <th scope="row" colspan="6" style="text-align: left; font-size: 15px;">
+                <hr>
+                    <span>&nbsp;<?php 
 _e( 'Search Items', 'wp-books-gallery' );
-?></span><hr>
+?></span>&nbsp;::
+                    <span>&nbsp;<?php 
+_e( 'Drag & drop to sort them at the front search panel', 'wp-books-gallery' );
+?></span>
+                <hr>
             </th>
         </tr>
         <?php 

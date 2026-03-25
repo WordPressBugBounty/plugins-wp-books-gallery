@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Books Gallery\n"
-"POT-Creation-Date: 2026-01-31 12:04+0600\n"
+"POT-Creation-Date: 2026-03-26 00:44+0600\n"
 "PO-Revision-Date: 2021-12-27 03:58+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Book Categories"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:211 wp-books-gallery.php:129
+#: admin/cls-books-gallery-admin.php:211 wp-books-gallery.php:130
 msgid "Book Category"
 msgstr ""
 
@@ -238,7 +238,7 @@ msgid "Search Reading Age"
 msgstr ""
 
 #: admin/cls-books-gallery-admin.php:292
-#: admin/view/partial/search-content.php:371
+#: admin/view/partial/search-content.php:374
 msgid "All Reading Age"
 msgstr ""
 
@@ -308,8 +308,8 @@ msgid "Co-Authors"
 msgstr ""
 
 #: admin/cls-books-gallery-admin.php:340
-#: admin/view/partial/gallery-content.php:90
-#: admin/view/partial/gallery-styles.php:267 wp-books-gallery.php:130
+#: admin/view/partial/gallery-content.php:91
+#: admin/view/partial/gallery-styles.php:267 wp-books-gallery.php:131
 msgid "Author"
 msgstr ""
 
@@ -318,7 +318,7 @@ msgid "Search Author"
 msgstr ""
 
 #: admin/cls-books-gallery-admin.php:342
-#: admin/view/partial/search-content.php:184
+#: admin/view/partial/search-content.php:187
 msgid "All Authors"
 msgstr ""
 
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Book External Image Url"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:403 admin/view/general-settings.php:347
+#: admin/cls-books-gallery-admin.php:403 admin/view/general-settings.php:355
 msgid "Multiple Sale Sources"
 msgstr ""
 
@@ -418,20 +418,21 @@ msgstr ""
 #: admin/view/general-settings.php:148 admin/view/general-settings.php:173
 #: admin/view/general-settings.php:231 admin/view/general-settings.php:260
 #: admin/view/general-settings.php:287 admin/view/general-settings.php:305
-#: admin/view/general-settings.php:325 admin/view/general-settings.php:355
-#: admin/view/general-settings.php:390 admin/view/general-settings.php:405
-#: admin/view/general-settings.php:420
-#: admin/view/partial/gallery-content.php:183
-#: admin/view/partial/gallery-content.php:201
-#: admin/view/partial/gallery-content.php:222
-#: admin/view/partial/gallery-content.php:240
-#: admin/view/partial/gallery-content.php:277
-#: admin/view/partial/gallery-content.php:295
-#: admin/view/partial/gallery-content.php:316
+#: admin/view/general-settings.php:325 admin/view/general-settings.php:363
+#: admin/view/general-settings.php:398 admin/view/general-settings.php:413
+#: admin/view/general-settings.php:428
+#: admin/view/partial/gallery-content.php:187
+#: admin/view/partial/gallery-content.php:206
+#: admin/view/partial/gallery-content.php:285
+#: admin/view/partial/gallery-content.php:303
+#: admin/view/partial/gallery-content.php:324
+#: admin/view/partial/gallery-content.php:342
+#: admin/view/partial/gallery-content.php:363
+#: admin/view/partial/gallery-content.php:381
 #: admin/view/partial/gallery-content.php:402
-#: admin/view/partial/gallery-content.php:421
-#: admin/view/partial/gallery-content.php:521
-#: admin/view/partial/gallery-content.php:544
+#: admin/view/partial/gallery-content.php:483
+#: admin/view/partial/gallery-content.php:555
+#: admin/view/partial/gallery-content.php:577
 #: admin/view/partial/gallery-styles.php:108
 #: admin/view/partial/gallery-styles.php:186
 #: admin/view/partial/gallery-styles.php:205
@@ -604,26 +605,30 @@ msgstr ""
 msgid "Include Books in Post Category"
 msgstr ""
 
-#: admin/view/general-settings.php:366
+#: admin/view/general-settings.php:347
+msgid "Display Sidebar in Archive Page"
+msgstr ""
+
+#: admin/view/general-settings.php:374
 msgid "Source"
 msgstr ""
 
-#: admin/view/general-settings.php:367
+#: admin/view/general-settings.php:375
 msgid "Alter Text"
 msgstr ""
 
-#: admin/view/general-settings.php:368
+#: admin/view/general-settings.php:376
 msgid "Choose Icon"
 msgstr ""
 
-#: admin/view/general-settings.php:369
+#: admin/view/general-settings.php:377
 msgid "Button Color"
 msgstr ""
 
-#: admin/view/general-settings.php:445
-#: admin/view/partial/gallery-content.php:587
+#: admin/view/general-settings.php:453
+#: admin/view/partial/gallery-content.php:610
 #: admin/view/partial/gallery-styles.php:608
-#: admin/view/partial/search-content.php:428
+#: admin/view/partial/search-content.php:431
 #: admin/view/partial/search-styles.php:335
 #: admin/view/partial/single-content.php:721
 #: admin/view/partial/single-styles.php:559
@@ -648,7 +653,7 @@ msgid "Primary Author"
 msgstr ""
 
 #: admin/view/partial/book-information.php:71
-#: admin/view/partial/gallery-content.php:92
+#: admin/view/partial/gallery-content.php:93
 msgid "Publisher"
 msgstr ""
 
@@ -661,9 +666,9 @@ msgid "Published On"
 msgstr ""
 
 #: admin/view/partial/book-information.php:110
-#: admin/view/partial/search-content.php:68
-#: admin/view/partial/search-content.php:294
-#: admin/view/partial/search-content.php:313
+#: admin/view/partial/search-content.php:71
+#: admin/view/partial/search-content.php:297
+#: admin/view/partial/search-content.php:316
 msgid "ISBN"
 msgstr ""
 
@@ -681,12 +686,12 @@ msgid "Pages"
 msgstr ""
 
 #: admin/view/partial/book-information.php:166
-#: admin/view/partial/gallery-content.php:95
+#: admin/view/partial/gallery-content.php:96
 msgid "Country"
 msgstr ""
 
 #: admin/view/partial/book-information.php:174
-#: admin/view/partial/gallery-content.php:94
+#: admin/view/partial/gallery-content.php:95
 msgid "Language"
 msgstr ""
 
@@ -816,11 +821,11 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
-#: admin/view/partial/book-information.php:496 wp-books-gallery.php:164
+#: admin/view/partial/book-information.php:496 wp-books-gallery.php:165
 msgid "Active"
 msgstr ""
 
-#: admin/view/partial/book-information.php:499 wp-books-gallery.php:164
+#: admin/view/partial/book-information.php:499 wp-books-gallery.php:165
 msgid "Inactive"
 msgstr ""
 
@@ -829,7 +834,7 @@ msgid "Gallery Template"
 msgstr ""
 
 #: admin/view/partial/gallery-content.php:23
-msgid "Grid"
+msgid "Grid Full"
 msgstr ""
 
 #: admin/view/partial/gallery-content.php:24
@@ -840,117 +845,108 @@ msgstr ""
 msgid "Grid Classic"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:29
+#: admin/view/partial/gallery-content.php:26
+msgid "Grid Only Image"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:30
 msgid "Gallery Columns"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:32
+#: admin/view/partial/gallery-content.php:33
 msgid "Desktop"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:43
+#: admin/view/partial/gallery-content.php:44
 msgid "Mobile"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:45
+#: admin/view/partial/gallery-content.php:46
 msgid "1"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:46
+#: admin/view/partial/gallery-content.php:47
 msgid "2"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:53
+#: admin/view/partial/gallery-content.php:54
 msgid "Image Size"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:57
+#: admin/view/partial/gallery-content.php:58
 msgid "Default - 200 x 0"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:58
+#: admin/view/partial/gallery-content.php:59
 msgid "Thumbnail - 150 x 150"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:59
+#: admin/view/partial/gallery-content.php:60
 msgid "Medium - 300 x 300"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:60
+#: admin/view/partial/gallery-content.php:61
 msgid "Full - 500 x 0"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:64
+#: admin/view/partial/gallery-content.php:65
 msgid "Image Animation"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:68
+#: admin/view/partial/gallery-content.php:69
 msgid "None"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:69
+#: admin/view/partial/gallery-content.php:70
 msgid "Rotate 360"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:73
+#: admin/view/partial/gallery-content.php:74
 msgid "Flip"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:83
+#: admin/view/partial/gallery-content.php:84
 msgid "Books Sorting By"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:87
+#: admin/view/partial/gallery-content.php:88
 msgid "Select One"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:88
+#: admin/view/partial/gallery-content.php:89
 msgid "Name"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:89
+#: admin/view/partial/gallery-content.php:90
 msgid "Slug/Url"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:91
+#: admin/view/partial/gallery-content.php:92
 msgid "Post Date"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:93
+#: admin/view/partial/gallery-content.php:94
 msgid "Book Published Date"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:96
+#: admin/view/partial/gallery-content.php:97
 msgid "Rand"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:100
-#: admin/view/partial/search-content.php:84
-#: admin/view/partial/search-content.php:113
-#: admin/view/partial/search-content.php:142
-#: admin/view/partial/search-content.php:171
-#: admin/view/partial/search-content.php:200
-#: admin/view/partial/search-content.php:231
-#: admin/view/partial/search-content.php:260
-#: admin/view/partial/search-content.php:329
-#: admin/view/partial/search-content.php:358
+#: admin/view/partial/gallery-content.php:101
+#: admin/view/partial/search-content.php:87
+#: admin/view/partial/search-content.php:116
+#: admin/view/partial/search-content.php:145
+#: admin/view/partial/search-content.php:174
+#: admin/view/partial/search-content.php:203
+#: admin/view/partial/search-content.php:234
+#: admin/view/partial/search-content.php:263
+#: admin/view/partial/search-content.php:332
+#: admin/view/partial/search-content.php:361
 msgid "Order By"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:104
-#: admin/view/partial/search-content.php:88
-#: admin/view/partial/search-content.php:117
-#: admin/view/partial/search-content.php:146
-#: admin/view/partial/search-content.php:175
-#: admin/view/partial/search-content.php:204
-#: admin/view/partial/search-content.php:235
-#: admin/view/partial/search-content.php:264
-#: admin/view/partial/search-content.php:333
-#: admin/view/partial/search-content.php:362
-msgid "Ascending"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:107
+#: admin/view/partial/gallery-content.php:105
 #: admin/view/partial/search-content.php:91
 #: admin/view/partial/search-content.php:120
 #: admin/view/partial/search-content.php:149
@@ -960,189 +956,195 @@ msgstr ""
 #: admin/view/partial/search-content.php:267
 #: admin/view/partial/search-content.php:336
 #: admin/view/partial/search-content.php:365
+msgid "Ascending"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:108
+#: admin/view/partial/search-content.php:94
+#: admin/view/partial/search-content.php:123
+#: admin/view/partial/search-content.php:152
+#: admin/view/partial/search-content.php:181
+#: admin/view/partial/search-content.php:210
+#: admin/view/partial/search-content.php:241
+#: admin/view/partial/search-content.php:270
+#: admin/view/partial/search-content.php:339
+#: admin/view/partial/search-content.php:368
 msgid "Descending"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:113
+#: admin/view/partial/gallery-content.php:114
 msgid "Disable Book Details Page / Enable Popup"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:120
+#: admin/view/partial/gallery-content.php:121
 msgid "Detail Page in New Tab"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:129
+#: admin/view/partial/gallery-content.php:130
 msgid "Title Word Length"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:137
+#: admin/view/partial/gallery-content.php:136
+msgid "Display Total Books"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:146
+msgid "Books Per Page"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:159
+msgid "Display Pagination"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:165
+#: admin/view/partial/gallery-content.php:443
+#: admin/view/partial/gallery-content.php:462
+#: admin/view/partial/gallery-content.php:505
+#: admin/view/partial/gallery-content.php:523
+msgid "Available in Premium"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:181
+msgid "Display Front Sorting"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:200
+msgid "Sorting Options"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:215
+msgid "Allowed options: latest, oldestFirst, titleAsc, titleDesc, priceLH, priceHL"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:223
 msgid "Book Info"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:143
-#: admin/view/partial/search-content.php:78
-#: admin/view/partial/single-content.php:214
-msgid "Display Category"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:150
-msgid "Category Label Text"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:153
-#: admin/view/partial/gallery-styles.php:221
-msgid "Category"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:160
-#: admin/view/partial/search-content.php:165
-#: admin/view/partial/single-content.php:199
-msgid "Display Author"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:167
-msgid "Author Label Text"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:170
-msgid "By:"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:177
-#: admin/view/partial/single-content.php:419
-msgid "Display Edition"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:195
-msgid "Edition Label Text"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:216
-#: admin/view/partial/single-content.php:265
-msgid "Display Publish Date"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:234
-msgid "Publish Date Label Text"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:255
+#: admin/view/partial/gallery-content.php:229
 #: admin/view/partial/single-content.php:528
 msgid "Display Description"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:262
-msgid "Description Word Length"
+#: admin/view/partial/gallery-content.php:236
+msgid "Word Length"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:271
-#: admin/view/partial/search-content.php:194
+#: admin/view/partial/gallery-content.php:245
+#: admin/view/partial/search-content.php:81
+#: admin/view/partial/single-content.php:214
+msgid "Display Category"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:252
+#: admin/view/partial/gallery-content.php:269
+#: admin/view/partial/gallery-content.php:297
+#: admin/view/partial/gallery-content.php:336
+#: admin/view/partial/gallery-content.php:375
+msgid "Label Text"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:255
+#: admin/view/partial/gallery-styles.php:221
+msgid "Category"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:262
+#: admin/view/partial/search-content.php:168
+#: admin/view/partial/single-content.php:199
+msgid "Display Author"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:272
+msgid "By:"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:279
+#: admin/view/partial/single-content.php:419
+msgid "Display Edition"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:318
+#: admin/view/partial/single-content.php:265
+msgid "Display Publish Date"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:357
+#: admin/view/partial/search-content.php:197
 #: admin/view/partial/single-content.php:229
 msgid "Display Publisher"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:289
-msgid "Publisher Label Text"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:310
+#: admin/view/partial/gallery-content.php:396
 msgid "Hide Format"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:331
+#: admin/view/partial/gallery-content.php:416
+msgid "Other Settings"
+msgstr ""
+
+#: admin/view/partial/gallery-content.php:421
 msgid "Display Download Button"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:338
-#: admin/view/partial/gallery-content.php:366
-#: admin/view/partial/search-content.php:392
+#: admin/view/partial/gallery-content.php:428
+#: admin/view/partial/gallery-content.php:456
+#: admin/view/partial/search-content.php:395
 msgid "Button Text"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:341
+#: admin/view/partial/gallery-content.php:431
 msgid "Download"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:347
+#: admin/view/partial/gallery-content.php:437
 msgid "Display Buy Now Button"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:353
-#: admin/view/partial/gallery-content.php:372
-#: admin/view/partial/gallery-content.php:458
-#: admin/view/partial/gallery-content.php:489
-msgid "Available in Premium"
+#: admin/view/partial/gallery-content.php:477
+msgid "Button Fixed Alignment"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:387
-msgid "Display Total Books"
+#: admin/view/partial/gallery-content.php:491
+msgid "This will display button in a stright line."
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:396
-msgid "Display Front Sorting"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:415
-msgid "Sorting Options"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:430
-msgid "Allowed options: latest, oldestFirst, titleAsc, titleDesc, priceLH, priceHL"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:439
-msgid "Books Per Page"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:452
-msgid "Display Pagination"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:473
+#: admin/view/partial/gallery-content.php:499
 #: admin/view/partial/single-content.php:703
 msgid "Hide Price"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:483
+#: admin/view/partial/gallery-content.php:517
 msgid "Currency"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:515
-msgid "Button Bottom Align"
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:529
-msgid "This will display button in a stright line."
-msgstr ""
-
-#: admin/view/partial/gallery-content.php:538
+#: admin/view/partial/gallery-content.php:549
 #: widget/cls-books-gallery-widget.php:174
 msgid "Display Rating"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:552
+#: admin/view/partial/gallery-content.php:563
 msgid "WP Customer Reviews Plugin Integration Required For This Feature."
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:560
+#: admin/view/partial/gallery-content.php:571
 msgid "Publish Date Format"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:564
+#: admin/view/partial/gallery-content.php:584
 #: admin/view/partial/single-content.php:282
 msgid "Full"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:567
+#: admin/view/partial/gallery-content.php:587
 #: admin/view/partial/single-content.php:285
 msgid "Only Year"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:575
+#: admin/view/partial/gallery-content.php:598
 msgid "Shortcode:"
 msgstr ""
 
-#: admin/view/partial/gallery-content.php:580
+#: admin/view/partial/gallery-content.php:603
 msgid "Copy this shortcode and apply it to any page to display books gallery."
 msgstr ""
 
@@ -1333,121 +1335,125 @@ msgstr ""
 msgid "Display Search Panel"
 msgstr ""
 
-#: admin/view/partial/search-content.php:28
+#: admin/view/partial/search-content.php:29
 msgid "Search Items"
 msgstr ""
 
-#: admin/view/partial/search-content.php:40
+#: admin/view/partial/search-content.php:30
+msgid "Drag & drop to sort them at the front search panel"
+msgstr ""
+
+#: admin/view/partial/search-content.php:43
 msgid "Display Book Name"
 msgstr ""
 
-#: admin/view/partial/search-content.php:46
-#: admin/view/partial/search-content.php:65
-#: admin/view/partial/search-content.php:291
-#: admin/view/partial/search-content.php:310
+#: admin/view/partial/search-content.php:49
+#: admin/view/partial/search-content.php:68
+#: admin/view/partial/search-content.php:294
+#: admin/view/partial/search-content.php:313
 msgid "Placeholder Text"
 msgstr ""
 
-#: admin/view/partial/search-content.php:49
+#: admin/view/partial/search-content.php:52
 msgid "Book Name"
 msgstr ""
 
-#: admin/view/partial/search-content.php:59
+#: admin/view/partial/search-content.php:62
 #: admin/view/partial/single-content.php:290
 msgid "Display ISBN"
 msgstr ""
 
-#: admin/view/partial/search-content.php:94
-#: admin/view/partial/search-content.php:123
-#: admin/view/partial/search-content.php:152
-#: admin/view/partial/search-content.php:181
-#: admin/view/partial/search-content.php:210
-#: admin/view/partial/search-content.php:241
-#: admin/view/partial/search-content.php:270
-#: admin/view/partial/search-content.php:339
-#: admin/view/partial/search-content.php:368
+#: admin/view/partial/search-content.php:97
+#: admin/view/partial/search-content.php:126
+#: admin/view/partial/search-content.php:155
+#: admin/view/partial/search-content.php:184
+#: admin/view/partial/search-content.php:213
+#: admin/view/partial/search-content.php:244
+#: admin/view/partial/search-content.php:273
+#: admin/view/partial/search-content.php:342
+#: admin/view/partial/search-content.php:371
 msgid "Default Option"
 msgstr ""
 
-#: admin/view/partial/search-content.php:97
+#: admin/view/partial/search-content.php:100
 msgid "All Categories"
 msgstr ""
 
-#: admin/view/partial/search-content.php:107
+#: admin/view/partial/search-content.php:110
 msgid "Display Year"
 msgstr ""
 
-#: admin/view/partial/search-content.php:126
+#: admin/view/partial/search-content.php:129
 msgid "All Years"
 msgstr ""
 
-#: admin/view/partial/search-content.php:136
+#: admin/view/partial/search-content.php:139
 #: admin/view/partial/single-content.php:356
 msgid "Display Language"
 msgstr ""
 
-#: admin/view/partial/search-content.php:155
+#: admin/view/partial/search-content.php:158
 msgid "All Languages"
 msgstr ""
 
-#: admin/view/partial/search-content.php:213
+#: admin/view/partial/search-content.php:216
 msgid "All Publishers"
 msgstr ""
 
-#: admin/view/partial/search-content.php:225
+#: admin/view/partial/search-content.php:228
 msgid "Display Book Format"
 msgstr ""
 
-#: admin/view/partial/search-content.php:254
+#: admin/view/partial/search-content.php:257
 #: admin/view/partial/single-content.php:82
 msgid "Display Series"
 msgstr ""
 
-#: admin/view/partial/search-content.php:285
+#: admin/view/partial/search-content.php:288
 #: admin/view/partial/single-content.php:308
 msgid "Display ISBN-13"
 msgstr ""
 
-#: admin/view/partial/search-content.php:304
+#: admin/view/partial/search-content.php:307
 msgid "Display Tags"
 msgstr ""
 
-#: admin/view/partial/search-content.php:323
+#: admin/view/partial/search-content.php:326
 msgid "Display Co-Author"
 msgstr ""
 
-#: admin/view/partial/search-content.php:342
+#: admin/view/partial/search-content.php:345
 msgid "All Co-Authors"
 msgstr ""
 
-#: admin/view/partial/search-content.php:352
+#: admin/view/partial/search-content.php:355
 #: admin/view/partial/single-content.php:121
 msgid "Display Reading Age"
 msgstr ""
 
-#: admin/view/partial/search-content.php:387
+#: admin/view/partial/search-content.php:390
 #: admin/view/partial/search-styles.php:184
 msgid "Search Button"
 msgstr ""
 
-#: admin/view/partial/search-content.php:395
-#: admin/view/partial/search-content.php:415
+#: admin/view/partial/search-content.php:398
+#: admin/view/partial/search-content.php:418
 msgid "Search Books"
 msgstr ""
 
-#: admin/view/partial/search-content.php:401
+#: admin/view/partial/search-content.php:404
 msgid "Refresh Button"
 msgstr ""
 
-#: admin/view/partial/search-content.php:406
+#: admin/view/partial/search-content.php:409
 msgid "Hide Button"
 msgstr ""
 
-#: admin/view/partial/search-content.php:412
+#: admin/view/partial/search-content.php:415
 msgid "Button Icon"
 msgstr ""
 
-#: admin/view/partial/search-content.php:418
+#: admin/view/partial/search-content.php:421
 msgid "Display as Text"
 msgstr ""
 
@@ -1807,11 +1813,11 @@ msgstr ""
 msgid "Import Books"
 msgstr ""
 
-#: core/gallery-content.php:252
+#: core/gallery-content.php:253
 msgid "« "
 msgstr ""
 
-#: core/gallery-content.php:253
+#: core/gallery-content.php:254
 msgid " »"
 msgstr ""
 
@@ -1826,8 +1832,8 @@ msgstr ""
 #: front/view/featured-content.php:21 front/view/featured-content.php:27
 #: front/view/featured-content.php:30 front/view/single-book.php:33
 #: front/view/single/before-title.php:53 front/view/slide.php:20
-#: front/view/slide.php:27 front/view/slide.php:30 wp-books-gallery.php:148
-#: wp-books-gallery.php:154
+#: front/view/slide.php:27 front/view/slide.php:30 wp-books-gallery.php:149
+#: wp-books-gallery.php:155
 msgid "No Image Available"
 msgstr ""
 
@@ -1872,7 +1878,7 @@ msgstr ""
 msgid "By"
 msgstr ""
 
-#: front/view/single-modal.php:31 wp-books-gallery.php:131
+#: front/view/single-modal.php:31 wp-books-gallery.php:132
 msgid "Tags"
 msgstr ""
 
@@ -1911,7 +1917,7 @@ msgstr ""
 msgid "px"
 msgstr ""
 
-#: widget/cls-books-gallery-widget.php:150 wp-books-gallery.php:128
+#: widget/cls-books-gallery-widget.php:150 wp-books-gallery.php:129
 msgid "Book Title"
 msgstr ""
 
@@ -1932,18 +1938,18 @@ msgstr ""
 msgid "Buy Button"
 msgstr ""
 
-#: wp-books-gallery.php:127
+#: wp-books-gallery.php:128
 msgid "Book Cover"
 msgstr ""
 
-#: wp-books-gallery.php:132
+#: wp-books-gallery.php:133
 msgid "Book Status"
 msgstr ""
 
-#: wp-books-gallery.php:133
+#: wp-books-gallery.php:134
 msgid "Published Date"
 msgstr ""
 
-#: wp-books-gallery.php:196
+#: wp-books-gallery.php:197
 msgid "Books Gallery Slug"
 msgstr ""

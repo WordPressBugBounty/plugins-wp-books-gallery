@@ -825,6 +825,21 @@ a.button.wbg-btn.single-book {
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 
 @media only screen and (min-width: 1025px) {
+    .wbg-main-wrapper.wbg-product-column-10 {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    .wbg-main-wrapper.wbg-product-column-9 {
+        grid-template-columns: repeat(9, 1fr);
+    }
+    .wbg-main-wrapper.wbg-product-column-8 {
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .wbg-main-wrapper.wbg-product-column-7 {
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .wbg-main-wrapper.wbg-product-column-6 {
+        grid-template-columns: repeat(6, 1fr);
+    }
     .wbg-main-wrapper.wbg-product-column-5 {
         grid-template-columns: repeat(5, 1fr);
     }
@@ -836,6 +851,9 @@ a.button.wbg-btn.single-book {
     }
     .wbg-main-wrapper.wbg-product-column-2 {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .wbg-main-wrapper.wbg-product-column-1 {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

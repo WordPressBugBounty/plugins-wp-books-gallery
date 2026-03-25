@@ -174,7 +174,7 @@ class WBG_Front {
     function wbg_load_tag_template( $template ) {
         global $post;
         if ( 'books' === $post->post_type ) {
-            return WBG_PATH . 'front/view/tag.php';
+            return WBG_PATH . 'front/view/archive.php';
         }
         return $template;
     }
@@ -276,6 +276,13 @@ class WBG_Front {
         include WBG_PATH . 'front/view/single-search.php';
         $output .= ob_get_clean();
         return $output;
+    }
+
+    function wbg_load_book_structure_data() {
+        global $post;
+        if ( 'books' === $post->post_type ) {
+            include_once WBG_PATH . 'front/view/structure-data.php';
+        }
     }
 
 }

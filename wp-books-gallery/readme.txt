@@ -1,141 +1,94 @@
-=== HM Books Gallery - Build a Book Showcase, Store or a Library in minutes ===
+=== WP Books Gallery – Build Stunning Book Showcases & Libraries in Minutes ===
 Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
-Tags: affiliate marketing, books, book, pdf, documents
+Tags: book gallery, book showcase, book library, book catalog, book review
 Requires at least: 5.4
-Tested up to: 6.9
-Stable tag: 4.7.8
+Tested up to: 6.9.4
+Stable tag: 4.7.9
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Book Gallery will build a mobile-friendly Book Store, Showcase or Library in a few minutes. You can also display pdfs, documents in a grid/list view.
+WordPress Book Gallery will build a mobile-friendly book gallery, book showcase, or book library in a few minutes.
 
 == Description ==
 
-**WordPress Book Gallery** is the **Best Book Showcase & Library Plugin for WordPress** which will build a beautiful mobile-friendly Book Store, Book Gallery or a Digital Library in a few minutes.
+**WordPress Book Gallery is a powerful Book Showcase plugin for WordPress that lets you create beautiful book galleries, catalogs, and digital libraries in minutes.**
 
-Although this plugin is called **Books Gallery**, you can also use this plugin as your PDFs library or Documents organizer and display them in a list or grid view.
+**WordPress Book Gallery** lets you easily display books with cover images, author details, descriptions, ratings, and affiliate or purchase links — no coding required.
 
-**Here are 3 Simple reasons why you should start using WordPress Book Gallery Plugin on your website:**
+
+**🔧 Who Should Use This Plugin?**
+
+* Authors & Publishers – showcase your books professionally
+* Book Bloggers & Reviewers – attract readers and improve SEO
+* Libraries & Bookstores – organize collections online
+* Affiliate Marketers – monetize book recommendations easily
+
+
+**✨ Why WP Books Gallery?**
+
+* Display books in **grid, slider, or list layouts**
+
+* Showcase **author, ISBN, publisher, and rating info**
+
+* Add **affiliate or buy links** for monetization
+
+* Fully compatible with Page Builder
+
+* Perfect for **book review sites, libraries, bookstores, and affiliate marketers**
+
 
 **✅ Online Digital Library**
 
-With this WordPress Digital Library Plugin you can create your own online book store to showcase your books. Visitors can download books for free or buy them from a third party site. 
+With this WordPress Digital Library Plugin you can create your own online book store to showcase your books. Visitors can download books for free or buy them from a third party site.
 
-**✅ Easy Affiliate Marketing**
 
-Earn a commission for marketing another person’s or company’s books. Build, manage, and scale the online business you want.
+**✅ Perfect for Book Review & Affiliate Websites**
+
+Create beautiful book lists like:
+
+✔ Best programming books
+✔ Top self-help books
+✔ Must-read business books
+✔ Book review websites
+
+Add Amazon or affiliate links to each book and monetize your content.
+
 
 **✅ Sell Books Directly**
 
-You are an author or publisher and you have books to sell. Sell it directly from your site. Easy and Quick setup with WooCommerce. 
+You are an author or publisher and you have books to sell. Sell it directly from your site. Easy and Quick setup with WooCommerce.
+
+
+**✅ WordPress Book Showcase Plugin**
+
+✔ Display book covers
+✔ Show book details
+✔ Add buy links
+✔ Create book lists
+
 
 **How It Works!**
 
 [youtube https://youtu.be/0L8B1nHQjWg]
-
-When you click on a book, it will open with a detail page, where you will find Book Cover, Author, Published On, Publisher, ISBN, Total Pages, Country, Language, Book Dimensions, File Size, Description etc. 
-Use the shortcode: [wp_books_gallery] to display your books in your web page.
-
-WordPress Books Gallery Plugin is a simple, effective and powerful plugin to Self Publish your desired Books.
 
 [__Live Demo__](https://books-gallery.com/demo/)
 
 [Read more about WordPress Books Gallery](https://books-gallery.com/).
 
 
-**🌟 Plugin Features:**
+**🌟 Key Features:**
 
-* Easy to install
-* Fully integrated in WordPress
-* Display books in catalog/showcase style
-* Lots of customization options
-* Fully Responsive Plugin
-* Search By Various Options
-* Active/Inactive Book
-* Number Of Books To Be Shown ( Using Shortcode & Paid )
-* Display Books By Category  ( Using Shortcode )
-* Pagination ( Using Shortcode and Paid )
-* Search By ISBN
-* Search By Language
-* Search By Published Year
-* Display total number of books
-* Can be used as an Amazon Affiliate Plugin
-* Can be integrated to WooCommerce and sell Books
-* Book Reviews & Ratings
-* Font Awesome Free 6.1.1 integrated
-* Can be use as your PDFs library
-* Can be use as Documents organizer
+👉 **Book Galleries & Showcases –** beautiful grid, slider, and list layouts
+👉 **Book Metadata –** author, publisher, ISBN, language, and more
+👉 **Ratings & Reviews –** star ratings to engage visitors
+👉 **Affiliate Links & Buy Buttons –** monetize your book lists
+👉 **Search & Filters -** fully customizable search panel
+👉 **Sale Books Directly -** using WooCommerce
+👉 **Customizable Layouts –** responsive and mobile-friendly
+👉 **Import Books -** import books using csv or API from Google Books using ISBN
 
-
-**✅ Options In Gallery Settings**
-
-* Number of showing Gallery columns 2,3 and 4
-* Number of showing Gallery columns in Mobile 1 or 2
-* Sorting By Name, Author, Date etc.
-* Open Book Details On Same Tab Or A New Tab
-* Book Title Word Legth
-* Show/Hide Category
-* Category Label Text
-* Show/Hide Author
-* Author Label Text
-* Show/Hide Description
-* Description Word Length
-* Show/Hide BuyNow/Download Button
-* BuyNow/Download Button Text
-* Books display order ASC/DESC
-* Enable/Disable books details page
-* Books cover width full/default
-* BuyNow/Download Button Text/Background Color Option
-
-
-**✅ Options In Search Panel**
-
-* Show/Hide Search Panel
-* Show/Hide Search By Book Name
-* Show/Hide Search By Category
-* Show/Hide Search By Author
-* Show/Hide Search By Publisher
-* Search Books Button Text
-* Search Books Button BG Color
-* Search Books Button Font Color
-* Search Books Button Border Color
-* Category Order ASC/DESC in Search Panel
-* Author Order ASC/DESC in Search Panel
-* Publisher Order ASC/DESC in Search Panel
-* Show/Hide Year Search Option
-* ASC/DESC Year Order in Search Panel
-* Show/Hide ISBN Seacrh Option
-* Set Default Option for Search Dropdown Items
-
-
-**✅ Options In Books Details Settings**
-
-* Display Author and Author Label Text
-* Display Category and Category Label Text
-* Display Publisher and Publisher Label Text
-* Display Publish Date and Publish Date Label Text
-* Display ISBN and ISBN Label Text
-* Display Pages and Pages Label Text
-* Display Country and Country Label Text
-* Display Language and Language Label Text
-* Display Dimension and Dimension Label Text
-* Display File Size and File Size Label Text
-* Display BuyNow / Download Button
-* Display Description and Description Label Text
-* Published Date Format: Full / Year
-* Showing the book’s tags in details page
-
-
-<strong> How to Build an Amazon Affiliate Store: </strong>
-
-https://youtu.be/vtUQnuNAIRA
-
-
-<strong> How to Sell eBook With WooCommerce: </strong>
-
-https://youtu.be/nR_3v1TkaZo
 
 
 ➡️ Usage of Shortcode:⬅️
@@ -150,69 +103,46 @@ https://youtu.be/nR_3v1TkaZo
 
 **🌟 Pro Features - Basic**
 
-* Unlimited Books
-* Enable Paginaton
-* Book Cost Type: Free / Premium
-* Display Book Price: Regular and Discount
-* 115 Currency Available
-* Display Price at Gallery Page
-* Two Separate Book Links: Free Download and Buy From
-* Show-Hide total books via Shortcode
-* Show-Hide Seacrh Panel via Shortcode
-* Display Books of an Author via Shortcode
-* Book Format like Hard Cover, Audio Book, Kindle Edition, Paperback etc.
-* Book Series
-* Display Books by Language with Shortcode
-* Order By - Title, Date, Author etc. with Shortcode
+* Display Unlimited Books With Paginaton
+* Display Book Price (Regular and Discounted) with 115 Currencies
+* Two Separate Buttons: Download and Buy Now
+* Extra Shortcoded Options Like: Show-Hide Total Books, Seach Panel, Authors, Language etc.
+* Book Format and Series
+* Order By - Title, Date, Author etc.
+
 
 **🌟 Pro Features - Professional**
 
-* Display Featured Books With Slider/Grid View
-* Display Latest Books With Slider/Grid View
-* Display Categorized Books With Slider/Grid View
-* Search Panel Item Drag & Drop Sorting
+* Extra Metadata: ISBN-13, Reading Age, Grade Level, Item Weight, Co-Publisher, ASIN, Edition, Illustrator etc.
+* Display Review & Rating
+* Display Featured, Latest, Categorized Books With Slider
+* Display Multiple Authors
+* Display Subtitle in Details Page
+* Up to 15 buttons to sell on different platforms
 * External Book Cover Image Url
-* Display Rating in Gallery Page
-* Display Rating in Single Page
-* Show-Hide Rating Option in Gallery Settings Page
-* Reading Age Info in Book Details Page
-* Grade Level Info in Book Details Page
-* ISBN-13 Option Available
-* Item Weight Option Available
-* Multiple Author Option Available
-* Co-Publisher Option Available
-* Co-Publisher Show-Hide Option Available
+* Latest Books Slider Widget
 * Allow Only Logged-in Users to Download Books
 * Import Books with CSV Format - Addon Available
 * Import Books from Open Library
-* Display Subtitle in Details Page
-* Display ASIN in Book Details
-* Display Edition in Book Details
-* Display Illustrator in Book Details
-* Front end sorting feature
 * Display Book details in popup modal
 * Option for Affiliate Code tag in url
-* Option to align button at bottom
-* Related books slide in single page
-* Author books slide in single page
-* Latest Books Slider Widget
-* Gallery Pagination Styling
-* Multiple Sale Sources (New)
+* Related Books Slider in Single page
+* Author Books slider in Single page
+* Display Author Bio at Book Details Page
 * Display a single book by book-id
 * Books by Category Panel
 * Author List Panel
-* Display Books of an Author Panel
-* Display Author Bio at Book Details Page
+* Individual Author Panel with Book Listing
+* More Styling Options
 
 
-[__Upgrade to Pro!__](https://books-gallery.com/pricing-faq/)
+**➡️ Upgrade to Pro**
+Consider upgrading to [Books Gallery Pro](https://books-gallery.com/pricing-faq/) to unlock advanced features and support ongoing development.
 
 
 **📋 Translation Ready:**
 
 * POT file included (/languages/)
-* Bengoli
-* Farsi (Iran)
 * Spanish (Spain)
 * Spanish (Ecuador)
 * Spanish (Venezuela)
@@ -220,32 +150,21 @@ https://youtu.be/nR_3v1TkaZo
 * Swedish (Sweden)
 * Romanian
 * French (France)
+* Farsi (Iran)
 * Arabic
 * German
 
 
-**👍 Thanks For Translation:**
-
-* Morovat Guivi - Farsi (Iran)
-
-
-**👍 Feedback/Rating:**
-If you find this plugin helpful, feel free to give us your valuable review. Rate us and share this plugin with your friends and others. This will motivate us and help us to grow.
-[Rate Us](https://wordpress.org/support/plugin/wp-books-gallery/reviews/#new-post)
-
-
-
 **🔥 Other Plugins from [HM Plugin](https://hmplugin.com)**
 
-👉 [WordPress Books Showcase Plugin](https://wordpress.org/plugins/wp-books-gallery/) Create an online digital library to sell and affiliate books
-👉 [WordPress Donation Plugin](https://wordpress.org/plugins/wp-stripe-donation/) Create a form to collect donation and payment via Stripe payment gateway
+👉 [WordPress Job Board and Recruitment Plugin](https://wordpress.org/plugins/jobwp/) Create a modern job board and career page on WordPress
+👉 [WordPress Donation Plugin](https://wordpress.org/plugins/wp-stripe-donation/) Accept payments on WordPress with Stripe
 👉 [WordPress News Plugin](https://wordpress.org/plugins/wp-top-news/) Display internal and external news in various layouts
 👉 [WordPress Notification Bar Plugin](https://wordpress.org/plugins/tiny-bar/) Dsiplay message and a button at the top or bottom of your webpage
 👉 [WordPress Author Bio Box Plugin](https://wordpress.org/plugins/hm-cool-author-box-widget/) Displays an author box / author info / auhor bio to your website
 👉 [WordPress Logo Showcase Plugin](https://wordpress.org/plugins/hm-logo-showcase/) Easiest client, brand logo showcase plugin to display logos on your website
 👉 [WordPress Resume Manager Plugin](https://wordpress.org/plugins/hm-resume-manager/) Display and manage personal resume or CV at your WordPress webpage
 👉 [WordPress Restaurant Menu Plugin](https://wordpress.org/plugins/menukaart/) Simplest plugin that displays food items, menus in your webpage
-👉 [WordPress Job Board and Recruitment Plugin](https://wordpress.org/plugins/jobwp/) Easiest Job Board, Career and Recruitment Plugin to display job listing in a career page
 👉 [WordPress Product Showcase Plugin](https://wordpress.org/plugins/hm-product-catalog/) Display products with various informations on your website
 👉 [WordPress Testimonial Plugin](https://wordpress.org/plugins/hm-testimonial/) Displays client’s testimonial, review or quote in multiple ways
 👉 [WordPress FAQ Plugin](https://wordpress.org/plugins/wp-display-faq/) WordPress FAQ Plugin which will display various FAQs in your website
@@ -314,17 +233,24 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 == Screenshots ==
 
-1. Book Gallery Grid View
-2. Book Gallery List View
-3. Book Gallery Single Page View
-4. Book Gallery Featured Books View (Pro)
-5. Books Gallery Content Settings Page
-6. Books Gallery Styling Settings Page
-7. Book Gallery Search Panel Settings Page
-8. Book Gallery Single Page Settings Page
+1. Book showcase grid layout
+2. Interactive Book Slider (Pro)
+3. Add Affiliate Buy Links
+4. Author, ISBN, Ratings & more
+5. Organize Books by Category
 
 
 == Changelog ==
+
+= 4.7.9 =
+* Improved compatibility with the latest WordPress version
+* Sidebar added to the archive and tag pages
+* Gallery with only image template introduced
+* Gallery columns shortcode option added
+* Cover size shortcode option added
+* Fixed reported bug
+* Improved usability
+* Freemius SDK updated to 2.13.1
 
 = 4.7.8 =
 * Added book gallery slug option in permalink settings
