@@ -25,9 +25,8 @@ $wbgReviews = get_posts( array(
             'value'   => $post->ID,
             'compare' => '='
         ),
-        ),
-    )
-);
+    ),
+));
 
 if ( ! empty( $wbgReviews ) ) {
     $star_sum = 0;
@@ -44,18 +43,24 @@ if ( ! empty( $wbgReviews ) ) {
 ?>
 <script type="application/ld+json">
 {
- "@context": "https://schema.org",
- "@type": "Book",
- "name": "<?php echo get_the_title(); ?>",
- "author": {
-   "@type": "Person",
-   "name": "<?php echo ( ! empty( $wbgAuthor ) ) ? $wbgAuthor : ''; ?>"
- },
- "image": "<?php esc_html_e( $wbg_img ); ?>",
- "aggregateRating": {
-   "@type": "AggregateRating",
-   "ratingValue": "<?php esc_html_e( $hmt_star ); ?>",
-   "reviewCount": "<?php esc_html_e( $star_count ); ?>"
- }
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "<?php echo get_the_title(); ?>",
+    "author": {
+        "@type": "Person",
+        "name": "<?php echo ( ! empty( $wbgAuthor ) ) ? $wbgAuthor : ''; ?>"
+    },
+    "image": "<?php esc_html_e( $wbg_img ); ?>",
+    <?php
+    if ( ! empty( $wbgReviews ) ) {
+        ?>
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "<?php esc_html_e( $hmt_star ); ?>",
+            "reviewCount": "<?php esc_html_e( $star_count ); ?>"
+        }
+        <?php
+    }
+    ?>
 }
 </script>
