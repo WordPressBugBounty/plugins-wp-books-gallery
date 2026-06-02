@@ -87,7 +87,9 @@
         '#wbg_back_btn_bg_color',
         '#wbg_back_btn_font_color',
         '#wbg_back_btn_bg_color_hvr',
-        '#wbg_back_btn_font_color_hvr'
+        '#wbg_back_btn_font_color_hvr',
+        '#wbg_single_author_name_font_color',
+        '#wbg_single_author_bio_font_color'
     ];
 
     $.each(wbgColorPicker, function(index, value) {

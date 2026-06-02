@@ -323,6 +323,11 @@ trait Wbg_Core_Settings
                 'type'      => 'boolean',
                 'default'   => false,
             ],
+            [
+                'name'      => 'wbg_google_api_key',
+                'type'      => 'text',
+                'default'   => '',
+            ],
         ];
     }
 }

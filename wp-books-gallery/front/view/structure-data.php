@@ -3,8 +3,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-$wbgAuthor      = get_post_meta( $post->ID, 'wbg_author', true );
-$wbgImgUrl          = get_post_meta( $post->ID, 'wbgp_img_url', true );
+$wbgAuthor  = get_post_meta( $post->ID, 'wbg_author', true );
+$wbgImgUrl  = get_post_meta( $post->ID, 'wbgp_img_url', true );
+$wbgIsbn    = get_post_meta( $post->ID, 'wbg_isbn', true );
 
 if ( has_post_thumbnail( $post->ID ) ) {
     $wbg_img = get_the_post_thumbnail_url($post->ID,'full');
@@ -50,15 +51,20 @@ if ( ! empty( $wbgReviews ) ) {
         "@type": "Person",
         "name": "<?php echo ( ! empty( $wbgAuthor ) ) ? $wbgAuthor : ''; ?>"
     },
-    "image": "<?php esc_html_e( $wbg_img ); ?>",
+    "image": "<?php esc_html_e( $wbg_img ); ?>"
     <?php
     if ( ! empty( $wbgReviews ) ) {
-        ?>
+        ?>,
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "<?php esc_html_e( $hmt_star ); ?>",
             "reviewCount": "<?php esc_html_e( $star_count ); ?>"
         }
+        <?php
+    }
+    if ( ! empty( $wbgIsbn ) ) {
+        ?>,
+        "isbn": "<?php esc_html_e( $wbgIsbn ); ?>"
         <?php
     }
     ?>

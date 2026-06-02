@@ -280,7 +280,7 @@ class WBG_Front {
 
     function wbg_load_book_structure_data() {
         global $post;
-        if ( 'books' === $post->post_type ) {
+        if ( 'books' === get_post_type() ) {
             include_once WBG_PATH . 'front/view/structure-data.php';
         }
     }

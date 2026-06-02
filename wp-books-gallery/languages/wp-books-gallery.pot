@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Books Gallery\n"
-"POT-Creation-Date: 2026-04-15 10:11+0600\n"
+"POT-Creation-Date: 2026-05-31 20:28+0600\n"
 "PO-Revision-Date: 2021-12-27 03:58+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -363,7 +363,7 @@ msgstr ""
 msgid "Book External Image Url"
 msgstr ""
 
-#: admin/cls-books-gallery-admin.php:403 admin/view/general-settings.php:355
+#: admin/cls-books-gallery-admin.php:403 admin/view/general-settings.php:375
 msgid "Multiple Sale Sources"
 msgstr ""
 
@@ -389,6 +389,66 @@ msgstr ""
 
 #: admin/cls-books-gallery-admin.php:752
 msgid "Books Gallery Sidebar"
+msgstr ""
+
+#: admin/view/api-import/header.php:36
+msgid "No Google API Key Found!"
+msgstr ""
+
+#: admin/view/api-import/header.php:91
+msgid "No ISBN Provided!"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:9
+msgid "Import Books From API"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:25
+msgid "This Feature Available in the Professional Version"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:36
+msgid "Import API Source"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:40
+msgid "Open Library"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:43
+msgid "Google Books"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:48
+msgid "Enter ISBN-10 / ISBN-13"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:51
+msgid "ISBN-10, ISBN-13"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:57
+msgid "Use comma between multiple ISBN/s"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:58
+msgid "Recommended size: 20 isbns at a time to avoid timeout"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:59
+msgid "Avoid - simultaneous requests"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:60
+msgid "For Google Books, please enter your Google API key in General Settings -> Google API Key"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:61
+msgid "To create a Google API key check this tutorial"
+msgstr ""
+
+#: admin/view/api-import/settings-page.php:68
+msgid "Import Books"
 msgstr ""
 
 #: admin/view/gallery-settings.php:22 admin/view/search-settings.php:22
@@ -418,9 +478,9 @@ msgstr ""
 #: admin/view/general-settings.php:148 admin/view/general-settings.php:173
 #: admin/view/general-settings.php:231 admin/view/general-settings.php:260
 #: admin/view/general-settings.php:287 admin/view/general-settings.php:305
-#: admin/view/general-settings.php:325 admin/view/general-settings.php:363
-#: admin/view/general-settings.php:398 admin/view/general-settings.php:413
-#: admin/view/general-settings.php:428
+#: admin/view/general-settings.php:325 admin/view/general-settings.php:361
+#: admin/view/general-settings.php:383 admin/view/general-settings.php:418
+#: admin/view/general-settings.php:433 admin/view/general-settings.php:448
 #: admin/view/partial/gallery-content.php:187
 #: admin/view/partial/gallery-content.php:206
 #: admin/view/partial/gallery-content.php:285
@@ -468,9 +528,9 @@ msgstr ""
 #: admin/view/partial/single-content.php:145
 #: admin/view/partial/single-content.php:166
 #: admin/view/partial/single-content.php:184
-#: admin/view/partial/single-content.php:644
-#: admin/view/partial/single-content.php:671
-#: admin/view/partial/single-content.php:689
+#: admin/view/partial/single-content.php:651
+#: admin/view/partial/single-content.php:678
+#: admin/view/partial/single-content.php:696
 #: admin/view/partial/single-styles.php:30
 #: admin/view/partial/single-styles.php:83
 #: admin/view/partial/single-styles.php:102
@@ -484,16 +544,17 @@ msgstr ""
 #: admin/view/partial/single-styles.php:286
 #: admin/view/partial/single-styles.php:305
 #: admin/view/partial/single-styles.php:326
-#: admin/view/partial/single-styles.php:353
-#: admin/view/partial/single-styles.php:372
-#: admin/view/partial/single-styles.php:393
-#: admin/view/partial/single-styles.php:412
-#: admin/view/partial/single-styles.php:431
-#: admin/view/partial/single-styles.php:458
-#: admin/view/partial/single-styles.php:477
-#: admin/view/partial/single-styles.php:496
-#: admin/view/partial/single-styles.php:523
-#: admin/view/partial/single-styles.php:542 admin/view/wbg-api-import.php:200
+#: admin/view/partial/single-styles.php:349
+#: admin/view/partial/single-styles.php:405
+#: admin/view/partial/single-styles.php:424
+#: admin/view/partial/single-styles.php:445
+#: admin/view/partial/single-styles.php:464
+#: admin/view/partial/single-styles.php:483
+#: admin/view/partial/single-styles.php:510
+#: admin/view/partial/single-styles.php:529
+#: admin/view/partial/single-styles.php:548
+#: admin/view/partial/single-styles.php:575
+#: admin/view/partial/single-styles.php:594
 msgid "Available in Professional"
 msgstr ""
 
@@ -609,29 +670,33 @@ msgstr ""
 msgid "Display Sidebar in Archive Page"
 msgstr ""
 
-#: admin/view/general-settings.php:374
+#: admin/view/general-settings.php:355
+msgid "Google API Key"
+msgstr ""
+
+#: admin/view/general-settings.php:394
 msgid "Source"
 msgstr ""
 
-#: admin/view/general-settings.php:375
+#: admin/view/general-settings.php:395
 msgid "Alter Text"
 msgstr ""
 
-#: admin/view/general-settings.php:376
+#: admin/view/general-settings.php:396
 msgid "Choose Icon"
 msgstr ""
 
-#: admin/view/general-settings.php:377
+#: admin/view/general-settings.php:397
 msgid "Button Color"
 msgstr ""
 
-#: admin/view/general-settings.php:453
+#: admin/view/general-settings.php:473
 #: admin/view/partial/gallery-content.php:610
 #: admin/view/partial/gallery-styles.php:608
 #: admin/view/partial/search-content.php:431
 #: admin/view/partial/search-styles.php:335
-#: admin/view/partial/single-content.php:721
-#: admin/view/partial/single-styles.php:559
+#: admin/view/partial/single-content.php:728
+#: admin/view/partial/single-styles.php:611
 msgid "Save Settings"
 msgstr ""
 
@@ -1109,7 +1174,7 @@ msgid "This will display button in a stright line."
 msgstr ""
 
 #: admin/view/partial/gallery-content.php:499
-#: admin/view/partial/single-content.php:703
+#: admin/view/partial/single-content.php:710
 msgid "Hide Price"
 msgstr ""
 
@@ -1159,14 +1224,14 @@ msgstr ""
 #: admin/view/partial/search-styles.php:196
 #: admin/view/partial/search-styles.php:279
 #: admin/view/partial/search-styles.php:324
-#: admin/view/partial/single-styles.php:406
+#: admin/view/partial/single-styles.php:458
 #: widget/cls-books-gallery-widget.php:131
 msgid "Border Color"
 msgstr ""
 
 #: admin/view/partial/gallery-styles.php:31
 #: admin/view/partial/single-styles.php:24
-#: admin/view/partial/single-styles.php:366
+#: admin/view/partial/single-styles.php:418
 msgid "Width"
 msgstr ""
 
@@ -1206,9 +1271,9 @@ msgstr ""
 #: admin/view/partial/search-styles.php:272
 #: admin/view/partial/search-styles.php:310
 #: admin/view/partial/single-styles.php:46
-#: admin/view/partial/single-styles.php:387
-#: admin/view/partial/single-styles.php:452
-#: admin/view/partial/single-styles.php:517
+#: admin/view/partial/single-styles.php:439
+#: admin/view/partial/single-styles.php:504
+#: admin/view/partial/single-styles.php:569
 #: widget/cls-books-gallery-widget.php:141
 #: widget/cls-books-gallery-widget.php:183
 msgid "Background Color"
@@ -1224,7 +1289,7 @@ msgstr ""
 
 #: admin/view/partial/gallery-styles.php:124
 #: admin/view/partial/single-content.php:553
-#: admin/view/partial/single-content.php:568
+#: admin/view/partial/single-content.php:575
 #: admin/view/partial/single-styles.php:72
 #: widget/cls-books-gallery-widget.php:121
 msgid "Title"
@@ -1249,8 +1314,8 @@ msgstr ""
 #: admin/view/partial/single-styles.php:169
 #: admin/view/partial/single-styles.php:234
 #: admin/view/partial/single-styles.php:280
-#: admin/view/partial/single-styles.php:471
-#: admin/view/partial/single-styles.php:536
+#: admin/view/partial/single-styles.php:523
+#: admin/view/partial/single-styles.php:588
 #: widget/cls-books-gallery-widget.php:152
 #: widget/cls-books-gallery-widget.php:163
 #: widget/cls-books-gallery-widget.php:188
@@ -1277,7 +1342,7 @@ msgstr ""
 #: admin/view/partial/single-styles.php:207
 #: admin/view/partial/single-styles.php:253
 #: admin/view/partial/single-styles.php:299
-#: admin/view/partial/single-styles.php:490
+#: admin/view/partial/single-styles.php:542
 #: widget/cls-books-gallery-widget.php:157
 #: widget/cls-books-gallery-widget.php:168
 msgid "Font Size"
@@ -1331,7 +1396,7 @@ msgid "Active Font Color"
 msgstr ""
 
 #: admin/view/partial/search-content.php:20
-#: admin/view/partial/single-content.php:665
+#: admin/view/partial/single-content.php:672
 msgid "Display Search Panel"
 msgstr ""
 
@@ -1462,7 +1527,7 @@ msgid "Search Panel"
 msgstr ""
 
 #: admin/view/partial/search-styles.php:83
-#: admin/view/partial/single-styles.php:425
+#: admin/view/partial/single-styles.php:477
 #: widget/cls-books-gallery-widget.php:126
 msgid "Border Width"
 msgstr ""
@@ -1684,52 +1749,56 @@ msgstr ""
 msgid "Hide Other Books From"
 msgstr ""
 
-#: admin/view/partial/single-content.php:562
+#: admin/view/partial/single-content.php:560
+msgid "Items Per Slide"
+msgstr ""
+
+#: admin/view/partial/single-content.php:569
 msgid "Hide Other Books By"
 msgstr ""
 
-#: admin/view/partial/single-content.php:577
+#: admin/view/partial/single-content.php:584
 msgid "Hide Author Panel"
 msgstr ""
 
-#: admin/view/partial/single-content.php:583
+#: admin/view/partial/single-content.php:590
 msgid "Author Panel Title"
 msgstr ""
 
-#: admin/view/partial/single-content.php:592
+#: admin/view/partial/single-content.php:599
 msgid "Hide Editorial Reviews"
 msgstr ""
 
-#: admin/view/partial/single-content.php:598
-#: admin/view/partial/single-content.php:613
+#: admin/view/partial/single-content.php:605
+#: admin/view/partial/single-content.php:620
 msgid "Editorial Reviews Title"
 msgstr ""
 
-#: admin/view/partial/single-content.php:607
+#: admin/view/partial/single-content.php:614
 msgid "Display Format Price & Buy Url"
 msgstr ""
 
-#: admin/view/partial/single-content.php:625
+#: admin/view/partial/single-content.php:632
 msgid "Hide Back Button"
 msgstr ""
 
-#: admin/view/partial/single-content.php:631
+#: admin/view/partial/single-content.php:638
 msgid "Back Button Label"
 msgstr ""
 
-#: admin/view/partial/single-content.php:638
+#: admin/view/partial/single-content.php:645
 msgid "Back Button Icon"
 msgstr ""
 
-#: admin/view/partial/single-content.php:659
+#: admin/view/partial/single-content.php:666
 msgid "Display Sidebar"
 msgstr ""
 
-#: admin/view/partial/single-content.php:683
+#: admin/view/partial/single-content.php:690
 msgid "Hide Search Panel in Mobile"
 msgstr ""
 
-#: admin/view/partial/single-content.php:710
+#: admin/view/partial/single-content.php:717
 msgid "Hide Load More Button"
 msgstr ""
 
@@ -1750,67 +1819,43 @@ msgid "Anchor Hover Color"
 msgstr ""
 
 #: admin/view/partial/single-styles.php:342
+msgid "Author Panel"
+msgstr ""
+
+#: admin/view/partial/single-styles.php:358
+msgid "Name Font Color"
+msgstr ""
+
+#: admin/view/partial/single-styles.php:365
+msgid "Name Font Size"
+msgstr ""
+
+#: admin/view/partial/single-styles.php:374
+msgid "Bio Font Color"
+msgstr ""
+
+#: admin/view/partial/single-styles.php:381
+msgid "Bio Font Size"
+msgstr ""
+
+#: admin/view/partial/single-styles.php:394
 msgid "Modal Popup"
 msgstr ""
 
-#: admin/view/partial/single-styles.php:347
+#: admin/view/partial/single-styles.php:399
 msgid "Height"
 msgstr ""
 
-#: admin/view/partial/single-styles.php:447
+#: admin/view/partial/single-styles.php:499
 msgid "Back Button"
 msgstr ""
 
-#: admin/view/partial/single-styles.php:512
+#: admin/view/partial/single-styles.php:564
 msgid "Back Button: Hover"
 msgstr ""
 
 #: admin/view/single-settings.php:9
 msgid "Details Settings"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:135
-msgid "Books Imported Successfully"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:144
-msgid "Books Already Imported!"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:156
-msgid "No ISBN Provided!"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:164
-msgid "Import Books From API"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:182
-msgid "Import From"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:186
-msgid "Open Library"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:189
-msgid "Google Books"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:194
-msgid "Provide Your ISBN"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:206
-msgid "ISBN-10, ISBN-13"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:207
-msgid "Use comma between multiple ISBN/s"
-msgstr ""
-
-#: admin/view/wbg-api-import.php:215
-msgid "Import Books"
 msgstr ""
 
 #: core/gallery-content.php:253
@@ -1827,14 +1872,6 @@ msgstr ""
 
 #: freemius/templates/plugin-info/description.php:30
 msgid "selling_point_"
-msgstr ""
-
-#: front/view/featured-content.php:21 front/view/featured-content.php:27
-#: front/view/featured-content.php:30 front/view/single-book.php:33
-#: front/view/single/before-title.php:53 front/view/slide.php:20
-#: front/view/slide.php:27 front/view/slide.php:30 wp-books-gallery.php:149
-#: wp-books-gallery.php:155
-msgid "No Image Available"
 msgstr ""
 
 #: front/view/gallery/sorting-view-mode.php:16
@@ -1872,6 +1909,11 @@ msgstr ""
 
 #: front/view/gallery/sorting-view-mode.php:80
 msgid "View"
+msgstr ""
+
+#: front/view/single-book.php:33 wp-books-gallery.php:149
+#: wp-books-gallery.php:155
+msgid "No Image Available"
 msgstr ""
 
 #: front/view/single-book.php:37

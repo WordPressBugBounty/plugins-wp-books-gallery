@@ -1,10 +1,10 @@
-=== WP Books Gallery – Build Stunning Book Showcases & Libraries in Minutes ===
+=== WP Books Gallery - Build Stunning Book Showcases & Libraries in Minutes ===
 Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: book gallery, book showcase, book library, book catalog, book review
 Requires at least: 5.4
-Tested up to: 6.9.4
-Stable tag: 4.8.1
+Tested up to: 7.0
+Stable tag: 4.8.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,15 +15,15 @@ WordPress Book Gallery will build a mobile-friendly book gallery, book showcase,
 
 **WordPress Book Gallery is a powerful Book Showcase plugin for WordPress that lets you create beautiful book galleries, catalogs, and digital libraries in minutes.**
 
-**WordPress Book Gallery** lets you easily display books with cover images, author details, descriptions, ratings, affiliate links, and SEO-friendly Book Schema — no coding required.
+**WordPress Book Gallery** lets you easily display books with cover images, author details, descriptions, ratings, affiliate links, and SEO-friendly Book Schema - no coding required.
 
 
 **🔧 Who Should Use This Plugin?**
 
-* Authors & Publishers – showcase your books professionally
-* Book Bloggers & Reviewers – attract readers and improve SEO
-* Libraries & Bookstores – organize collections online
-* Affiliate Marketers – monetize book recommendations easily
+* Authors & Publishers - showcase your books professionally
+* Book Bloggers & Reviewers - attract readers and improve SEO
+* Libraries & Bookstores - organize collections online
+* Affiliate Marketers - monetize book recommendations easily
 
 
 **✨ Why WP Books Gallery?**
@@ -82,15 +82,17 @@ You are an author or publisher and you have books to sell. Sell it directly from
 
 **🌟 Key Features:**
 
-👉 **Book Galleries & Showcases –** beautiful grid, slider, and list layouts
-👉 **Book Metadata –** author, publisher, ISBN, language, and more
-👉 **Ratings & Reviews –** star ratings to engage visitors
-👉 **Affiliate Links & Buy Buttons –** monetize your book lists
+👉 **Book Galleries & Showcases -** beautiful grid, slider, and list layouts
+👉 **Book Metadata -** author, publisher, ISBN, language, and more
+👉 **Ratings & Reviews -** star ratings to engage visitors
+👉 **Affiliate Links & Buy Buttons -** monetize your book lists
 👉 **Search & Filters -** fully customizable search panel
 👉 **Sale Books Directly -** using WooCommerce
 👉 **SEO-Ready Book Schema -** get rich results in Google search
-👉 **Customizable Layouts –** responsive and mobile-friendly
+👉 **Customizable Layouts -** responsive and mobile-friendly
 👉 **Import Books -** import books using csv or API from Google Books using ISBN
+👉 **Automatic Amazon Affiliate Tag -** Enter your Amazon Associates ID once 
+and it automatically appends to every buy link sitewide. No manual URL editing needed!
 
 
 
@@ -227,12 +229,11 @@ Yes. If you already have Books in the free version, you will automatically get t
 = Should I purchase the Pro version? =
 Pro version includes tons of amazing and useful features. If you’re interested to get the Pro, Please go to [Upgrade to Pro!](https://books-gallery.com/pricing-faq/) Page.
 
-= Can I have a Free Trial of that Pro version? =
-Yes you can! Please go to [Upgrade to Pro!](https://books-gallery.com/pricing-faq/) Page.
-
 = Is it translation ready? =
 Yes, this plugin is fully Translation ready, supporting .pot language files! You can easily translate into your language with loco translator.
 
+= Does Books Gallery support automatic Amazon affiliate tags? =
+Yes! Books Gallery includes a built-in automatic affiliate code feature. Simply enter your Amazon Associates ID once in the plugin settings and it automatically appends your tag to every Amazon buy link across your entire gallery - no manual URL editing required. This works for both download links and buy links.
 
 == Screenshots ==
 
@@ -244,6 +245,11 @@ Yes, this plugin is fully Translation ready, supporting .pot language files! You
 
 
 == Changelog ==
+
+= 4.8.2 =
+* Image alt issue fixed in details page
+* Image alt issue fixed for slider widget
+* Fixed minor bugs
 
 = 4.8.1 =
 * Fixed minor bugs

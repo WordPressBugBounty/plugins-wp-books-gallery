@@ -66,6 +66,7 @@ esc_attr_e( $wbg_back_btn_font_color_hvr );
         text-align: center;
     }
     <?php 
+// if ( wbg_fs()->is_plan__premium_only('pro') ) ended
 if ( $wbg_enable_rtl ) {
     ?>
         .wbg-details-wrapper .wbg-details-summary {

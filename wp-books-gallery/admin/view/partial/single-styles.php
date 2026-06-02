@@ -294,6 +294,23 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
 ?>
             </td>
         </tr>
+        <!-- Author Panel -->
+        <tr>
+            <th scope="row" colspan="6" style="text-align:left; font-size:15px; color:#F5653E;">
+                <hr><span><?php 
+_e( 'Author Panel', 'wp-books-gallery' );
+?>&nbsp;::</span><hr>
+            </th>
+        </tr>
+        <?php 
+?>
+            <tr>
+            <td colspan="6"><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
+?></td>
+            </tr>
+            <?php 
+?>
         <!-- Modal Popup -->
         <tr>
             <th scope="row" colspan="6" style="text-align:left;">

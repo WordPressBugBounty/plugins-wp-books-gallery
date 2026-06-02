@@ -284,7 +284,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
 ?>
                     </td>
                 </tr>
-                <tr class="Subtitle Prefix">
+                <tr class="wbg_sub_title_prefix">
                     <th scope="row">
                         <label><?php 
 _e( 'Subtitle Prefix', 'wp-books-gallery' );
@@ -322,6 +322,22 @@ _e( 'Display Sidebar in Archive Page', 'wp-books-gallery' );
                         <input type="checkbox" name="wbg_display_sidebar_archive_page" class="wbg_display_sidebar_archive_page" id="wbg_display_sidebar_archive_page" value="1" <?php 
 checked( $wbg_display_sidebar_archive_page, 1 );
 ?> />
+                    </td>
+                </tr>
+                <tr class="wbg_google_api_key">
+                    <th scope="row">
+                        <label><?php 
+_e( 'Google API Key', 'wp-books-gallery' );
+?></label>
+                    </th>
+                    <td colspan="3">
+                        <?php 
+?>
+                            <span><?php 
+echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Professional', 'wp-books-gallery' ) . '</a>';
+?></span>
+                            <?php 
+?>
                     </td>
                 </tr>
             </table>

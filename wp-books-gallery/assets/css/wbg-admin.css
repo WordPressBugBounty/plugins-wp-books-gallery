@@ -274,8 +274,12 @@ input#wbg_shortcode {
 }
 
 .wbg-admin-sidebar .postbox.pro-features ul a {
-    color: #35c481;
+    color: #f7c788;
     text-decoration: none;
+}
+
+.wbg-admin-sidebar .postbox.pro-features ul a:hover {
+    color: #88ddf7;
 }
 
 
