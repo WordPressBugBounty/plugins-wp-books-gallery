@@ -56,7 +56,7 @@ trait Wbg_Gallery_Settings_Content
             [
                 'name'      => 'wbg_book_cover_size',
                 'type'      => 'string',
-                'default'   => 'medium-full',
+                'default'   => 'default',
             ],
             [
                 'name'      => 'wbg_book_image_animation',
@@ -66,12 +66,12 @@ trait Wbg_Gallery_Settings_Content
             [
                 'name'      => 'wbg_gallary_sorting',
                 'type'      => 'string',
-                'default'   => 'title',
+                'default'   => 'date',
             ],
             [
                 'name'      => 'wbg_books_order',
                 'type'      => 'string',
-                'default'   => 'ASC',
+                'default'   => 'DESC',
             ],
             [
                 'name'      => 'wbg_display_details_page',
@@ -230,7 +230,7 @@ trait Wbg_Gallery_Settings_Content
             ],
             [
                 'name'      => 'wbg_gallery_sorting_options',
-                'type'      => 'textarea',
+                'type'      => 'text',
                 'default'   => 'latest, priceLH, priceHL',
             ],
         ];

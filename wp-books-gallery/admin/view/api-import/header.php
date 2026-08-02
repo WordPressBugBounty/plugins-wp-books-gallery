@@ -29,7 +29,13 @@ if ( isset( $_POST['saveSettings'] ) && current_user_can('manage_options') ) {
 
         if ( '' !== $_POST['wbg_api_isbn'] ) {
 
-            $wbg_api_from = $_POST['wbg_api_from'];
+            $wbg_api_from = isset( $_POST['wbg_api_from'] ) ? sanitize_text_field( $_POST['wbg_api_from'] ) : '';
+
+            if ( '' === $wbg_api_from ) {
+
+                $wbgiUploadMsg = __("No API source selected", 'wp-books-gallery');
+                return $wbgiUploadMsg;
+            }
 
             if ( ( 'gb' === $wbg_api_from ) && empty( $apiKey ) ) {
 

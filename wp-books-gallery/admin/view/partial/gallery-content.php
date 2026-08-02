@@ -14,7 +14,7 @@ foreach ( $wpsdGallerySettingsContent as $option_name => $option_value ) {
     <?php 
 wp_nonce_field( 'wbg_gallery_c_action', 'wbg_gallery_c_nonce_field' );
 ?>
-    <table class="wbg-gallery-conent-settings-table">
+    <table class="hm-settings-table" cellpadding=0 cellspacing=0>
         <!-- Gallery Template -->
         <tr>
             <th scope="row">
@@ -222,26 +222,24 @@ _e( 'Descending', 'wp-books-gallery' );
         <!-- Disable Book Details Page -->
         <tr>
             <th scope="row">
-                <label for="wbg_display_details_page"><?php 
+                <label><?php 
 _e( 'Disable Book Details Page / Enable Popup', 'wp-books-gallery' );
 ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="wbg_display_details_page" id="wbg_display_details_page" value="1"
-                    <?php 
-echo ( $wbg_display_details_page ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_display_details_page', $wbg_display_details_page );
+?>
             </td>
             <th scope="row">
-                <label for="wbg_details_is_external"><?php 
+                <label><?php 
 _e( 'Detail Page in New Tab', 'wp-books-gallery' );
 ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="wbg_details_is_external" id="wbg_details_is_external" value="1"
-                    <?php 
-echo ( $wbg_details_is_external ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_details_is_external', $wbg_details_is_external );
+?>
             </td>
         </tr>
         <tr class="wbg_title_length">
@@ -256,15 +254,14 @@ esc_attr_e( $wbg_title_length );
 ?>">
             </td>
             <th scope="row">
-                <label for="wbg_display_total_books"><?php 
+                <label><?php 
 _e( 'Display Total Books', 'wp-books-gallery' );
 ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="wbg_display_total_books" class="wbg_display_total_books" id="wbg_display_total_books" value="1"
-                    <?php 
-echo ( $wbg_display_total_books ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_display_total_books', $wbg_display_total_books );
+?>
             </td>
         </tr>
         <!-- Books Per Page -->
@@ -277,17 +274,17 @@ _e( 'Books Per Page', 'wp-books-gallery' );
             <td>
                 <?php 
 $wbg_max_book = 500;
-$wbg_max_book = 20;
+$wbg_max_book = 30;
 ?>
                 <input type="number" min="1" max="<?php 
 esc_attr_e( $wbg_max_book );
-?>" step="1" name="wbg_books_per_page" class="wbg_books_per_page" value="<?php 
+?>" step="1" name="wbg_books_per_page" class="wbg_books_per_page" 
+                    value="<?php 
 esc_attr_e( $wbg_books_per_page );
 ?>">
-                    
             </td>
             <th scope="row">
-                <label for="wbg_display_pagination"><?php 
+                <label><?php 
 _e( 'Display Pagination', 'wp-books-gallery' );
 ?>?</label>
             </th>
@@ -304,7 +301,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Premiu
         <!-- Display Front Sorting -->
         <tr>
             <th scope="row">
-                <label for="wbg_display_sorting"><?php 
+                <label><?php 
 _e( 'Display Front Sorting', 'wp-books-gallery' );
 ?>?</label>
             </th>
@@ -332,25 +329,23 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
 ?>
             </td>
         </tr>
-        <tr>
-            <td colspan="4">
-                <b><?php 
+        <!-- Book Info -->
+        <tr class="wbg-settings-section">
+            <td colspan="4" class="wbg-settings-block-title"><i class="fa-solid fa-list"></i>&nbsp;<?php 
 _e( 'Book Info', 'wp-books-gallery' );
-?>&nbsp;::</b>
-            </td>
+?></td>
         </tr>
         <!-- Description -->
         <tr class="wbg_display_description">
             <th scope="row">
-                <label for="wbg_display_description"><?php 
+                <label><?php 
 _e( 'Display Description', 'wp-books-gallery' );
 ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="wbg_display_description" class="wbg_display_description" id="wbg_display_description" value="1"
-                    <?php 
-echo ( $wbg_display_description ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_display_description', $wbg_display_description );
+?>
             </td>
             <th scope="row">
                 <label for="wbg_description_length"><?php 
@@ -366,15 +361,14 @@ esc_attr_e( $wbg_description_length );
         <!-- Category -->
         <tr class="wbg_display_category">
             <th scope="row">
-                <label for="wbg_display_category"><?php 
+                <label><?php 
 _e( 'Display Category', 'wp-books-gallery' );
 ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="wbg_display_category" class="wbg_display_category" id="wbg_display_category" value="1"
-                    <?php 
-echo ( $wbg_display_category ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_display_category', $wbg_display_category );
+?>
             </td>
             <th scope="row">
                 <label for="wbg_cat_label_txt"><?php 
@@ -393,15 +387,14 @@ esc_attr_e( $wbg_cat_label_txt );
         <!-- Author -->
         <tr class="wbg_display_author">
             <th scope="row">
-                <label for="wbg_display_author"><?php 
+                <label><?php 
 _e( 'Display Author', 'wp-books-gallery' );
 ?>?</label>
             </th>
             <td>
-                <input type="checkbox" name="wbg_display_author" class="wbg_display_author" id="wbg_display_author" value="1"
-                    <?php 
-echo ( $wbg_display_author ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_display_author', $wbg_display_author );
+?>
             </td>
             <th scope="row">
                 <label for="wbg_author_label_txt"><?php 
@@ -420,7 +413,7 @@ esc_attr_e( $wbg_author_label_txt );
         <!-- Edition -->
         <tr>
             <th scope="row">
-                <label for="wbg_display_edition_gallery"><?php 
+                <label><?php 
 _e( 'Display Edition', 'wp-books-gallery' );
 ?>?</label>
             </th>
@@ -451,7 +444,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
         <!-- Publish Date -->
         <tr>
             <th scope="row">
-                <label for="wbg_display_publish_date_gallery"><?php 
+                <label><?php 
 _e( 'Display Publish Date', 'wp-books-gallery' );
 ?>?</label>
             </th>
@@ -482,7 +475,7 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
         <!-- Publisher -->
         <tr>
             <th scope="row">
-                <label for="wbg_display_publisher_gallery"><?php 
+                <label><?php 
 _e( 'Display Publisher', 'wp-books-gallery' );
 ?>?</label>
             </th>
@@ -512,12 +505,10 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
         </tr>
         <!-- Format -->
         <tr>
-            <th scope="row">
-                <label for="wbg_gallery_hide_format"><?php 
+            <th scope="row"><?php 
 _e( 'Hide Format', 'wp-books-gallery' );
-?>?</label>
-            </th>
-            <td>
+?>?</th>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -527,24 +518,20 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
 ?>
             </td>
         </tr>
-        <tr>
-            <td colspan="4">
-                <b><?php 
+        <!-- Other Settings -->
+        <tr class="wbg-settings-section">
+            <td colspan="4" class="wbg-settings-block-title"><i class="fa-solid fa-sliders"></i>&nbsp;<?php 
 _e( 'Other Settings', 'wp-books-gallery' );
-?>&nbsp;::</b>
-            </td>
+?></td>
         </tr>
         <tr class="wbg_display_buynow">
-            <th scope="row">
-                <label for="wbg_display_buynow"><?php 
+            <th scope="row"><?php 
 _e( 'Display Download Button', 'wp-books-gallery' );
-?>?</label>
-            </th>
+?>?</th>
             <td>
-                <input type="checkbox" name="wbg_display_buynow" class="wbg_display_buynow" id="wbg_display_buynow" value="1"
-                    <?php 
-echo ( $wbg_display_buynow ? 'checked' : '' );
-?> >
+                <?php 
+$this->wbg_load_checkbox_settings_field( 'wbg_display_buynow', $wbg_display_buynow );
+?>
             </td>
             <th scope="row">
                 <label for="wbg_buynow_btn_txt"><?php 
@@ -561,11 +548,9 @@ esc_attr_e( $wbg_buynow_btn_txt );
             </td>
         </tr>
         <tr class="wbg_display_buy_now">
-            <th scope="row">
-                <label for="wbg_display_buy_now"><?php 
+            <th scope="row"><?php 
 _e( 'Display Buy Now Button', 'wp-books-gallery' );
-?>?</label>
-            </th>
+?>?</th>
             <td>
                 <?php 
 ?>
@@ -591,11 +576,9 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Premiu
             </td>
         </tr>
         <tr class="wbg_gallery_button_bottom_align">
-            <th scope="row">
-                <label for="wbg_gallery_button_bottom_align"><?php 
+            <th scope="row"><?php 
 _e( 'Button Fixed Alignment', 'wp-books-gallery' );
-?>?</label>
-            </th>
+?>?</th>
             <td colspan="3">
                 <?php 
 ?>
@@ -607,11 +590,9 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
             </td>
         </tr>
         <tr class="wbg_gallery_hide_price">
-            <th scope="row">
-                <label for="wbg_gallery_hide_price"><?php 
+            <th scope="row"><?php 
 _e( 'Hide Price', 'wp-books-gallery' );
-?>?</label>
-            </th>
+?>?</th>
             <td>
                 <?php 
 ?>
@@ -638,11 +619,9 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Premiu
         </tr>
         <!-- Display Rating -->
         <tr>
-            <th scope="row">
-                <label for="wbg_display_rating"><?php 
+            <th scope="row"><?php 
 _e( 'Display Rating', 'wp-books-gallery' );
-?>?</label>
-            </th>
+?>?</th>
             <td colspan="3">
                 <?php 
 ?>
@@ -654,12 +633,12 @@ echo '<a href="' . wbg_fs()->get_upgrade_url() . '">' . __( 'Available in Profes
             </td>
         </tr>
         <tr class="wbg_publish_date_format">
-            <th scope="row" style="text-align: right;">
+            <th scope="row">
                 <label for="wbg_publish_date_format"><?php 
 _e( 'Publish Date Format', 'wp-books-gallery' );
 ?>:</label>
             </th>
-            <td>
+            <td colspan="3">
                 <?php 
 ?>
                     <span><?php 
@@ -682,10 +661,9 @@ _e( 'Shortcode:', 'wp-books-gallery' );
             </th>
             <td colspan="3">
                 <input type="text" name="wbg_shortcode" id="wbg_shortcode" class="medium-text" value="[wp_books_gallery]" readonly />
-                <br>
-                <code><?php 
+                <span class="wbg-sub-msg"><?php 
 _e( 'Copy this shortcode and apply it to any page to display books gallery.', 'wp-books-gallery' );
-?></code>
+?></span>
             </td>
         </tr>
     </table>

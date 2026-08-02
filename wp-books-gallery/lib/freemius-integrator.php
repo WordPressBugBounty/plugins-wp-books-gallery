@@ -9,7 +9,7 @@ if ( !function_exists( 'wbg_fs' ) ) {
         global $wbg_fs;
         if ( !isset( $wbg_fs ) ) {
             // Include Freemius SDK.
-            require_once WBG_PATH . '/freemius/start.php';
+            require_once WBG_PATH . 'vendor/freemius/start.php';
             $wbg_fs = fs_dynamic_init( array(
                 'id'               => '8841',
                 'slug'             => 'wp-books-gallery',

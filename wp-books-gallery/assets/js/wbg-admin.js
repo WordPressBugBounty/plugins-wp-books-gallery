@@ -102,7 +102,7 @@
         changeYear: true,
     });
 
-    $('.wbg-search-settings-table').sortable({
+    $('#wbg-search-settings-table').sortable({
         items: '.wbg_list_item',
         opacity: 0.6,
         cursor: 'move',
@@ -172,6 +172,19 @@
         $("#wbg-wc-product-list").change(function(event) {
             $('#wbgp_buy_link_id').val('?add-to-cart=' + $(this).val());
         });
+
+        // myToggleButton
+        const toggleButton = document.getElementById('wbgToggleButton');
+
+        if (toggleButton != null) {
+            $('#wbg-multi-sale-sources-tbl').hide();
+
+            toggleButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                $('#wbg-multi-sale-sources-tbl').slideToggle("fast");
+                $(e.currentTarget).find("i").toggleClass("fa-chevron-down fa-chevron-up");
+            });
+        }
     });
 
 })(jQuery);
