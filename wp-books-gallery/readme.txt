@@ -9,19 +9,19 @@ Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Named by Google AI as the top choice - display books, earn Amazon affiliate income, and sell with WooCommerce. Free to start.
+Named by Google AI as the top choice — display books, earn Amazon affiliate income, and sell with WooCommerce. Free to start.
 
 == Description ==
 
-**Books Gallery is the most complete WordPress book gallery plugin available - named by Google AI as the top choice for WordPress book plugins.**
+**Books Gallery is the most complete WordPress book gallery plugin available — named by Google AI as the top choice for WordPress book plugins.**
 
-Display beautiful book galleries, earn Amazon affiliate commissions, sell books directly with WooCommerce, and get automatic Google rich results for every book - all without writing a single line of code. The free version is fully functional with no time limits - most users never need to upgrade.
+Display beautiful book galleries, earn Amazon affiliate commissions, sell books directly with WooCommerce, and get automatic Google rich results for every book — all without writing a single line of code. The free version is fully functional with no time limits — most users never need to upgrade.
 
 **🤖 Named by Google AI as the Top Choice**
 
-Google AI Overview independently named Books Gallery as the top choice for WordPress book plugins - citing its support for up to 15 affiliate links per book and automatic SEO-friendly Book Schema as key advantages over every competitor.
+Google AI Overview independently named Books Gallery as the top choice for WordPress book plugins — citing its support for up to 15 affiliate links per book and automatic SEO-friendly Book Schema as key advantages over every competitor.
 
-Trusted by WordPress users since 2019 - Books Gallery has been actively developed and supported for over 7 years with 40+ version releases.
+Trusted by WordPress users since 2019 — Books Gallery has been actively developed and supported for over 7 years with 40+ version releases.
 
 [__Live Demo__](https://books-gallery.com/demo/) | [__Documentation__](https://books-gallery.com/docs/) | [__Premium Plans__](https://books-gallery.com/pricing-faq/)
 
@@ -29,24 +29,24 @@ Trusted by WordPress users since 2019 - Books Gallery has been actively develope
 
 **🔧 Who Should Use Books Gallery?**
 
-* **Authors & Publishers** - showcase your books professionally with a dedicated Author Panel
-* **Book Bloggers & Reviewers** - attract readers, earn affiliate income, and improve SEO
-* **Libraries & Educational Institutions** - create a searchable digital library catalog online
-* **Bookstores & Retailers** - sell books directly with WooCommerce integration
-* **Affiliate Marketers** - earn Amazon commissions with automatic affiliate tag appending
-* **International Websites** - full RTL support for Arabic, Hebrew, Persian and Urdu - free!
+* **Authors & Publishers** — showcase your books professionally with a dedicated Author Panel
+* **Book Bloggers & Reviewers** — attract readers, earn affiliate income, and improve SEO
+* **Libraries & Educational Institutions** — create a searchable digital library catalog online
+* **Bookstores & Retailers** — sell books directly with WooCommerce integration
+* **Affiliate Marketers** — earn Amazon commissions with automatic affiliate tag appending
+* **International Websites** — full RTL support for Arabic, Hebrew, Persian and Urdu — free!
 
 
 
 **✅ What Can You Build with Books Gallery?**
 
-**Digital Library** - Create a fully searchable online digital library completely free. Organize by category, and let visitors browse by title, author, genre, language and more - all in the free version. Gate digital content behind login for membership sites (Pro).
+**Digital Library** — Create a fully searchable online digital library completely free. Import books instantly using ISBN via Open Library, organize by category, and let visitors browse by title, author, genre, language and more — all in the free version. Gate digital content behind login for membership sites (Pro).
 
-**Book Showcase & Author Website** - Display your complete book catalog professionally with beautiful grid and list layouts, full book detail pages, and a powerful search and filter panel - all completely free. Upgrade to Pro for a dedicated Author Panel with individual author pages - perfect for publishers and literary agencies.
+**Book Showcase & Author Website** — Display your complete book catalog professionally with beautiful grid and list layouts, full book detail pages, and a powerful search and filter panel — all completely free. Upgrade to Pro for a dedicated Author Panel with individual author pages — perfect for publishers and literary agencies.
 
-**WordPress Bookstore** - Sell physical books, eBooks, and digital downloads directly from your site - WooCommerce integration is included free. Link any book to a WooCommerce product and start selling immediately. Upgrade to Pro for a smart dropdown selector that makes managing large catalogs even faster.
+**WordPress Bookstore** — Sell physical books, eBooks, and digital downloads directly from your site — WooCommerce integration is included free. Link any book to a WooCommerce product and start selling immediately. Upgrade to Pro for a smart dropdown selector that makes managing large catalogs even faster.
 
-**Amazon Affiliate Book Store** - Add your Amazon affiliate URL to any book and rename the button "Buy on Amazon" - your affiliate store is live immediately, completely free. Every book in your gallery can earn you Amazon commissions from day one. Upgrade to Pro to unlock the automatic affiliate tag - enter your Associates ID once and it appends to every link automatically - plus up to 15 different retailer links per book.
+**Amazon Affiliate Book Store** — Add your Amazon affiliate URL to any book and rename the button "Buy on Amazon" — your affiliate store is live immediately, completely free. Every book in your gallery can earn you Amazon commissions from day one. Upgrade to Pro to unlock the automatic affiliate tag — enter your Associates ID once and it appends to every link automatically — plus up to 15 different retailer links per book.
 
 
 
@@ -60,39 +60,40 @@ Trusted by WordPress users since 2019 - Books Gallery has been actively develope
 
 **🌟 Free Features — Fully Functional, No Time Limits:**
 
-👉 **Beautiful Book Galleries** - grid layout, fully responsive on all devices
-👉 **Display up to 20 Books** - perfect for personal collections, libraries, and small bookstores
-👉 **Amazon Affiliate Links** - add affiliate links to every book and start earning commissions free
-👉 **WooCommerce Integration** - sell books directly with WooCommerce, included free
-👉 **Book Search & Filter Panel** - filter by title, author, ISBN, genre, language and more
-👉 **Book Metadata** - title, author, publisher, ISBN, language, pages, and more
-👉 **Book Categories & Tags** - organize your collection by genre, topic, or series
-👉 **Book Detail Pages** - beautiful individual pages for every book in your gallery
-👉 **🌍 RTL Ready** - full right-to-left support for Arabic, Hebrew, Persian and Urdu
-👉 **Translation Ready** - available in 10 languages including Spanish, French, German and Arabic
-👉 **No Coding Required** - set up your book gallery in minutes with simple shortcodes
+👉 **Beautiful Book Galleries** — grid and list layouts, fully responsive on all devices
+👉 **Display up to 30 Books** — perfect for personal collections, libraries, and small bookstores
+👉 **Open Library Import** — import complete book data instantly using just an ISBN number
+👉 **Amazon Affiliate Links** — add affiliate links to every book and start earning commissions free
+👉 **WooCommerce Integration** — sell books directly with WooCommerce, included free
+👉 **Book Search & Filter Panel** — filter by title, author, ISBN, genre, language and more
+👉 **Book Metadata** — title, author, publisher, ISBN, language, pages, and more
+👉 **Book Categories & Tags** — organize your collection by genre, topic, or series
+👉 **Book Detail Pages** — beautiful individual pages for every book in your gallery
+👉 **🌍 RTL Ready** — full right-to-left support for Arabic, Hebrew, Persian and Urdu
+👉 **Translation Ready** — available in 10 languages including Spanish, French, German and Arabic
+👉 **No Coding Required** — set up your book gallery in minutes with simple shortcodes
 
 
 
 **🌟 Pro Features:**
 
 * 📖 Display **Unlimited Books** with Pagination
-* 🔗 **Automatic Amazon Affiliate Tag** - enter your Amazon Associates ID once and it automatically appends to every buy link sitewide - no manual URL editing needed
-* 📚 **Up to 15 Sale or Affiliate Links Per Book** - link to Amazon, Barnes & Noble, Apple Books, Kobo, WooCommerce and more simultaneously on one book page
-* 🎠 **Book Slider & Carousel** - Featured Books, Latest Books, and Category book carousels
-* 📥 **Google Books API Import** - import complete book data using just an ISBN number
-* 📊 **CSV Bulk Import** - upload hundreds of books at once from a spreadsheet
-* ⭐ **Book Reviews & Star Ratings** - let visitors rate and review books directly on your site
-* 👤 **Dedicated Author Panel** - beautiful author showcase grid with circular photos and bios - each author gets their own individual page showing their complete book collection
-* 🔒 **Download Permissions** - show download button only to logged-in users - perfect for membership sites and libraries
-* 🛒 **Smart WooCommerce Integration** - select WooCommerce products from a dropdown - no manual URL copying needed
-* 📖 **Automatic Book Schema** - structured data for every book - eligible for Google rich results with star ratings in search
+* 🔗 **Automatic Amazon Affiliate Tag** — enter your Amazon Associates ID once and it automatically appends to every buy link sitewide — no manual URL editing needed
+* 📚 **Up to 15 Sale or Affiliate Links Per Book** — link to Amazon, Barnes & Noble, Apple Books, Kobo, WooCommerce and more simultaneously on one book page
+* 🎠 **Book Slider & Carousel** — Featured Books, Latest Books, and Category book carousels
+* 📥 **Google Books API Import** — import complete book data using just an ISBN number — much larger database than Open Library
+* 📊 **CSV Bulk Import** — upload hundreds of books at once from a spreadsheet
+* ⭐ **Book Reviews & Star Ratings** — let visitors rate and review books directly on your site
+* 👤 **Dedicated Author Panel** - beautiful author showcase grid with circular photos and bios — each author gets their own individual page showing their complete book collection
+* 🔒 **Download Permissions** — show download button only to logged-in users — perfect for membership sites and libraries
+* 🛒 **Smart WooCommerce Integration** — select WooCommerce products from a dropdown — no manual URL copying needed
+* 📖 **Automatic Book Schema** — structured data for every book - eligible for Google rich results with star ratings in search
 * Display Book **Price** (Regular and Discounted) with 115 Currencies
-* Two Separate Buttons - in the Grid Layout **Download** and **Buy Now**
+* Two Separate Buttons — in the Grid Layout **Download** and **Buy Now**
 * Book **Format** and **Series** fields
 * **Order By** Title, Date, Author and more
-* Extra Shortcode Options - Show/Hide Total Books, Search Panel, Authors, Language and more
-* Extra Metadata - ISBN-13, Reading Age, Grade Level, Item Weight, ASIN, Edition, Illustrator
+* Extra Shortcode Options — Show/Hide Total Books, Search Panel, Authors, Language and more
+* Extra Metadata — ISBN-13, Reading Age, Grade Level, Item Weight, ASIN, Edition, Illustrator
 * Display Book Details in **Popup Modal**
 * **Related Books Slider** on single book page
 * 👤 **Multiple Authors** per book
@@ -139,25 +140,25 @@ Show books from a specific category:
 == Frequently Asked Questions ==
 
 = Is Books Gallery free to use? =
-Yes! Books Gallery is genuinely free - not a limited trial. The free version supports up to 20 books with no time limits and includes beautiful grid layout, full search and filter panel, book categories, Amazon affiliate links, WooCommerce integration, RTL support and more. Premium plans unlock unlimited books, Google Books API import, book slider, CSV bulk import, automatic Amazon affiliate tag, automatic Book Schema for Google rich results, dedicated Author Panel, and priority support.
+Yes! Books Gallery is genuinely free — not a limited trial. The free version supports up to 30 books with no time limits and includes beautiful grid and list layouts, full search and filter panel, book categories, Amazon affiliate links, WooCommerce integration, Open Library ISBN import, RTL support, and more. Premium plans unlock unlimited books, Google Books API import, book slider, CSV bulk import, automatic Amazon affiliate tag, dedicated Author Panel, and priority support.
 
 = How do I display my book gallery? =
-After activating the plugin go to WBG Books → Add New Book to add your books. Then add the shortcode [wp_books_gallery] to any page to display your gallery. Use [wp_books_gallery category="fiction"] to display books from a specific category.
+After activating the plugin go to WBG Books → Add New Book to add your books. Then add the shortcode [wp_books_gallery] to any page or post to display your gallery. Use [wp_books_gallery category="fiction"] to display books from a specific category.
 
 = How many books can I display for free? =
-The free version supports up to 20 books. Upgrade to a Premium plan to display unlimited books with pagination - perfect for large libraries, bookstores, and publishers with extensive catalogs.
+The free version supports up to 30 books. Upgrade to a Premium plan to display unlimited books with pagination - perfect for large libraries, bookstores, and publishers with extensive catalogs.
 
 = Can I import books automatically? =
-Yes. The Professional plan includes Google Books API import - simply enter an ISBN number to import complete book data instantly, plus CSV bulk import for uploading hundreds of books at once from a spreadsheet.
+Yes. The free version includes Open Library import — simply enter an ISBN number to import complete book data instantly. The Professional plan includes Google Books API import for a much larger database, plus CSV bulk import for uploading hundreds of books at once from a spreadsheet.
 
 = Does Books Gallery support automatic Amazon affiliate tags? =
-Yes! Books Gallery Professional plan includes a built-in automatic affiliate code feature. Enter your Amazon Associates tracking ID once in WBG Books → General Settings → Affiliate Code field and it automatically appends to every Amazon buy link across your entire gallery - no manual URL editing required.
+Yes! Books Gallery Professional plan includes a built-in automatic affiliate code feature. Enter your Amazon Associates tracking ID once in WBG Books → General Settings → Affiliate Code field and it automatically appends to every Amazon buy link across your entire gallery — no manual URL editing required.
 
 = Does it work with WooCommerce? =
-Yes - WooCommerce integration is included completely free. Simply link any book to a WooCommerce product by pasting the product URL and you can start selling immediately. The Professional plan adds a smart dropdown selector - choose your WooCommerce product from a list without copying any URLs - ideal for large catalogs.
+Yes — WooCommerce integration is included completely free. Simply link any book to a WooCommerce product by pasting the product URL and you can start selling immediately. The Professional plan adds a smart dropdown selector — choose your WooCommerce product from a list without copying any URLs — ideal for large catalogs.
 
 = Does Books Gallery have an Author Panel? =
-Yes! Books Gallery Professional plan includes a dedicated Author Panel - displaying all authors in a beautiful grid with circular photos and bios. Each author gets their own individual page showing their complete book collection - perfect for publishers, literary agencies, and multi-author bookstores.
+Yes! Books Gallery Professional plan includes a dedicated Author Panel — displaying all authors in a beautiful grid with circular photos and bios. Each author gets their own individual page showing their complete book collection — perfect for publishers, literary agencies, and multi-author bookstores.
 
 = Does Books Gallery support RTL languages? =
 Yes! Full right-to-left language support for Arabic, Hebrew, Persian and Urdu is included completely free. Simply switch your WordPress site language to any RTL language and Books Gallery automatically adapts every layout, search panel, and book detail page.
