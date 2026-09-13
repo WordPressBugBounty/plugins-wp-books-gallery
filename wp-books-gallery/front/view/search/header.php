@@ -66,9 +66,10 @@ foreach ( $wbg_tax_filters as $get_key => $meta_key ) {
         $wbg_clean_params[$get_key] = '';
     }
 }
+$wbg_author_order = ( 'DESC' === strtoupper( $wbg_display_author_order ) ? 'DESC' : 'ASC' );
 if ( !empty( $wbg_clean_params['wbg_category_s'] ) ) {
-    $wbg_authors_by_cat = "SELECT DISTINCT pm.meta_value\r\n                        FROM {$wpdb->posts} p\r\n                        LEFT JOIN {$wpdb->term_relationships} rel ON rel.object_id = p.ID\r\n                        LEFT JOIN {$wpdb->term_taxonomy} tax ON tax.term_taxonomy_id = rel.term_taxonomy_id\r\n                        LEFT JOIN {$wpdb->terms} t ON t.term_id = tax.term_id\r\n                        LEFT JOIN {$wpdb->postmeta} pm ON pm.post_id = p.ID\r\n                        WHERE post_status = 'publish'\r\n                        AND post_type = 'books'\r\n                        AND t.slug = '" . $wbg_clean_params['wbg_category_s'] . "'\r\n                        AND tax.taxonomy = 'book_category'\r\n                        AND pm.meta_key = 'wbg_author'\r\n                        ORDER BY pm.meta_value {$wbg_display_author_order}";
+    $wbg_authors_by_cat = $wpdb->prepare( "SELECT DISTINCT pm.meta_value\r\n        FROM {$wpdb->posts} p\r\n        LEFT JOIN {$wpdb->term_relationships} rel ON rel.object_id = p.ID\r\n        LEFT JOIN {$wpdb->term_taxonomy} tax ON tax.term_taxonomy_id = rel.term_taxonomy_id\r\n        LEFT JOIN {$wpdb->terms} t ON t.term_id = tax.term_id\r\n        LEFT JOIN {$wpdb->postmeta} pm ON pm.post_id = p.ID\r\n        WHERE post_status = 'publish'\r\n        AND post_type = 'books'\r\n        AND t.slug = %s\r\n        AND tax.taxonomy = 'book_category'\r\n        AND pm.meta_key = 'wbg_author'\r\n        ORDER BY pm.meta_value {$wbg_author_order}", $wbg_clean_params['wbg_category_s'] );
     $wbg_authors = $wpdb->get_results( $wbg_authors_by_cat, ARRAY_A );
 } else {
-    $wbg_authors = $wpdb->get_results( "SELECT DISTINCT meta_value FROM {$wpdb->postmeta} pm, {$wpdb->posts} p WHERE meta_key = 'wbg_author' and p.post_type = 'books' ORDER BY meta_value {$wbg_display_author_order}", ARRAY_A );
+    $wbg_authors = $wpdb->get_results( "SELECT DISTINCT meta_value\r\n        FROM {$wpdb->postmeta} pm, {$wpdb->posts} p\r\n        WHERE meta_key = 'wbg_author'\r\n        AND p.post_type = 'books'\r\n        ORDER BY meta_value {$wbg_author_order}", ARRAY_A );
 }

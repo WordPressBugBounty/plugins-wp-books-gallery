@@ -3,8 +3,8 @@ Contributors: mhmrajib, hmplugin, freemius
 Donate link: https://www.paypal.me/mhmrajib
 Tags: book gallery, book showcase, book library, books, affiliate
 Requires at least: 5.8
-Tested up to: 7.0.2
-Stable tag: 4.8.3
+Tested up to: 7.1
+Stable tag: 4.8.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -202,6 +202,12 @@ Pro unlocks powerful features including automatic Amazon affiliate tag, up to 15
 
 
 == Changelog ==
+
+= 4.8.4 =
+* Security: Fixed a potential SQL injection vulnerability in the book category search functionality.
+* Security: Improved validation and database query handling for search parameters.
+* Security: Improved security of author sorting parameters.
+* Tested: Compatible with WordPress 7.1
 
 = 4.8.3 =
 * New: Free book limit increased to 30 books
